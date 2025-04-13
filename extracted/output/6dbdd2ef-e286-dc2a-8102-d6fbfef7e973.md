@@ -1,0 +1,74 @@
+﻿
+
+Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+  
+C#Visual BasicVisual C++
+
+Revit 2024 API  
+---  
+BindingMap..::..ReInsert Method (Definition, Binding, ForgeTypeId)  
+[BindingMap Class](4ce777fb-ab30-6d15-d019-5b430223ac62.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+---  
+  
+Removes an existing parameter and creates a new binding for a given parameter in a specified group.
+
+**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)
+
+# Syntax
+
+C#  
+---  
+      
+    
+    public virtual bool ReInsert(
+    	[Definition](8fe04f37-04e1-9e93-ffdb-e3900908e42a.md) key,
+    	[Binding](47f6ad6f-8d00-af57-995e-dc6db1255f58.md) item,
+    	[ForgeTypeId](d9fcf276-9566-de83-2b0b-d89b65ccc8af.md) groupTypeId
+    )  
+  
+Visual Basic  
+---  
+      
+    
+    Public Overridable Function ReInsert ( _
+    	key As [Definition](8fe04f37-04e1-9e93-ffdb-e3900908e42a.md), _
+    	item As [Binding](47f6ad6f-8d00-af57-995e-dc6db1255f58.md), _
+    	groupTypeId As [ForgeTypeId](d9fcf276-9566-de83-2b0b-d89b65ccc8af.md) _
+    ) As Boolean  
+  
+Visual C++  
+---  
+      
+    
+    public:
+    virtual bool ReInsert(
+    	[Definition](8fe04f37-04e1-9e93-ffdb-e3900908e42a.md)^ key, 
+    	[Binding](47f6ad6f-8d00-af57-995e-dc6db1255f58.md)^ item, 
+    	[ForgeTypeId](d9fcf276-9566-de83-2b0b-d89b65ccc8af.md)^ groupTypeId
+    )  
+  
+#### Parameters
+
+key
+    Type: [Autodesk.Revit.DB..::..Definition](8fe04f37-04e1-9e93-ffdb-e3900908e42a.md) A parameter definition which can be an existing definition or one from a shared parameters file. 
+
+item
+    Type: [Autodesk.Revit.DB..::..Binding](47f6ad6f-8d00-af57-995e-dc6db1255f58.md) An InstanceBinding or TypeBinding object which contains the set of categories to which the parameter should be bound. 
+
+groupTypeId
+    Type: [Autodesk.Revit.DB..::..ForgeTypeId](d9fcf276-9566-de83-2b0b-d89b65ccc8af.md) The identifier of the parameter definition's parameter group, or empty if the parameter is not to be associated with any predefined group.
+
+# Remarks
+
+Note the type of the binding object dictates whether the parameter is bound to all instances or just types. A parameter definition cannot be bound to both instances and types. If the parameter binding already exists, remove the binding, create a new parameter binding. If the parameter binding related to the input key doesn't exist in the database, ReInsert will fail and false will be returned. In this case, Insert should be called.
+
+# See Also
+
+[BindingMap Class](4ce777fb-ab30-6d15-d019-5b430223ac62.md)
+
+[ReInsert Overload](8ac26661-1c4b-6ba1-417f-e4ea09acf32c.md)
+
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)
+
+Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

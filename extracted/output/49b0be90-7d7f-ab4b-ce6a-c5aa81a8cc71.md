@@ -1,0 +1,35 @@
+﻿
+
+Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+---  
+  
+C#Visual BasicVisual C++
+
+Include Protected MembersInclude Inherited Members
+
+Revit 2024 API  
+---  
+EnergyAnalysisDetailModelOptions Properties  
+[EnergyAnalysisDetailModelOptions Class](18297392-d94a-cdab-feb3-81482771c44d.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+---  
+  
+The [EnergyAnalysisDetailModelOptions](18297392-d94a-cdab-feb3-81482771c44d.md) type exposes the following members.
+
+# Properties
+
+|  | Name | Description |
+| --- | --- | --- |
+|  | [EnergyModelType](74be020b-ad05-834c-71ba-8dcd7cf6ae37.md) | It indicates whether the energy model is based on rooms/spaces or building elements. |
+|  | [ExportMullions](04d9f70b-ada4-d0fc-5ce7-b81250dbac8d.md) | Indicates if to specify the setting for exporting mullions. |
+|  | [IncludeShadingSurfaces](ceb9f732-a01f-7c34-21bf-431305bd1de8.md) | Indicates if to set and get the setting for if shading surfaces should be included. |
+|  | [IsValidObject](42896fca-db3d-9b7e-7cde-51a45a6e6b60.md) | Specifies whether the .NET object represents a valid Revit entity. |
+|  | [SimplifyCurtainSystems](5ffb0eb4-4864-a358-e4b8-16b32e41b8fd.md) | Indicates if to specify the setting for simplified curtain systems. |
+|  | [Tier](5452df51-4e96-5805-1aa0-0c4bd1ad2087.md) | Level of computation for energy analysis model. |
+  
+# See Also
+
+[EnergyAnalysisDetailModelOptions Class](18297392-d94a-cdab-feb3-81482771c44d.md)
+
+[Autodesk.Revit.DB.Analysis Namespace](958e2e12-587d-f188-5d7b-f13d7dbfdf48.md)
+
+Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

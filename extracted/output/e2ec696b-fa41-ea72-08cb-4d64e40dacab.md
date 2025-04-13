@@ -1,0 +1,60 @@
+﻿
+
+Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+  
+C#Visual BasicVisual C++
+
+Revit 2024 API  
+---  
+VoltageTypeSet..::..Erase Method   
+[VoltageTypeSet Class](3d6a14b7-0399-2ef9-8685-cbfaaf7739cf.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+---  
+  
+Removes a specified voltage type from the set.
+
+**Namespace:** [Autodesk.Revit.DB.Electrical](212a1314-7843-2c6c-3322-363127e4059f.md)**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)
+
+# Syntax
+
+C#  
+---  
+      
+    
+    public virtual int Erase(
+    	[VoltageType](6b462685-b825-f8f9-f218-035107f7aaf0.md) item
+    )  
+  
+Visual Basic  
+---  
+      
+    
+    Public Overridable Function Erase ( _
+    	item As [VoltageType](6b462685-b825-f8f9-f218-035107f7aaf0.md) _
+    ) As Integer  
+  
+Visual C++  
+---  
+      
+    
+    public:
+    virtual int Erase(
+    	[VoltageType](6b462685-b825-f8f9-f218-035107f7aaf0.md)^ item
+    )  
+  
+#### Parameters
+
+item
+    Type: [Autodesk.Revit.DB.Electrical..::..VoltageType](6b462685-b825-f8f9-f218-035107f7aaf0.md)The voltage type to be erased.
+
+#### Return Value
+
+The number of voltage types that were erased from the set.
+
+# See Also
+
+[VoltageTypeSet Class](3d6a14b7-0399-2ef9-8685-cbfaaf7739cf.md)
+
+[Autodesk.Revit.DB.Electrical Namespace](212a1314-7843-2c6c-3322-363127e4059f.md)
+
+Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

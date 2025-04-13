@@ -1,0 +1,49 @@
+﻿
+
+Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+---  
+  
+C#Visual BasicVisual C++
+
+Include Protected MembersInclude Inherited Members
+
+Revit 2024 API  
+---  
+TableData Members  
+[TableData Class](ab967e17-822e-fd5f-760a-4810e2e7eb61.md) Methods Properties See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+---  
+  
+The [TableData](ab967e17-822e-fd5f-760a-4810e2e7eb61.md) type exposes the following members.
+
+# Methods
+
+|  | Name | Description |
+| --- | --- | --- |
+|  | [Dispose](51795d34-2cc1-a54f-26ac-c6876d778f60.md) | Releases all resources used by the [TableData](ab967e17-822e-fd5f-760a-4810e2e7eb61.md) |
+|  | Equals | Determines whether the specified Object is equal to the current Object. (Inherited from Object.) |
+|  | GetHashCode | Serves as a hash function for a particular type.  (Inherited from Object.) |
+|  | [GetSectionData(Int32)](ac5594a4-3b6e-9a85-ac7c-363340f09aac.md) | Returns the section data array element at the specified index. |
+|  | [GetSectionData(SectionType)](154fcb09-0a96-d795-5df2-e2ec6ad244d5.md) | Returns the pointer to the section data array element at the specified section type. |
+|  | GetType | Gets the Type of the current instance. (Inherited from Object.) |
+|  | [IsEqual](1dbaa75b-3eca-c000-807c-5cac1cfc5fdb.md) | Checks if this element is equal in value to the other element. |
+|  | [IsValidZoomLevel](0b29dd56-50f3-1768-513f-545bfa4db09f.md) | Verifies if the value of zoom level is valid. |
+|  | ToString | Returns a string that represents the current object. (Inherited from Object.) |
+  
+# Properties
+
+|  | Name | Description |
+| --- | --- | --- |
+|  | [FreezeColumnsAndRows](6de1e628-31ce-7de1-d53d-9d1b57553bb1.md) | set to true if the columns and rows should be unmovable by the slider grips |
+|  | [IsValidObject](c7fa73f8-59df-dd41-c8e6-4b98093e9a19.md) | Specifies whether the .NET object represents a valid Revit entity. |
+|  | [NumberOfSections](4f57f099-a0cb-6d95-2716-a5c3417654d4.md) | Gets the number of items in section data array. |
+|  | [Width](2501ac82-ebc3-10e6-1740-29ef3c81d3ed.md) | Gets or sets the table width in feet |
+|  | [WidthInPixels](67af51c2-1c2b-64e0-35fa-448033fb4810.md) | Gets the width of the panel schedule in logical pixels |
+|  | [ZoomLevel](ead726cc-7695-e71d-e4a6-919319bb58db.md) | The value of zoom level for corresponding TableView. |
+  
+# See Also
+
+[TableData Class](ab967e17-822e-fd5f-760a-4810e2e7eb61.md)
+
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)
+
+Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

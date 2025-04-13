@@ -1,0 +1,45 @@
+﻿
+
+Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+---  
+  
+C#Visual BasicVisual C++
+
+Include Protected MembersInclude Inherited Members
+
+Revit 2024 API  
+---  
+Asset Methods  
+[Asset Class](598e104b-b6ec-9ebe-7a93-ec96b8cbeba9.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+---  
+  
+The [Asset](598e104b-b6ec-9ebe-7a93-ec96b8cbeba9.md) type exposes the following members.
+
+# Methods
+
+|  | Name | Description |
+| --- | --- | --- |
+|  | [AddConnectedAsset](bb4fdff5-a1b3-c215-c8ac-c1e6abaaea69.md) | Adds a new connected asset attached to this asset property, if it allows it.  (Inherited from [AssetProperty](7be89499-d011-ab43-4715-0ee6f9335970.md).) |
+|  | [AddCopyAsConnectedAsset](dce50799-b956-e3f9-86c2-e67aaf78c69c.md) | Makes a copy of the asset and connects it to this property.  (Inherited from [AssetProperty](7be89499-d011-ab43-4715-0ee6f9335970.md).) |
+|  | [Dispose](dc1aefa4-7c91-64e4-edc0-27e1cadeacc1.md) | (Inherited from [AssetProperty](7be89499-d011-ab43-4715-0ee6f9335970.md).) |
+|  | Equals | Determines whether the specified Object is equal to the current Object. (Inherited from Object.) |
+|  | [FindByName](ff64717a-fa49-d828-7daa-941986971a61.md) | Gets the property with the given name.  (Inherited from [AssetProperties](45955e9d-7dd4-b06c-f71a-f9ae2cc1c34a.md).) |
+|  | [Get](dcdee945-b819-c9da-22ea-4ef5f0b06065.md) | Gets the property at the given index.  (Inherited from [AssetProperties](45955e9d-7dd4-b06c-f71a-f9ae2cc1c34a.md).) |
+|  | [GetAllConnectedProperties](5f34b9bc-4e1b-a9db-5262-327fc22e10c1.md) | Gets the list of the connected properties. Connected properties are the detachable properties of an AssetProperty. e.g. diffuse property can have texture as its connected property. It can also detach texture on runtime.  (Inherited from [AssetProperty](7be89499-d011-ab43-4715-0ee6f9335970.md).) |
+|  | [GetConnectedProperty](e12badf1-5be9-dc40-3d0a-10ba466e8e20.md) | Gets one connected property with specified index.  (Inherited from [AssetProperty](7be89499-d011-ab43-4715-0ee6f9335970.md).) |
+|  | GetHashCode | Serves as a hash function for a particular type.  (Inherited from Object.) |
+|  | [GetSingleConnectedAsset](3a190829-9269-0e56-8b9b-a53b89de35a6.md) | Gets the single connected asset attached to this asset property, if it exists.  (Inherited from [AssetProperty](7be89499-d011-ab43-4715-0ee6f9335970.md).) |
+|  | GetType | Gets the Type of the current instance. (Inherited from Object.) |
+|  | [IsEditable](8e7fa788-9842-883d-16f1-73b5a0802d61.md) | Check if property can be edited.  (Inherited from [AssetProperty](7be89499-d011-ab43-4715-0ee6f9335970.md).) |
+|  | [IsValidIndex](dea26a3b-bc9b-db11-447c-dd9698377155.md) | Returns true if the provided index is valid.  (Inherited from [AssetProperties](45955e9d-7dd4-b06c-f71a-f9ae2cc1c34a.md).) |
+|  | [IsValidSchemaIdentifier](22a7e616-123f-ec35-b162-067dda3a6a60.md) | Check that schema name is valid  (Inherited from [AssetProperty](7be89499-d011-ab43-4715-0ee6f9335970.md).) |
+|  | [RemoveConnectedAsset](1f25e33b-fd8b-692c-097d-f5eee8dfbd21.md) | Removes the connected asset attached to this asset property if any.  (Inherited from [AssetProperty](7be89499-d011-ab43-4715-0ee6f9335970.md).) |
+|  | ToString | Returns a string that represents the current object. (Inherited from Object.) |
+  
+# See Also
+
+[Asset Class](598e104b-b6ec-9ebe-7a93-ec96b8cbeba9.md)
+
+[Autodesk.Revit.DB.Visual Namespace](f5a10581-6ac2-be19-0e32-f87d05bc8b83.md)
+
+Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

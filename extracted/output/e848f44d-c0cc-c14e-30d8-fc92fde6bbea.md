@@ -1,0 +1,45 @@
+﻿
+
+Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+---  
+  
+C#Visual BasicVisual C++
+
+Include Protected MembersInclude Inherited Members
+
+Revit 2024 API  
+---  
+BalusterPlacement Members  
+[BalusterPlacement Class](33c016f2-bf39-a852-052f-b1c80b0f1860.md) Methods Properties See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+---  
+  
+The [BalusterPlacement](33c016f2-bf39-a852-052f-b1c80b0f1860.md) type exposes the following members.
+
+# Methods
+
+|  | Name | Description |
+| --- | --- | --- |
+|  | [Dispose](78a4fa8a-d5fa-736c-8c98-05073e31a556.md) | Releases all resources used by the [BalusterPlacement](33c016f2-bf39-a852-052f-b1c80b0f1860.md) |
+|  | Equals | Determines whether the specified Object is equal to the current Object. (Inherited from Object.) |
+|  | GetHashCode | Serves as a hash function for a particular type.  (Inherited from Object.) |
+|  | GetType | Gets the Type of the current instance. (Inherited from Object.) |
+|  | ToString | Returns a string that represents the current object. (Inherited from Object.) |
+  
+# Properties
+
+|  | Name | Description |
+| --- | --- | --- |
+|  | [BalusterPattern](1d8b109e-c916-80fd-f41b-04c9deeccddd.md) | Accesses the object containing properties related to the baluster pattern. |
+|  | [BalusterPerTreadFamilyId](eeb75390-9f5e-1ff8-6259-d454ec3e99e2.md) | The id of baluster per tread family. |
+|  | [BalusterPerTreadNumber](978bfaf4-b0f8-7af5-1147-cee9c6817865.md) | The number of balusters per tread. |
+|  | [IsValidObject](a3e1bf6e-0a4f-b972-893a-f09cdfc7c6c1.md) | Specifies whether the .NET object represents a valid Revit entity. |
+|  | [PostPattern](d95f08c8-4d68-4af3-7b4d-c8929848be95.md) | Accesses the object containing properties related to the post pattern. |
+|  | [UseBalusterPerTreadOnStairs](c4e88ca4-4f65-9a44-c89c-dc30e40b70ae.md) | If true, one or more balusters will be included on each tread of an associated stair. If false, this is not guaranteed to happen. |
+  
+# See Also
+
+[BalusterPlacement Class](33c016f2-bf39-a852-052f-b1c80b0f1860.md)
+
+[Autodesk.Revit.DB.Architecture Namespace](720f0c58-cb2b-4f13-374a-7348ed0a1cd3.md)
+
+Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

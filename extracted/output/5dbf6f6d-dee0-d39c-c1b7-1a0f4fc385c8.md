@@ -1,0 +1,41 @@
+﻿
+
+Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+---  
+  
+C#Visual BasicVisual C++
+
+Include Protected MembersInclude Inherited Members
+
+Revit 2024 API  
+---  
+AssemblyViewUtils Methods  
+[AssemblyViewUtils Class](4c839bed-9f56-c255-afba-8152c9171a22.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+---  
+  
+The [AssemblyViewUtils](4c839bed-9f56-c255-afba-8152c9171a22.md) type exposes the following members.
+
+# Methods
+
+|  | Name | Description |
+| --- | --- | --- |
+|  | [AcquireAssemblyViews](9d899efa-112e-b169-fde8-303f0967593d.md) | Transfers the assembly views owned by a source assembly instance to a target sibling assembly instance of the same assembly type. |
+|  | [Create3DOrthographic(Document, ElementId)](d1d13c59-ed2a-844a-5ad0-f195ee2d4a2f.md) | Creates a new orthographic 3D assembly view for the assembly instance. |
+|  | [Create3DOrthographic(Document, ElementId, ElementId, Boolean)](f87603e2-81cb-34d0-0f57-b80e392ebee8.md) | Creates a new orthographic 3D assembly view for the assembly instance. The view will have the same orientation as the Default 3D view. The document must be regenerated before using the 3D view. |
+|  | [CreateDetailSection(Document, ElementId, AssemblyDetailViewOrientation)](784df7d5-3da2-9a3d-fc5f-8b97ce019b23.md) | Creates a new detail section assembly view for the assembly instance. |
+|  | [CreateDetailSection(Document, ElementId, AssemblyDetailViewOrientation, ElementId, Boolean)](d1dbb597-be46-0e7d-f173-af2e270831b9.md) | Creates a new detail section assembly view for the assembly instance. |
+|  | [CreateMaterialTakeoff(Document, ElementId)](6fbfacef-91b9-6ca3-9531-e3aa1ae9f834.md) | Creates a new material takeoff multicategory schedule assembly view for the assembly instance. |
+|  | [CreateMaterialTakeoff(Document, ElementId, ElementId, Boolean)](4e0033ee-64ac-a6ab-71ce-4b58de63ffdc.md) | Creates a new material takeoff multicategory schedule assembly view for the assembly instance. |
+|  | [CreatePartList(Document, ElementId)](a9c1ec3a-ceeb-a203-8c1d-9700b5aa9881.md) | Creates a new part list multicategory schedule assembly view for the assembly instance. |
+|  | [CreatePartList(Document, ElementId, ElementId, Boolean)](c211c569-f7bc-8869-ea4d-71bbb4034748.md) | Creates a new part list multicategory schedule assembly view for the assembly instance. |
+|  | [CreateSheet](afd8688c-80d3-8c70-804c-0eed87eab8f3.md) | Creates a new sheet assembly view for the assembly instance. |
+|  | [CreateSingleCategorySchedule(Document, ElementId, ElementId)](32780a72-3d3a-10d2-fece-c7016a21b79b.md) | Creates a new single-category schedule assembly view for the assembly instance. |
+|  | [CreateSingleCategorySchedule(Document, ElementId, ElementId, ElementId, Boolean)](935a90c4-80e7-7dd7-7f78-592e4f458d5e.md) | Creates a new single-category schedule assembly view for the assembly instance. |
+  
+# See Also
+
+[AssemblyViewUtils Class](4c839bed-9f56-c255-afba-8152c9171a22.md)
+
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)
+
+Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

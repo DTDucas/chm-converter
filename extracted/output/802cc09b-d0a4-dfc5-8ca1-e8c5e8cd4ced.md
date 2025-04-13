@@ -1,0 +1,75 @@
+﻿
+
+Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+  
+C#Visual BasicVisual C++
+
+Revit 2024 API  
+---  
+Surface..::..Project Method   
+[Surface Class](bb391358-5ca0-578d-e8e2-6d1b30c472d8.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+---  
+  
+Project a 3D point orthogonally onto a surface (to find the nearest point). Throws InvalidOperationException if the projection fails. 
+
+**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2018.1 
+
+# Syntax
+
+C#  
+---  
+      
+    
+    public void Project(
+    	[XYZ](c2fd995c-95c0-58fb-f5de-f3246cbc5600.md) point,
+    	out [UV](1724be37-059b-91ff-aa74-d1508082f76d.md) uv,
+    	out double distance
+    )  
+  
+Visual Basic  
+---  
+      
+    
+    Public Sub Project ( _
+    	point As [XYZ](c2fd995c-95c0-58fb-f5de-f3246cbc5600.md), _
+    	<OutAttribute> ByRef uv As [UV](1724be37-059b-91ff-aa74-d1508082f76d.md), _
+    	<OutAttribute> ByRef distance As Double _
+    )  
+  
+Visual C++  
+---  
+      
+    
+    public:
+    void Project(
+    	[XYZ](c2fd995c-95c0-58fb-f5de-f3246cbc5600.md)^ point, 
+    	[OutAttribute] [UV](1724be37-059b-91ff-aa74-d1508082f76d.md)^% uv, 
+    	[OutAttribute] double% distance
+    )  
+  
+#### Parameters
+
+point
+    Type: [Autodesk.Revit.DB..::..XYZ](c2fd995c-95c0-58fb-f5de-f3246cbc5600.md) The point to project. 
+
+uv
+    Type: [Autodesk.Revit.DB..::..UV](1724be37-059b-91ff-aa74-d1508082f76d.md)% The surface coordinates of the projected point. 
+
+distance
+    Type: System..::..Double% Holds the distance from input point to its projection. 
+
+# Exceptions
+
+| Exception | Condition |
+| --- | --- |
+| [Autodesk.Revit.Exceptions..::..ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md) | A non-optional argument was null |
+| [Autodesk.Revit.Exceptions..::..InvalidOperationException](9e715f03-3884-e539-4dd6-8d7545733adc.md) | The projection failed. |
+  
+# See Also
+
+[Surface Class](bb391358-5ca0-578d-e8e2-6d1b30c472d8.md)
+
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)
+
+Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)
