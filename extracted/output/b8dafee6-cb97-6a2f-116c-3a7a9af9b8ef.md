@@ -1,86 +1,69 @@
+# AddCommandLink Method (TaskDialogCommandLinkId, String, String)
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
 ---  
-  
 C#Visual BasicVisual C++
-
 Revit 2024 API  
 ---  
 TaskDialog..::..AddCommandLink Method (TaskDialogCommandLinkId, String, String)  
-[TaskDialog Class](853afb57-7455-a636-9881-61a391118c16.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[TaskDialog Class](853afb57-7455-a636-9881-61a391118c16.md "TaskDialog Class") See Also  
 ---  
-  
 Adds a CommandLink associated to the given id, displaying the indicating main and supporting content. 
-
-**Namespace:** [Autodesk.Revit.UI](e86fd90a-8957-02a6-da7f-ced248966e3e.md)**Assembly:** RevitAPIUI (in RevitAPIUI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2011
-
+**Namespace:** [Autodesk.Revit.UI](e86fd90a-8957-02a6-da7f-ced248966e3e.md "Autodesk.Revit.UI Namespace")**Assembly:** RevitAPIUI (in RevitAPIUI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2011
 # Syntax
-
 C#  
 ---  
-      
-    
-    public void AddCommandLink(
-    	[TaskDialogCommandLinkId](21d69e07-93bf-18a6-1b76-c7e917edf897.md) id,
-    	string mainContent,
-    	string supportingContent
-    )  
+```text
+public void AddCommandLink(
+	TaskDialogCommandLinkId id,
+	string mainContent,
+	string supportingContent
+)
+```
   
 Visual Basic  
 ---  
-      
-    
-    Public Sub AddCommandLink ( _
-    	id As [TaskDialogCommandLinkId](21d69e07-93bf-18a6-1b76-c7e917edf897.md), _
-    	mainContent As String, _
-    	supportingContent As String _
-    )  
+```text
+Public Sub AddCommandLink ( _
+	id As TaskDialogCommandLinkId, _
+	mainContent As String, _
+	supportingContent As String _
+)
+```
   
 Visual C++  
 ---  
-      
-    
-    public:
-    void AddCommandLink(
-    	[TaskDialogCommandLinkId](21d69e07-93bf-18a6-1b76-c7e917edf897.md) id, 
-    	String^ mainContent, 
-    	String^ supportingContent
-    )  
+```text
+public:
+void AddCommandLink(
+	TaskDialogCommandLinkId id, 
+	String^ mainContent, 
+	String^ supportingContent
+)
+```
   
-#### Parameters
-
+# ### Parameters
 id
-    Type: [Autodesk.Revit.UI..::..TaskDialogCommandLinkId](21d69e07-93bf-18a6-1b76-c7e917edf897.md) The id of the CommandLink. This corresponds to the value returned by Show() when the link is chosen by the user. 
-
+    Type: [Autodesk.Revit.UI..::..TaskDialogCommandLinkId](21d69e07-93bf-18a6-1b76-c7e917edf897.md "TaskDialogCommandLinkId Enumeration") The id of the CommandLink. This corresponds to the value returned by Show() when the link is chosen by the user. 
 mainContent
     Type: System..::..String The main content of the CommandLink. 
-
 supportingContent
     Type: System..::..String The main content of the CommandLink. 
-
 # Remarks
-
 Parameter mainContent cannot contain newlines. 
-
 If the id has already been set to the task dialog, the new CommandLink definition overrides the old one. 
-
 CommandLinks will always be shown in the dialog in the order of their ids. 
-
 # Exceptions
-
 | Exception | Condition |
 | --- | --- |
-| [Autodesk.Revit.Exceptions..::..ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md) | Thrown when mainContent is nullNothingnullptra null reference (Nothing in Visual Basic). |
-| [Autodesk.Revit.Exceptions..::..ArgumentException](2e6e4206-97a8-dd4b-df5d-4269f4bb6088.md) | Thrown when mainContent is an empty string. |
-| [Autodesk.Revit.Exceptions..::..ArgumentException](2e6e4206-97a8-dd4b-df5d-4269f4bb6088.md) | Thrown when the mainContent contains newline characters. |
-  
+| --- | --- |
+| [Autodesk.Revit.Exceptions..::..ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md "ArgumentNullException Class") | Thrown when mainContent is nullNothingnullptra null reference (Nothing in Visual Basic). |
+| [Autodesk.Revit.Exceptions..::..ArgumentException](2e6e4206-97a8-dd4b-df5d-4269f4bb6088.md "ArgumentException Class") | Thrown when mainContent is an empty string. |
+| [Autodesk.Revit.Exceptions..::..ArgumentException](2e6e4206-97a8-dd4b-df5d-4269f4bb6088.md "ArgumentException Class") | Thrown when the mainContent contains newline characters. |
+
 # See Also
-
-[TaskDialog Class](853afb57-7455-a636-9881-61a391118c16.md)
-
-[AddCommandLink Overload](29d66720-13af-f1f7-0494-80c7ef6de11d.md)
-
-[Autodesk.Revit.UI Namespace](e86fd90a-8957-02a6-da7f-ced248966e3e.md)
-
+[TaskDialog Class](853afb57-7455-a636-9881-61a391118c16.md "TaskDialog Class")
+[AddCommandLink Overload](29d66720-13af-f1f7-0494-80c7ef6de11d.md "AddCommandLink Method")
+[Autodesk.Revit.UI Namespace](e86fd90a-8957-02a6-da7f-ced248966e3e.md "Autodesk.Revit.UI Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

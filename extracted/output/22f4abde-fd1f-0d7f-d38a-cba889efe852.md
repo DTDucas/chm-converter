@@ -1,43 +1,36 @@
+# AnalyticalPowerSourceData Members
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
 ---  
-  
 C#Visual BasicVisual C++
-
 Include Protected MembersInclude Inherited Members
-
 Revit 2024 API  
 ---  
 AnalyticalPowerSourceData Members  
-[AnalyticalPowerSourceData Class](844cf629-c023-47a8-55f1-b1d702780658.md) Methods Properties See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[AnalyticalPowerSourceData Class](844cf629-c023-47a8-55f1-b1d702780658.md "AnalyticalPowerSourceData Class") Methods Properties See Also  
 ---  
-  
-The [AnalyticalPowerSourceData](844cf629-c023-47a8-55f1-b1d702780658.md) type exposes the following members.
-
+The [AnalyticalPowerSourceData](844cf629-c023-47a8-55f1-b1d702780658.md "AnalyticalPowerSourceData Class") type exposes the following members.
 # Methods
-
-|  | Name | Description |
+| Name | Description |
+| --- | --- |
 | --- | --- | --- |
-|  | [Dispose](f7dfe5ca-7afd-202a-cce0-8d4e0ce3a8fb.md) | (Inherited from [AnalyticalDistributionNodePropertyData](08a43b98-428c-2bd4-d1c3-fc425563d67e.md).) |
-|  | Equals | Determines whether the specified Object is equal to the current Object. (Inherited from Object.) |
-|  | GetHashCode | Serves as a hash function for a particular type.  (Inherited from Object.) |
-|  | GetType | Gets the Type of the current instance. (Inherited from Object.) |
-|  | ToString | Returns a string that represents the current object. (Inherited from Object.) |
-  
+| [Dispose](f7dfe5ca-7afd-202a-cce0-8d4e0ce3a8fb.md "Dispose Method") | (Inherited from [AnalyticalDistributionNodePropertyData](08a43b98-428c-2bd4-d1c3-fc425563d67e.md "AnalyticalDistributionNodePropertyData Class").) |
+| Equals | Determines whether the specified Object is equal to the current Object. (Inherited from Object.) |
+| GetHashCode | Serves as a hash function for a particular type.  (Inherited from Object.) |
+| GetType | Gets the Type of the current instance. (Inherited from Object.) |
+| ToString | Returns a string that represents the current object. (Inherited from Object.) |
+
 # Properties
-
-|  | Name | Description |
+| Name | Description |
+| --- | --- |
 | --- | --- | --- |
-|  | [IsValidObject](d3767f0c-ecb2-e6bc-3b6f-0a65f71204b2.md) | Specifies whether the .NET object represents a valid Revit entity.  (Inherited from [AnalyticalDistributionNodePropertyData](08a43b98-428c-2bd4-d1c3-fc425563d67e.md).) |
-|  | [NumberOfPhases](1e6211dd-dde5-39c5-563c-4967431190a9.md) | The number of phases.  (Inherited from [AnalyticalDistributionNodePropertyData](08a43b98-428c-2bd4-d1c3-fc425563d67e.md).) |
-|  | [TotalConnectedCurrent](86c8a1b4-6ca6-5c1c-635f-f365b5ae9c3c.md) | The total connected current of the analytical power source. |
-|  | [Voltage](fc7a9c1a-6a5d-3103-fbe0-87f7f4888c6e.md) | The voltage value of the analytical power source. |
-  
+| [IsValidObject](d3767f0c-ecb2-e6bc-3b6f-0a65f71204b2.md "IsValidObject Property") | Specifies whether the .NET object represents a valid Revit entity.  (Inherited from [AnalyticalDistributionNodePropertyData](08a43b98-428c-2bd4-d1c3-fc425563d67e.md "AnalyticalDistributionNodePropertyData Class").) |
+| [NumberOfPhases](1e6211dd-dde5-39c5-563c-4967431190a9.md "NumberOfPhases Property") | The number of phases.  (Inherited from [AnalyticalDistributionNodePropertyData](08a43b98-428c-2bd4-d1c3-fc425563d67e.md "AnalyticalDistributionNodePropertyData Class").) |
+| [TotalConnectedCurrent](86c8a1b4-6ca6-5c1c-635f-f365b5ae9c3c.md "TotalConnectedCurrent Property") | The total connected current of the analytical power source. |
+| [Voltage](fc7a9c1a-6a5d-3103-fbe0-87f7f4888c6e.md "Voltage Property") | The voltage value of the analytical power source. |
+
 # See Also
-
-[AnalyticalPowerSourceData Class](844cf629-c023-47a8-55f1-b1d702780658.md)
-
-[Autodesk.Revit.DB.Electrical Namespace](212a1314-7843-2c6c-3322-363127e4059f.md)
-
+[AnalyticalPowerSourceData Class](844cf629-c023-47a8-55f1-b1d702780658.md "AnalyticalPowerSourceData Class")
+[Autodesk.Revit.DB.Electrical Namespace](212a1314-7843-2c6c-3322-363127e4059f.md "Autodesk.Revit.DB.Electrical Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

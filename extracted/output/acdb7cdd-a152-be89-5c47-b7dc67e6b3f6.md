@@ -1,32 +1,25 @@
+# DialogBoxShowingEventArgs Properties
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
 ---  
-  
 C#Visual BasicVisual C++
-
 Include Protected MembersInclude Inherited Members
-
 Revit 2024 API  
 ---  
 DialogBoxShowingEventArgs Properties  
-[DialogBoxShowingEventArgs Class](8b6b969f-45d2-5b90-ca6d-593348ddf8d4.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[DialogBoxShowingEventArgs Class](8b6b969f-45d2-5b90-ca6d-593348ddf8d4.md "DialogBoxShowingEventArgs Class") See Also  
 ---  
-  
-The [DialogBoxShowingEventArgs](8b6b969f-45d2-5b90-ca6d-593348ddf8d4.md) type exposes the following members.
-
+The [DialogBoxShowingEventArgs](8b6b969f-45d2-5b90-ca6d-593348ddf8d4.md "DialogBoxShowingEventArgs Class") type exposes the following members.
 # Properties
-
-|  | Name | Description |
+| Name | Description |
+| --- | --- |
 | --- | --- | --- |
-|  | [Cancellable](a393138a-34b5-1724-aa69-92cef651482b.md) | Indicates whether an event may be cancelled by an event delegate.  (Inherited from [RevitAPIEventArgs](7c98499c-e345-cfda-ef89-48eccd3c9992.md).) |
-|  | [DialogId](7311c9d6-f223-f4c2-0b7a-197e42e5ee61.md) | A unique string identifier for DialogBox and TaskDialog type dialogs in Revit. |
-|  | [IsValidObject](35c0066a-b3dc-9d37-c79e-c29f90713b2d.md) | Specifies whether the .NET object represents a valid Revit entity.  (Inherited from [RevitAPIEventArgs](7c98499c-e345-cfda-ef89-48eccd3c9992.md).) |
-  
+| [Cancellable](a393138a-34b5-1724-aa69-92cef651482b.md "Cancellable Property") | Indicates whether an event may be cancelled by an event delegate.  (Inherited from [RevitAPIEventArgs](7c98499c-e345-cfda-ef89-48eccd3c9992.md "RevitAPIEventArgs Class").) |
+| [DialogId](7311c9d6-f223-f4c2-0b7a-197e42e5ee61.md "DialogId Property") | A unique string identifier for DialogBox and TaskDialog type dialogs in Revit. |
+| [IsValidObject](35c0066a-b3dc-9d37-c79e-c29f90713b2d.md "IsValidObject Property") | Specifies whether the .NET object represents a valid Revit entity.  (Inherited from [RevitAPIEventArgs](7c98499c-e345-cfda-ef89-48eccd3c9992.md "RevitAPIEventArgs Class").) |
+
 # See Also
-
-[DialogBoxShowingEventArgs Class](8b6b969f-45d2-5b90-ca6d-593348ddf8d4.md)
-
-[Autodesk.Revit.UI.Events Namespace](21d3e79a-2484-60b0-b4c6-5cf65cd96039.md)
-
+[DialogBoxShowingEventArgs Class](8b6b969f-45d2-5b90-ca6d-593348ddf8d4.md "DialogBoxShowingEventArgs Class")
+[Autodesk.Revit.UI.Events Namespace](21d3e79a-2484-60b0-b4c6-5cf65cd96039.md "Autodesk.Revit.UI.Events Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

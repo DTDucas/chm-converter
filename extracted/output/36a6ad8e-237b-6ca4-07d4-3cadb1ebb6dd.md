@@ -1,49 +1,39 @@
+# TextBoxData Class
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
 ---  
-  
 C#Visual BasicVisual C++
-
 Revit 2024 API  
 ---  
 TextBoxData Class  
-[Members](42023164-7324-f06d-979e-90482c6a12a7.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[Members](42023164-7324-f06d-979e-90482c6a12a7.md "TextBoxData Members") See Also  
 ---  
-  
 This class contains information necessary to construct a text box in the Ribbon.
-
-**Namespace:** [Autodesk.Revit.UI](e86fd90a-8957-02a6-da7f-ced248966e3e.md)**Assembly:** RevitAPIUI (in RevitAPIUI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2011
-
+**Namespace:** [Autodesk.Revit.UI](e86fd90a-8957-02a6-da7f-ced248966e3e.md "Autodesk.Revit.UI Namespace")**Assembly:** RevitAPIUI (in RevitAPIUI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2011
 # Syntax
-
 C#  
 ---  
-      
-    
-    public class TextBoxData : [RibbonItemData](eb399d25-88cb-c3a1-c445-37077b3a5aa1.md)  
+```text
+public class TextBoxData : RibbonItemData
+```
   
 Visual Basic  
 ---  
-      
-    
-    Public Class TextBoxData _
-    	Inherits [RibbonItemData](eb399d25-88cb-c3a1-c445-37077b3a5aa1.md)  
+```text
+Public Class TextBoxData _
+	Inherits RibbonItemData
+```
   
 Visual C++  
 ---  
-      
-    
-    public ref class TextBoxData : public [RibbonItemData](eb399d25-88cb-c3a1-c445-37077b3a5aa1.md)  
+```text
+public ref class TextBoxData : public RibbonItemData
+```
   
 # Inheritance Hierarchy
-
-System..::..Object [Autodesk.Revit.UI..::..RibbonItemData](eb399d25-88cb-c3a1-c445-37077b3a5aa1.md) Autodesk.Revit.UI..::..TextBoxData
-
+System..::..Object [Autodesk.Revit.UI..::..RibbonItemData](eb399d25-88cb-c3a1-c445-37077b3a5aa1.md "RibbonItemData Class") Autodesk.Revit.UI..::..TextBoxData
 # See Also
-
-[TextBoxData Members](42023164-7324-f06d-979e-90482c6a12a7.md)
-
-[Autodesk.Revit.UI Namespace](e86fd90a-8957-02a6-da7f-ced248966e3e.md)
-
+[TextBoxData Members](42023164-7324-f06d-979e-90482c6a12a7.md "TextBoxData Members")
+[Autodesk.Revit.UI Namespace](e86fd90a-8957-02a6-da7f-ced248966e3e.md "Autodesk.Revit.UI Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

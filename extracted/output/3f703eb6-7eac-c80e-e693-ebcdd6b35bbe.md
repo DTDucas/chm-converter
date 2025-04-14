@@ -1,97 +1,86 @@
+# PointLoad Class
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
 ---  
-  
 C#Visual BasicVisual C++
-
 Revit 2024 API  
 ---  
 PointLoad Class  
-[Members](bc80259d-8acc-3f3b-ecb7-0997d38bd4d2.md) Example See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[Members](bc80259d-8acc-3f3b-ecb7-0997d38bd4d2.md "PointLoad Members") Example See Also  
 ---  
-  
 An object that represents a force/moment applied to a single point. Data members 
-
-**Namespace:** [Autodesk.Revit.DB.Structure](d586b341-f687-9d90-e96d-255806b7d4fc.md)**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)
-
+**Namespace:** [Autodesk.Revit.DB.Structure](d586b341-f687-9d90-e96d-255806b7d4fc.md "Autodesk.Revit.DB.Structure Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)
 # Syntax
-
 C#  
 ---  
-      
-    
-    public class PointLoad : [LoadBase](4130f6dc-1963-2105-d85b-e08a7c34af8b.md)  
+```text
+public class PointLoad : LoadBase
+```
   
 Visual Basic  
 ---  
-      
-    
-    Public Class PointLoad _
-    	Inherits [LoadBase](4130f6dc-1963-2105-d85b-e08a7c34af8b.md)  
+```text
+Public Class PointLoad _
+	Inherits LoadBase
+```
   
 Visual C++  
 ---  
-      
-    
-    public ref class PointLoad : public [LoadBase](4130f6dc-1963-2105-d85b-e08a7c34af8b.md)  
+```text
+public ref class PointLoad : public LoadBase
+```
   
 # Examples
-
 CopyC#
-    
-    
-    private void Getinfo_PointLoad(PointLoad pointLoad)
-    {
-        string message = "Point Load :";
-    
-        // Get the load case name
-        message += "\nLoad case for load: " + pointLoad.LoadCaseName;
-    
-        //get the three dimensional force applied to the point load
-        message += "\nForce: (" + pointLoad.ForceVector.X + ", " +
-                 pointLoad.ForceVector.Y + ", " + pointLoad.ForceVector.Z + ")";
-    
-        //get the three dimensional moment application to the point load
-        message += "\nMoment: (" + pointLoad.MomentVector.X + ", " +
-                 pointLoad.MomentVector.Y + ", " + pointLoad.MomentVector.Z + ")";
-    
-        //get the three dimensional coordinates of point load
-        message += "\nPoint load location: (" + pointLoad.Point.X + ", " +
-                 pointLoad.Point.Y + ", " + pointLoad.Point.Z + ")";
-    
-        TaskDialog.Show("Revit",message);
-    }
+```text
+private void Getinfo_PointLoad(PointLoad pointLoad)
+{
+    string message = "Point Load :";
+
+    // Get the load case name
+    message += "\nLoad case for load: " + pointLoad.LoadCaseName;
+
+    //get the three dimensional force applied to the point load
+    message += "\nForce: (" + pointLoad.ForceVector.X + ", " +
+             pointLoad.ForceVector.Y + ", " + pointLoad.ForceVector.Z + ")";
+
+    //get the three dimensional moment application to the point load
+    message += "\nMoment: (" + pointLoad.MomentVector.X + ", " +
+             pointLoad.MomentVector.Y + ", " + pointLoad.MomentVector.Z + ")";
+
+    //get the three dimensional coordinates of point load
+    message += "\nPoint load location: (" + pointLoad.Point.X + ", " +
+             pointLoad.Point.Y + ", " + pointLoad.Point.Z + ")";
+
+    TaskDialog.Show("Revit",message);
+}
+```
 
 CopyVB.NET
-    
-    
-    Private Sub Getinfo_PointLoad(pointLoad As PointLoad)
-        Dim message As String = "Point Load :"
-    
-        ' Get the load case name
-        message += vbLf & "Load case for load: " & Convert.ToString(pointLoad.LoadCaseName)
-    
-        'get the three dimensional force applied to the point load
-     message += vbLf & "Force: (" & Convert.ToString(pointLoad.ForceVector.X) & ", " & Convert.ToString(pointLoad.ForceVector.Y) & ", " & Convert.ToString(pointLoad.ForceVector.Z) & ")"
-    
-        'get the three dimensional moment application to the point load
-     message += vbLf & "Moment: (" & Convert.ToString(pointLoad.MomentVector.X) & ", " & Convert.ToString(pointLoad.MomentVector.Y) & ", " & Convert.ToString(pointLoad.MomentVector.Z) & ")"
-    
-        'get the three dimensional coordinates of point load
-        message += vbLf & "Point load location: (" & Convert.ToString(pointLoad.Point.X) & ", " & Convert.ToString(pointLoad.Point.Y) & ", " & Convert.ToString(pointLoad.Point.Z) & ")"
-    
-        TaskDialog.Show("Revit", message)
-    End Sub
+```text
+Private Sub Getinfo_PointLoad(pointLoad As PointLoad)
+    Dim message As String = "Point Load :"
+
+    ' Get the load case name
+    message += vbLf & "Load case for load: " & Convert.ToString(pointLoad.LoadCaseName)
+
+    'get the three dimensional force applied to the point load
+ message += vbLf & "Force: (" & Convert.ToString(pointLoad.ForceVector.X) & ", " & Convert.ToString(pointLoad.ForceVector.Y) & ", " & Convert.ToString(pointLoad.ForceVector.Z) & ")"
+
+    'get the three dimensional moment application to the point load
+ message += vbLf & "Moment: (" & Convert.ToString(pointLoad.MomentVector.X) & ", " & Convert.ToString(pointLoad.MomentVector.Y) & ", " & Convert.ToString(pointLoad.MomentVector.Z) & ")"
+
+    'get the three dimensional coordinates of point load
+    message += vbLf & "Point load location: (" & Convert.ToString(pointLoad.Point.X) & ", " & Convert.ToString(pointLoad.Point.Y) & ", " & Convert.ToString(pointLoad.Point.Z) & ")"
+
+    TaskDialog.Show("Revit", message)
+End Sub
+```
 
 # Inheritance Hierarchy
-
-System..::..Object [Autodesk.Revit.DB..::..Element](eb16114f-69ea-f4de-0d0d-f7388b105a16.md) [Autodesk.Revit.DB.Structure..::..LoadBase](4130f6dc-1963-2105-d85b-e08a7c34af8b.md) Autodesk.Revit.DB.Structure..::..PointLoad
-
+System..::..Object [Autodesk.Revit.DB..::..Element](eb16114f-69ea-f4de-0d0d-f7388b105a16.md "Element Class") [Autodesk.Revit.DB.Structure..::..LoadBase](4130f6dc-1963-2105-d85b-e08a7c34af8b.md "LoadBase Class") Autodesk.Revit.DB.Structure..::..PointLoad
 # See Also
-
-[PointLoad Members](bc80259d-8acc-3f3b-ecb7-0997d38bd4d2.md)
-
-[Autodesk.Revit.DB.Structure Namespace](d586b341-f687-9d90-e96d-255806b7d4fc.md)
-
+[PointLoad Members](bc80259d-8acc-3f3b-ecb7-0997d38bd4d2.md "PointLoad Members")
+[Autodesk.Revit.DB.Structure Namespace](d586b341-f687-9d90-e96d-255806b7d4fc.md "Autodesk.Revit.DB.Structure Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

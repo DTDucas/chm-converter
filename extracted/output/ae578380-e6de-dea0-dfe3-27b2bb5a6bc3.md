@@ -1,57 +1,49 @@
+# DemandFactorId Property
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
 ---  
-  
 C#Visual BasicVisual C++
-
 Revit 2024 API  
 ---  
 ElectricalLoadClassification..::..DemandFactorId Property   
-[ElectricalLoadClassification Class](c8aeb888-f4dd-4b93-063e-6aa118c0e471.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[ElectricalLoadClassification Class](c8aeb888-f4dd-4b93-063e-6aa118c0e471.md "ElectricalLoadClassification Class") See Also  
 ---  
-  
 The demand factor definition this load classification element uses. 
-
-**Namespace:** [Autodesk.Revit.DB.Electrical](212a1314-7843-2c6c-3322-363127e4059f.md)**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2011 
-
+**Namespace:** [Autodesk.Revit.DB.Electrical](212a1314-7843-2c6c-3322-363127e4059f.md "Autodesk.Revit.DB.Electrical Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2011 
 # Syntax
-
 C#  
 ---  
-      
-    
-    public [ElementId](44f3f7b1-3229-3404-93c9-dc5e70337dd6.md) DemandFactorId { get; set; }  
+```text
+public ElementId DemandFactorId { get; set; }
+```
   
 Visual Basic  
 ---  
-      
-    
-    Public Property DemandFactorId As [ElementId](44f3f7b1-3229-3404-93c9-dc5e70337dd6.md)
-    	Get
-    	Set  
+```text
+Public Property DemandFactorId As ElementId
+	Get
+	Set
+```
   
 Visual C++  
 ---  
-      
-    
-    public:
-    property [ElementId](44f3f7b1-3229-3404-93c9-dc5e70337dd6.md)^ DemandFactorId {
-    	[ElementId](44f3f7b1-3229-3404-93c9-dc5e70337dd6.md)^ get ();
-    	void set ([ElementId](44f3f7b1-3229-3404-93c9-dc5e70337dd6.md)^ value);
-    }  
+```text
+public:
+property ElementId^ DemandFactorId {
+	ElementId^ get ();
+	void set (ElementId^ value);
+}
+```
   
 # Exceptions
-
 | Exception | Condition |
 | --- | --- |
-| [Autodesk.Revit.Exceptions..::..ArgumentException](2e6e4206-97a8-dd4b-df5d-4269f4bb6088.md) | When setting this property: The element id elemId is not a valid ElectricalDemandFactorDefinition element. |
-| [Autodesk.Revit.Exceptions..::..ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md) | When setting this property: A non-optional argument was null |
-  
+| --- | --- |
+| [Autodesk.Revit.Exceptions..::..ArgumentException](2e6e4206-97a8-dd4b-df5d-4269f4bb6088.md "ArgumentException Class") | When setting this property: The element id elemId is not a valid ElectricalDemandFactorDefinition element. |
+| [Autodesk.Revit.Exceptions..::..ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md "ArgumentNullException Class") | When setting this property: A non-optional argument was null |
+
 # See Also
-
-[ElectricalLoadClassification Class](c8aeb888-f4dd-4b93-063e-6aa118c0e471.md)
-
-[Autodesk.Revit.DB.Electrical Namespace](212a1314-7843-2c6c-3322-363127e4059f.md)
-
+[ElectricalLoadClassification Class](c8aeb888-f4dd-4b93-063e-6aa118c0e471.md "ElectricalLoadClassification Class")
+[Autodesk.Revit.DB.Electrical Namespace](212a1314-7843-2c6c-3322-363127e4059f.md "Autodesk.Revit.DB.Electrical Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

@@ -1,52 +1,42 @@
+# AssociatedBuildingPadId Property
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
 ---  
-  
 C#Visual BasicVisual C++
-
 Revit 2024 API  
 ---  
 TopographySurface..::..AssociatedBuildingPadId Property   
-[TopographySurface Class](64242f41-69e1-84be-f21b-84783e81364a.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[TopographySurface Class](64242f41-69e1-84be-f21b-84783e81364a.md "TopographySurface Class") See Also  
 ---  
-  
 The element id of the building pad which causes this topography surface to be formed. 
-
-**Namespace:** [Autodesk.Revit.DB.Architecture](720f0c58-cb2b-4f13-374a-7348ed0a1cd3.md)**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2015 
-
+**Namespace:** [Autodesk.Revit.DB.Architecture](720f0c58-cb2b-4f13-374a-7348ed0a1cd3.md "Autodesk.Revit.DB.Architecture Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2015 
 # Syntax
-
 C#  
 ---  
-      
-    
-    public [ElementId](44f3f7b1-3229-3404-93c9-dc5e70337dd6.md) AssociatedBuildingPadId { get; }  
+```text
+public ElementId AssociatedBuildingPadId { get; }
+```
   
 Visual Basic  
 ---  
-      
-    
-    Public ReadOnly Property AssociatedBuildingPadId As [ElementId](44f3f7b1-3229-3404-93c9-dc5e70337dd6.md)
-    	Get  
+```text
+Public ReadOnly Property AssociatedBuildingPadId As ElementId
+	Get
+```
   
 Visual C++  
 ---  
-      
-    
-    public:
-    property [ElementId](44f3f7b1-3229-3404-93c9-dc5e70337dd6.md)^ AssociatedBuildingPadId {
-    	[ElementId](44f3f7b1-3229-3404-93c9-dc5e70337dd6.md)^ get ();
-    }  
+```text
+public:
+property ElementId^ AssociatedBuildingPadId {
+	ElementId^ get ();
+}
+```
   
 # Remarks
-
 InvalidElementId returned signals that there is no associated building pad. 
-
 # See Also
-
-[TopographySurface Class](64242f41-69e1-84be-f21b-84783e81364a.md)
-
-[Autodesk.Revit.DB.Architecture Namespace](720f0c58-cb2b-4f13-374a-7348ed0a1cd3.md)
-
+[TopographySurface Class](64242f41-69e1-84be-f21b-84783e81364a.md "TopographySurface Class")
+[Autodesk.Revit.DB.Architecture Namespace](720f0c58-cb2b-4f13-374a-7348ed0a1cd3.md "Autodesk.Revit.DB.Architecture Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

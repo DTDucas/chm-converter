@@ -1,45 +1,38 @@
+# ExportLineweightTableIterator Members
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
 ---  
-  
 C#Visual BasicVisual C++
-
 Include Protected MembersInclude Inherited Members
-
 Revit 2024 API  
 ---  
 ExportLineweightTableIterator Members  
-[ExportLineweightTableIterator Class](84d255f3-ffc6-5458-1655-f109db371045.md) Methods Properties See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[ExportLineweightTableIterator Class](84d255f3-ffc6-5458-1655-f109db371045.md "ExportLineweightTableIterator Class") Methods Properties See Also  
 ---  
-  
-The [ExportLineweightTableIterator](84d255f3-ffc6-5458-1655-f109db371045.md) type exposes the following members.
-
+The [ExportLineweightTableIterator](84d255f3-ffc6-5458-1655-f109db371045.md "ExportLineweightTableIterator Class") type exposes the following members.
 # Methods
-
-|  | Name | Description |
+| Name | Description |
+| --- | --- |
 | --- | --- | --- |
-|  | [Dispose](be216377-f4c1-82e4-46a1-48b7f71b8627.md) | Releases all resources used by the [ExportLineweightTableIterator](84d255f3-ffc6-5458-1655-f109db371045.md) |
-|  | Equals | Determines whether the specified Object is equal to the current Object. (Inherited from Object.) |
-|  | GetHashCode | Serves as a hash function for a particular type.  (Inherited from Object.) |
-|  | GetType | Gets the Type of the current instance. (Inherited from Object.) |
-|  | [IsDone](a95bd17b-d1b6-c3da-def1-0b1f06477e0f.md) | Identifies if the iteration has completed. |
-|  | [MoveNext](281d3c22-5504-96a6-396d-591acd9d9cd0.md) | Increments the iterator to the next item. |
-|  | [Reset](df3e61dd-bce6-ddb1-ddad-cbc99bc3b682.md) | Resets the iterator to the initial state. |
-|  | ToString | Returns a string that represents the current object. (Inherited from Object.) |
-  
+| [Dispose](be216377-f4c1-82e4-46a1-48b7f71b8627.md "Dispose Method") | Releases all resources used by the [ExportLineweightTableIterator](84d255f3-ffc6-5458-1655-f109db371045.md "ExportLineweightTableIterator Class") |
+| Equals | Determines whether the specified Object is equal to the current Object. (Inherited from Object.) |
+| GetHashCode | Serves as a hash function for a particular type.  (Inherited from Object.) |
+| GetType | Gets the Type of the current instance. (Inherited from Object.) |
+| [IsDone](a95bd17b-d1b6-c3da-def1-0b1f06477e0f.md "IsDone Method") | Identifies if the iteration has completed. |
+| [MoveNext](281d3c22-5504-96a6-396d-591acd9d9cd0.md "MoveNext Method") | Increments the iterator to the next item. |
+| [Reset](df3e61dd-bce6-ddb1-ddad-cbc99bc3b682.md "Reset Method") | Resets the iterator to the initial state. |
+| ToString | Returns a string that represents the current object. (Inherited from Object.) |
+
 # Properties
-
-|  | Name | Description |
+| Name | Description |
+| --- | --- |
 | --- | --- | --- |
-|  | [Current](5dee5410-9cb5-5053-a9bb-bd83280dc983.md) | Gets the item at the current position of the iterator. |
-|  | [CurrentObject](a2230dfa-660d-d504-f08d-726df51dc44d.md) |  |
-|  | [IsValidObject](83ca0005-4722-2b92-21b6-7be74e1b6d8b.md) | Specifies whether the .NET object represents a valid Revit entity. |
-  
+| [Current](5dee5410-9cb5-5053-a9bb-bd83280dc983.md "Current Property") | Gets the item at the current position of the iterator. |
+| [CurrentObject](a2230dfa-660d-d504-f08d-726df51dc44d.md "CurrentObject Property") |
+| [IsValidObject](83ca0005-4722-2b92-21b6-7be74e1b6d8b.md "IsValidObject Property") | Specifies whether the .NET object represents a valid Revit entity. |
+
 # See Also
-
-[ExportLineweightTableIterator Class](84d255f3-ffc6-5458-1655-f109db371045.md)
-
-[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)
-
+[ExportLineweightTableIterator Class](84d255f3-ffc6-5458-1655-f109db371045.md "ExportLineweightTableIterator Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

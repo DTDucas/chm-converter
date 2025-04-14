@@ -1,43 +1,38 @@
+# PostableCommand Enumeration
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
 ---  
-  
 C#Visual BasicVisual C++
-
 Revit 2024 API  
 ---  
 PostableCommand Enumeration  
-See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+See Also  
 ---  
-  
 Enumerates all of the built-in commands which can be posted by an API application. 
-
-**Namespace:** [Autodesk.Revit.UI](e86fd90a-8957-02a6-da7f-ced248966e3e.md)**Assembly:** RevitAPIUI (in RevitAPIUI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2014 
-
+**Namespace:** [Autodesk.Revit.UI](e86fd90a-8957-02a6-da7f-ced248966e3e.md "Autodesk.Revit.UI Namespace")**Assembly:** RevitAPIUI (in RevitAPIUI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2014 
 # Syntax
-
 C#  
 ---  
-      
-    
-    public enum PostableCommand  
+```text
+public enum PostableCommand
+```
   
 Visual Basic  
 ---  
-      
-    
-    Public Enumeration PostableCommand  
+```text
+Public Enumeration PostableCommand
+```
   
 Visual C++  
 ---  
-      
-    
-    public enum class PostableCommand  
+```text
+public enum class PostableCommand
+```
   
 # Members
-
 | Member name | Description |
+| --- | --- |
 | --- | --- |
 | RoofByFace | Creates a roof using a non-vertical face of a mass. |
 | Soffit | Creates a roof soffit in the building model. |
@@ -573,11 +568,11 @@ Visual C++
 | DynamoPlayerForSteel | Places steel connections on selected elements using pre-defined rules. |
 | PanelByBoundary | Creates a planar analytical panel for the current work plane after a sketch of the contour. |
 | AnalyticalAutomation | Automates the creation, element connection, and update of the analytical model, using the physical representation as context. |
-| RebarBendingDetail |  |
+| RebarBendingDetail |
 | PanelByExtrusion | Creates an analytical panel perpendicular to the current work plane after a sketch of the path. |
-| CoordinationModelLocal |  |
-| CoordinationModelAutodeskDocs |  |
-| Loads |  |
+| CoordinationModelLocal |
+| CoordinationModelAutodeskDocs |
+| Loads |
 | SpaceNaming | Assigns the names and numbers from architectural rooms to MEP spaces used for building performance analysis. |
 | DynamoPlayer | Preview, select, and run your Dynamo graphs from a single dialog. |
 | RepairCentralModel | Repairs a corrupt central model. |
@@ -598,9 +593,7 @@ Visual C++
 | CanvasTheme | Sets the color theme of the canvas to dark or light. |
 | ExitRevit | Exit Revit. |
 | StatusBar | Displays the status bar at the bottom of the Revit window. |
-  
+
 # See Also
-
-[Autodesk.Revit.UI Namespace](e86fd90a-8957-02a6-da7f-ced248966e3e.md)
-
+[Autodesk.Revit.UI Namespace](e86fd90a-8957-02a6-da7f-ced248966e3e.md "Autodesk.Revit.UI Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

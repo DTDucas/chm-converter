@@ -1,85 +1,70 @@
+# SetArcTypeSpiral Method
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
 ---  
-  
 C#Visual BasicVisual C++
-
 Revit 2024 API  
 ---  
 RebarShapeDefinitionByArc..::..SetArcTypeSpiral Method   
-[RebarShapeDefinitionByArc Class](a92742a5-9781-3691-ec78-5b318fbf5ad3.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[RebarShapeDefinitionByArc Class](a92742a5-9781-3691-ec78-5b318fbf5ad3.md "RebarShapeDefinitionByArc Class") See Also  
 ---  
-  
 Set the RebarShapeDefinitionByArc.Type property to Spiral. 
-
-**Namespace:** [Autodesk.Revit.DB.Structure](d586b341-f687-9d90-e96d-255806b7d4fc.md)**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2011 
-
+**Namespace:** [Autodesk.Revit.DB.Structure](d586b341-f687-9d90-e96d-255806b7d4fc.md "Autodesk.Revit.DB.Structure Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2011 
 # Syntax
-
 C#  
 ---  
-      
-    
-    public void SetArcTypeSpiral(
-    	double height,
-    	double pitch,
-    	int baseFinishingTurns,
-    	int topFinishingTurns
-    )  
+```text
+public void SetArcTypeSpiral(
+	double height,
+	double pitch,
+	int baseFinishingTurns,
+	int topFinishingTurns
+)
+```
   
 Visual Basic  
 ---  
-      
-    
-    Public Sub SetArcTypeSpiral ( _
-    	height As Double, _
-    	pitch As Double, _
-    	baseFinishingTurns As Integer, _
-    	topFinishingTurns As Integer _
-    )  
+```text
+Public Sub SetArcTypeSpiral ( _
+	height As Double, _
+	pitch As Double, _
+	baseFinishingTurns As Integer, _
+	topFinishingTurns As Integer _
+)
+```
   
 Visual C++  
 ---  
-      
-    
-    public:
-    void SetArcTypeSpiral(
-    	double height, 
-    	double pitch, 
-    	int baseFinishingTurns, 
-    	int topFinishingTurns
-    )  
+```text
+public:
+void SetArcTypeSpiral(
+	double height, 
+	double pitch, 
+	int baseFinishingTurns, 
+	int topFinishingTurns
+)
+```
   
-#### Parameters
-
+# ### Parameters
 height
     Type: System..::..Double The height of the spiral (assuming the spiral is vertical). 
-
 pitch
     Type: System..::..Double The pitch, or vertical distance traveled in one rotation. 
-
 baseFinishingTurns
     Type: System..::..Int32 The number of finishing turns at the lower end of the spiral. 
-
 topFinishingTurns
     Type: System..::..Int32 The number of finishing turns at the upper end of the spiral. 
-
 # Remarks
-
 In order to create a spiral definition, you must provide default values for height, pitch, and finishing turns. 
-
 # Exceptions
-
 | Exception | Condition |
 | --- | --- |
-| [Autodesk.Revit.Exceptions..::..ArgumentException](2e6e4206-97a8-dd4b-df5d-4269f4bb6088.md) | baseFinishingTurns is not between 0 and 100. -or- topFinishingTurns is not between 0 and 100. |
-| [Autodesk.Revit.Exceptions..::..ArgumentOutOfRangeException](60f148c9-ece0-a6bb-4e12-bb4a9c8c8a24.md) | The given value for height must be greater than 0 and no more than 30000 feet. -or- The given value for pitch must be greater than 0 and no more than 30000 feet. |
-  
+| --- | --- |
+| [Autodesk.Revit.Exceptions..::..ArgumentException](2e6e4206-97a8-dd4b-df5d-4269f4bb6088.md "ArgumentException Class") | baseFinishingTurns is not between 0 and 100. -or- topFinishingTurns is not between 0 and 100. |
+| [Autodesk.Revit.Exceptions..::..ArgumentOutOfRangeException](60f148c9-ece0-a6bb-4e12-bb4a9c8c8a24.md "ArgumentOutOfRangeException Class") | The given value for height must be greater than 0 and no more than 30000 feet. -or- The given value for pitch must be greater than 0 and no more than 30000 feet. |
+
 # See Also
-
-[RebarShapeDefinitionByArc Class](a92742a5-9781-3691-ec78-5b318fbf5ad3.md)
-
-[Autodesk.Revit.DB.Structure Namespace](d586b341-f687-9d90-e96d-255806b7d4fc.md)
-
+[RebarShapeDefinitionByArc Class](a92742a5-9781-3691-ec78-5b318fbf5ad3.md "RebarShapeDefinitionByArc Class")
+[Autodesk.Revit.DB.Structure Namespace](d586b341-f687-9d90-e96d-255806b7d4fc.md "Autodesk.Revit.DB.Structure Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

@@ -1,46 +1,39 @@
+# FilteredElementIdIterator Members
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
 ---  
-  
 C#Visual BasicVisual C++
-
 Include Protected MembersInclude Inherited Members
-
 Revit 2024 API  
 ---  
 FilteredElementIdIterator Members  
-[FilteredElementIdIterator Class](dfd0acee-d626-d5b2-fa2a-f9fc4edb49e8.md) Methods Properties See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[FilteredElementIdIterator Class](dfd0acee-d626-d5b2-fa2a-f9fc4edb49e8.md "FilteredElementIdIterator Class") Methods Properties See Also  
 ---  
-  
-The [FilteredElementIdIterator](dfd0acee-d626-d5b2-fa2a-f9fc4edb49e8.md) type exposes the following members.
-
+The [FilteredElementIdIterator](dfd0acee-d626-d5b2-fa2a-f9fc4edb49e8.md "FilteredElementIdIterator Class") type exposes the following members.
 # Methods
-
-|  | Name | Description |
+| Name | Description |
+| --- | --- |
 | --- | --- | --- |
-|  | [Dispose](3b640fff-8676-9a8e-d541-083e5b0ddd31.md) | Releases all resources used by the [FilteredElementIdIterator](dfd0acee-d626-d5b2-fa2a-f9fc4edb49e8.md) |
-|  | Equals | Determines whether the specified Object is equal to the current Object. (Inherited from Object.) |
-|  | [GetCurrent](4622b4be-e533-d633-26e8-2c4ea5d63742.md) | The current element id found by the iterator. |
-|  | GetHashCode | Serves as a hash function for a particular type.  (Inherited from Object.) |
-|  | GetType | Gets the Type of the current instance. (Inherited from Object.) |
-|  | [IsDone](d97c9f2b-33a3-128b-fad4-00fba014c1a6.md) | Identifies if the iteration has completed. |
-|  | [MoveNext](ef73f3f0-2049-2ebf-fccd-84a2c85949b7.md) | Increments the iterator to the next element id passing the filter. |
-|  | [Reset](e478208b-3d1c-9ce1-1592-0faa8462469d.md) | Resets the iterator to the beginning. |
-|  | ToString | Returns a string that represents the current object. (Inherited from Object.) |
-  
+| [Dispose](3b640fff-8676-9a8e-d541-083e5b0ddd31.md "Dispose Method") | Releases all resources used by the [FilteredElementIdIterator](dfd0acee-d626-d5b2-fa2a-f9fc4edb49e8.md "FilteredElementIdIterator Class") |
+| Equals | Determines whether the specified Object is equal to the current Object. (Inherited from Object.) |
+| [GetCurrent](4622b4be-e533-d633-26e8-2c4ea5d63742.md "GetCurrent Method") | The current element id found by the iterator. |
+| GetHashCode | Serves as a hash function for a particular type.  (Inherited from Object.) |
+| GetType | Gets the Type of the current instance. (Inherited from Object.) |
+| [IsDone](d97c9f2b-33a3-128b-fad4-00fba014c1a6.md "IsDone Method") | Identifies if the iteration has completed. |
+| [MoveNext](ef73f3f0-2049-2ebf-fccd-84a2c85949b7.md "MoveNext Method") | Increments the iterator to the next element id passing the filter. |
+| [Reset](e478208b-3d1c-9ce1-1592-0faa8462469d.md "Reset Method") | Resets the iterator to the beginning. |
+| ToString | Returns a string that represents the current object. (Inherited from Object.) |
+
 # Properties
-
-|  | Name | Description |
+| Name | Description |
+| --- | --- |
 | --- | --- | --- |
-|  | [Current](d37acf89-a76e-f310-ff9e-056c5857172f.md) | Gets the item at the current position of the iterator. |
-|  | [CurrentObject](ca23ad34-a750-7156-f0c1-5295ccf4a582.md) |  |
-|  | [IsValidObject](3f6d5b54-979e-fe9f-9a8d-c124fd15c411.md) | Specifies whether the .NET object represents a valid Revit entity. |
-  
+| [Current](d37acf89-a76e-f310-ff9e-056c5857172f.md "Current Property") | Gets the item at the current position of the iterator. |
+| [CurrentObject](ca23ad34-a750-7156-f0c1-5295ccf4a582.md "CurrentObject Property") |
+| [IsValidObject](3f6d5b54-979e-fe9f-9a8d-c124fd15c411.md "IsValidObject Property") | Specifies whether the .NET object represents a valid Revit entity. |
+
 # See Also
-
-[FilteredElementIdIterator Class](dfd0acee-d626-d5b2-fa2a-f9fc4edb49e8.md)
-
-[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)
-
+[FilteredElementIdIterator Class](dfd0acee-d626-d5b2-fa2a-f9fc4edb49e8.md "FilteredElementIdIterator Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)
