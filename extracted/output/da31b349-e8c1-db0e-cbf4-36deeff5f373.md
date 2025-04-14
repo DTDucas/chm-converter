@@ -1,31 +1,24 @@
+# GetLinePattern Method
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
 ---  
-  
 C#Visual BasicVisual C++
-
 Include Protected MembersInclude Inherited Members
-
 Revit 2024 API  
 ---  
 LinePatternElement..::..GetLinePattern Method   
-[LinePatternElement Class](8f4678ba-1824-fd00-73b6-dfb9c7802f83.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[LinePatternElement Class](8f4678ba-1824-fd00-73b6-dfb9c7802f83.md "LinePatternElement Class") See Also  
 ---  
-  
 # Overload List
-
-|  | Name | Description |
+| Name | Description |
+| --- | --- |
 | --- | --- | --- |
-|  | [GetLinePattern()()()()](da768e39-4e08-7586-6665-95c13c69f7b4.md) | Gets the LinePattern associated to this element. |
-|  | [GetLinePattern(Document, ElementId)](230a23fa-45d0-d698-2e2d-61d2ecfad0a6.md) | Gets the LinePattern associated to an element or from a built-in line pattern. |
-  
+| [GetLinePattern()()()()](da768e39-4e08-7586-6665-95c13c69f7b4.md "GetLinePattern Method") | Gets the LinePattern associated to this element. |
+| [GetLinePattern(Document, ElementId)](230a23fa-45d0-d698-2e2d-61d2ecfad0a6.md "GetLinePattern Method \(Document, ElementId\)") | Gets the LinePattern associated to an element or from a built-in line pattern. |
+
 # See Also
-
-[LinePatternElement Class](8f4678ba-1824-fd00-73b6-dfb9c7802f83.md)
-
-[LinePatternElement Members](c1a8cdc4-e45e-0aa2-8aae-b47e817c3637.md)
-
-[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)
-
+[LinePatternElement Class](8f4678ba-1824-fd00-73b6-dfb9c7802f83.md "LinePatternElement Class")
+[LinePatternElement Members](c1a8cdc4-e45e-0aa2-8aae-b47e817c3637.md "LinePatternElement Members")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

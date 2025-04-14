@@ -1,48 +1,41 @@
+# MassInstanceUtils Members
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
 ---  
-  
 C#Visual BasicVisual C++
-
 Include Protected MembersInclude Inherited Members
-
 Revit 2024 API  
 ---  
 MassInstanceUtils Members  
-[MassInstanceUtils Class](c1918834-8fe4-b8fb-10bf-39c59ae34eeb.md) Methods Properties See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[MassInstanceUtils Class](c1918834-8fe4-b8fb-10bf-39c59ae34eeb.md "MassInstanceUtils Class") Methods Properties See Also  
 ---  
-  
-The [MassInstanceUtils](c1918834-8fe4-b8fb-10bf-39c59ae34eeb.md) type exposes the following members.
-
+The [MassInstanceUtils](c1918834-8fe4-b8fb-10bf-39c59ae34eeb.md "MassInstanceUtils Class") type exposes the following members.
 # Methods
-
-|  | Name | Description |
+| Name | Description |
+| --- | --- |
 | --- | --- | --- |
-|  | [AddMassLevelDataToMassInstance](fe3b251b-2677-094d-7e72-77fea0f49f24.md) | Create a MassLevelData (Mass Floor) to associate a Level with a mass instance. |
-|  | [Dispose](9bbe22ab-2538-b238-9eba-4777cb91f012.md) | Releases all resources used by the [MassInstanceUtils](c1918834-8fe4-b8fb-10bf-39c59ae34eeb.md) |
-|  | Equals | Determines whether the specified Object is equal to the current Object. (Inherited from Object.) |
-|  | [GetGrossFloorArea](4786d496-d8ae-0336-42c9-7febaeeac4c1.md) | Get the total occupiable floor area represented by a mass instance. |
-|  | [GetGrossSurfaceArea](e138e150-a22b-c086-fe3c-5b3643389b51.md) | Get the total exterior building surface area represented by a mass instance. |
-|  | [GetGrossVolume](fa70c27b-bd50-07d1-3f57-22f5e245d244.md) | Get the total building volume represented by a mass instance. |
-|  | GetHashCode | Serves as a hash function for a particular type.  (Inherited from Object.) |
-|  | [GetJoinedElementIds](19706a09-b90f-2078-cd66-488413989b5e.md) | Get the ElementIds of Elements that are joined to a mass instance. |
-|  | [GetMassLevelDataIds](244c26d6-da7c-c754-3a00-4be63d59a704.md) | Get the ElementIds of the MassLevelDatas (Mass Floors) associated with a mass instance. |
-|  | [GetMassLevelIds](627c83e6-6620-1296-9614-30d62042e062.md) | Get the ElementIds of the Levels associated with a mass instance. |
-|  | GetType | Gets the Type of the current instance. (Inherited from Object.) |
-|  | [RemoveMassLevelDataFromMassInstance](92218dd5-d331-c33a-abb2-d6f9956f9204.md) | Delete the MassLevelData (Mass Floor) that associates a Level with a mass instance. |
-|  | ToString | Returns a string that represents the current object. (Inherited from Object.) |
-  
+| [AddMassLevelDataToMassInstance](fe3b251b-2677-094d-7e72-77fea0f49f24.md "AddMassLevelDataToMassInstance Method") | Create a MassLevelData (Mass Floor) to associate a Level with a mass instance. |
+| [Dispose](9bbe22ab-2538-b238-9eba-4777cb91f012.md "Dispose Method") | Releases all resources used by the [MassInstanceUtils](c1918834-8fe4-b8fb-10bf-39c59ae34eeb.md "MassInstanceUtils Class") |
+| Equals | Determines whether the specified Object is equal to the current Object. (Inherited from Object.) |
+| [GetGrossFloorArea](4786d496-d8ae-0336-42c9-7febaeeac4c1.md "GetGrossFloorArea Method") | Get the total occupiable floor area represented by a mass instance. |
+| [GetGrossSurfaceArea](e138e150-a22b-c086-fe3c-5b3643389b51.md "GetGrossSurfaceArea Method") | Get the total exterior building surface area represented by a mass instance. |
+| [GetGrossVolume](fa70c27b-bd50-07d1-3f57-22f5e245d244.md "GetGrossVolume Method") | Get the total building volume represented by a mass instance. |
+| GetHashCode | Serves as a hash function for a particular type.  (Inherited from Object.) |
+| [GetJoinedElementIds](19706a09-b90f-2078-cd66-488413989b5e.md "GetJoinedElementIds Method") | Get the ElementIds of Elements that are joined to a mass instance. |
+| [GetMassLevelDataIds](244c26d6-da7c-c754-3a00-4be63d59a704.md "GetMassLevelDataIds Method") | Get the ElementIds of the MassLevelDatas (Mass Floors) associated with a mass instance. |
+| [GetMassLevelIds](627c83e6-6620-1296-9614-30d62042e062.md "GetMassLevelIds Method") | Get the ElementIds of the Levels associated with a mass instance. |
+| GetType | Gets the Type of the current instance. (Inherited from Object.) |
+| [RemoveMassLevelDataFromMassInstance](92218dd5-d331-c33a-abb2-d6f9956f9204.md "RemoveMassLevelDataFromMassInstance Method") | Delete the MassLevelData (Mass Floor) that associates a Level with a mass instance. |
+| ToString | Returns a string that represents the current object. (Inherited from Object.) |
+
 # Properties
-
-|  | Name | Description |
+| Name | Description |
+| --- | --- |
 | --- | --- | --- |
-|  | [IsValidObject](b9a91cb3-89ca-14f2-bf3c-be79db05736b.md) | Specifies whether the .NET object represents a valid Revit entity. |
-  
+| [IsValidObject](b9a91cb3-89ca-14f2-bf3c-be79db05736b.md "IsValidObject Property") | Specifies whether the .NET object represents a valid Revit entity. |
+
 # See Also
-
-[MassInstanceUtils Class](c1918834-8fe4-b8fb-10bf-39c59ae34eeb.md)
-
-[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)
-
+[MassInstanceUtils Class](c1918834-8fe4-b8fb-10bf-39c59ae34eeb.md "MassInstanceUtils Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

@@ -1,63 +1,53 @@
+# RemoveAllTriggers Method
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
 ---  
-  
 C#Visual BasicVisual C++
-
 Revit 2024 API  
 ---  
 UpdaterRegistry..::..RemoveAllTriggers Method   
-[UpdaterRegistry Class](4f24f516-5274-1420-f255-458c0af5d318.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[UpdaterRegistry Class](4f24f516-5274-1420-f255-458c0af5d318.md "UpdaterRegistry Class") See Also  
 ---  
-  
 Removes all triggers associated with Updater with specified UpdaterId. Does not unregister updater. 
-
-**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2011 
-
+**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2011 
 # Syntax
-
 C#  
 ---  
-      
-    
-    public static void RemoveAllTriggers(
-    	[UpdaterId](16a9604f-51bd-ce34-f145-17ae06b7c1cf.md) id
-    )  
+```text
+public static void RemoveAllTriggers(
+	UpdaterId id
+)
+```
   
 Visual Basic  
 ---  
-      
-    
-    Public Shared Sub RemoveAllTriggers ( _
-    	id As [UpdaterId](16a9604f-51bd-ce34-f145-17ae06b7c1cf.md) _
-    )  
+```text
+Public Shared Sub RemoveAllTriggers ( _
+	id As UpdaterId _
+)
+```
   
 Visual C++  
 ---  
-      
-    
-    public:
-    static void RemoveAllTriggers(
-    	[UpdaterId](16a9604f-51bd-ce34-f145-17ae06b7c1cf.md)^ id
-    )  
+```text
+public:
+static void RemoveAllTriggers(
+	UpdaterId^ id
+)
+```
   
-#### Parameters
-
+# ### Parameters
 id
-    Type: [Autodesk.Revit.DB..::..UpdaterId](16a9604f-51bd-ce34-f145-17ae06b7c1cf.md) Id of specified updater 
-
+    Type: [Autodesk.Revit.DB..::..UpdaterId](16a9604f-51bd-ce34-f145-17ae06b7c1cf.md "UpdaterId Class") Id of specified updater 
 # Exceptions
-
 | Exception | Condition |
 | --- | --- |
-| [Autodesk.Revit.Exceptions..::..ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md) | A non-optional argument was null |
-| [Autodesk.Revit.Exceptions..::..InvalidOperationException](9e715f03-3884-e539-4dd6-8d7545733adc.md) | The updater's owner's AddIn does not match the currently active AddIn. -or- RemoveAllTriggers called while executing an updater. |
-  
+| --- | --- |
+| [Autodesk.Revit.Exceptions..::..ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md "ArgumentNullException Class") | A non-optional argument was null |
+| [Autodesk.Revit.Exceptions..::..InvalidOperationException](9e715f03-3884-e539-4dd6-8d7545733adc.md "InvalidOperationException Class") | The updater's owner's AddIn does not match the currently active AddIn. -or- RemoveAllTriggers called while executing an updater. |
+
 # See Also
-
-[UpdaterRegistry Class](4f24f516-5274-1420-f255-458c0af5d318.md)
-
-[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)
-
+[UpdaterRegistry Class](4f24f516-5274-1420-f255-458c0af5d318.md "UpdaterRegistry Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

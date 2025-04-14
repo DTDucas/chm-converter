@@ -1,84 +1,70 @@
+# AddCutBetweenSolids Method (Document, Element, Element, Boolean)
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
 ---  
-  
 C#Visual BasicVisual C++
-
 Revit 2024 API  
 ---  
 SolidSolidCutUtils..::..AddCutBetweenSolids Method (Document, Element, Element, Boolean)  
-[SolidSolidCutUtils Class](f1a2d176-2ab6-fa4c-293e-970c5866e87c.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[SolidSolidCutUtils Class](f1a2d176-2ab6-fa4c-293e-970c5866e87c.md "SolidSolidCutUtils Class") See Also  
 ---  
-  
 Adds a solid-solid cut for the two elements with the option to control splitting of faces of the cutting solid. 
-
-**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2011 
-
+**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2011 
 # Syntax
-
 C#  
 ---  
-      
-    
-    public static void AddCutBetweenSolids(
-    	[Document](db03274b-a107-aa32-9034-f3e0df4bb1ec.md) document,
-    	[Element](eb16114f-69ea-f4de-0d0d-f7388b105a16.md) solidToBeCut,
-    	[Element](eb16114f-69ea-f4de-0d0d-f7388b105a16.md) cuttingSolid,
-    	bool splitFacesOfCuttingSolid
-    )  
+```text
+public static void AddCutBetweenSolids(
+	Document document,
+	Element solidToBeCut,
+	Element cuttingSolid,
+	bool splitFacesOfCuttingSolid
+)
+```
   
 Visual Basic  
 ---  
-      
-    
-    Public Shared Sub AddCutBetweenSolids ( _
-    	document As [Document](db03274b-a107-aa32-9034-f3e0df4bb1ec.md), _
-    	solidToBeCut As [Element](eb16114f-69ea-f4de-0d0d-f7388b105a16.md), _
-    	cuttingSolid As [Element](eb16114f-69ea-f4de-0d0d-f7388b105a16.md), _
-    	splitFacesOfCuttingSolid As Boolean _
-    )  
+```text
+Public Shared Sub AddCutBetweenSolids ( _
+	document As Document, _
+	solidToBeCut As Element, _
+	cuttingSolid As Element, _
+	splitFacesOfCuttingSolid As Boolean _
+)
+```
   
 Visual C++  
 ---  
-      
-    
-    public:
-    static void AddCutBetweenSolids(
-    	[Document](db03274b-a107-aa32-9034-f3e0df4bb1ec.md)^ document, 
-    	[Element](eb16114f-69ea-f4de-0d0d-f7388b105a16.md)^ solidToBeCut, 
-    	[Element](eb16114f-69ea-f4de-0d0d-f7388b105a16.md)^ cuttingSolid, 
-    	bool splitFacesOfCuttingSolid
-    )  
+```text
+public:
+static void AddCutBetweenSolids(
+	Document^ document, 
+	Element^ solidToBeCut, 
+	Element^ cuttingSolid, 
+	bool splitFacesOfCuttingSolid
+)
+```
   
-#### Parameters
-
+# ### Parameters
 document
-    Type: [Autodesk.Revit.DB..::..Document](db03274b-a107-aa32-9034-f3e0df4bb1ec.md) The document containing the two elements. 
-
+    Type: [Autodesk.Revit.DB..::..Document](db03274b-a107-aa32-9034-f3e0df4bb1ec.md "Document Class") The document containing the two elements. 
 solidToBeCut
-    Type: [Autodesk.Revit.DB..::..Element](eb16114f-69ea-f4de-0d0d-f7388b105a16.md) The solid to be cut. 
-
+    Type: [Autodesk.Revit.DB..::..Element](eb16114f-69ea-f4de-0d0d-f7388b105a16.md "Element Class") The solid to be cut. 
 cuttingSolid
-    Type: [Autodesk.Revit.DB..::..Element](eb16114f-69ea-f4de-0d0d-f7388b105a16.md) The cutting solid. 
-
+    Type: [Autodesk.Revit.DB..::..Element](eb16114f-69ea-f4de-0d0d-f7388b105a16.md "Element Class") The cutting solid. 
 splitFacesOfCuttingSolid
     Type: System..::..Boolean True to split faces of cutting solid where it intersects the solid to be cut, false otherwise. 
-
 # Exceptions
-
 | Exception | Condition |
 | --- | --- |
-| [Autodesk.Revit.Exceptions..::..ArgumentException](2e6e4206-97a8-dd4b-df5d-4269f4bb6088.md) | The element must be in a project document or in a conceptual model, pattern based curtain panel, or adaptive component family. -or- The element does not meet the condition that it must be solid and must be a GenericForm, GeomCombination, or a FamilyInstance. |
-| [Autodesk.Revit.Exceptions..::..ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md) | A non-optional argument was null |
-| [Autodesk.Revit.Exceptions..::..InvalidOperationException](9e715f03-3884-e539-4dd6-8d7545733adc.md) | Failed to add solid-solid cut for the two elements. |
-  
+| --- | --- |
+| [Autodesk.Revit.Exceptions..::..ArgumentException](2e6e4206-97a8-dd4b-df5d-4269f4bb6088.md "ArgumentException Class") | The element must be in a project document or in a conceptual model, pattern based curtain panel, or adaptive component family. -or- The element does not meet the condition that it must be solid and must be a GenericForm, GeomCombination, or a FamilyInstance. |
+| [Autodesk.Revit.Exceptions..::..ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md "ArgumentNullException Class") | A non-optional argument was null |
+| [Autodesk.Revit.Exceptions..::..InvalidOperationException](9e715f03-3884-e539-4dd6-8d7545733adc.md "InvalidOperationException Class") | Failed to add solid-solid cut for the two elements. |
+
 # See Also
-
-[SolidSolidCutUtils Class](f1a2d176-2ab6-fa4c-293e-970c5866e87c.md)
-
-[AddCutBetweenSolids Overload](91f9389e-9a5d-beca-b735-1863ceddeac7.md)
-
-[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)
-
+[SolidSolidCutUtils Class](f1a2d176-2ab6-fa4c-293e-970c5866e87c.md "SolidSolidCutUtils Class")
+[AddCutBetweenSolids Overload](91f9389e-9a5d-beca-b735-1863ceddeac7.md "AddCutBetweenSolids Method")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

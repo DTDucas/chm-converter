@@ -1,49 +1,39 @@
+# StructuralSectionPipeStandard Class
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
 ---  
-  
 C#Visual BasicVisual C++
-
 Revit 2024 API  
 ---  
 StructuralSectionPipeStandard Class  
-[Members](867a2fd4-f018-4320-5464-f28e7174ffb3.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[Members](867a2fd4-f018-4320-5464-f28e7174ffb3.md "StructuralSectionPipeStandard Members") See Also  
 ---  
-  
 Defines parameters for pipes also known as RoundHSS or HollowStructuralSection (HSS). 
-
-**Namespace:** [Autodesk.Revit.DB.Structure.StructuralSections](09862f38-63f6-a5f8-e560-ae775901bc92.md)**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2015 
-
+**Namespace:** [Autodesk.Revit.DB.Structure.StructuralSections](09862f38-63f6-a5f8-e560-ae775901bc92.md "Autodesk.Revit.DB.Structure.StructuralSections Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2015 
 # Syntax
-
 C#  
 ---  
-      
-    
-    public class StructuralSectionPipeStandard : [StructuralSectionGeneralR](0520949b-2fd0-ca3c-bc98-c259e28d29d1.md)  
+```text
+public class StructuralSectionPipeStandard : StructuralSectionGeneralR
+```
   
 Visual Basic  
 ---  
-      
-    
-    Public Class StructuralSectionPipeStandard _
-    	Inherits [StructuralSectionGeneralR](0520949b-2fd0-ca3c-bc98-c259e28d29d1.md)  
+```text
+Public Class StructuralSectionPipeStandard _
+	Inherits StructuralSectionGeneralR
+```
   
 Visual C++  
 ---  
-      
-    
-    public ref class StructuralSectionPipeStandard : public [StructuralSectionGeneralR](0520949b-2fd0-ca3c-bc98-c259e28d29d1.md)  
+```text
+public ref class StructuralSectionPipeStandard : public StructuralSectionGeneralR
+```
   
 # Inheritance Hierarchy
-
-System..::..Object [Autodesk.Revit.DB.Structure.StructuralSections..::..StructuralSection](65b59d7d-bd7b-c71b-7159-dfc506a912ee.md) [Autodesk.Revit.DB.Structure.StructuralSections..::..StructuralSectionRound](d46f7519-8b60-d73a-42a0-13e0f4455e62.md) [Autodesk.Revit.DB.Structure.StructuralSections..::..StructuralSectionGeneralR](0520949b-2fd0-ca3c-bc98-c259e28d29d1.md) Autodesk.Revit.DB.Structure.StructuralSections..::..StructuralSectionPipeStandard
-
+System..::..Object [Autodesk.Revit.DB.Structure.StructuralSections..::..StructuralSection](65b59d7d-bd7b-c71b-7159-dfc506a912ee.md "StructuralSection Class") [Autodesk.Revit.DB.Structure.StructuralSections..::..StructuralSectionRound](d46f7519-8b60-d73a-42a0-13e0f4455e62.md "StructuralSectionRound Class") [Autodesk.Revit.DB.Structure.StructuralSections..::..StructuralSectionGeneralR](0520949b-2fd0-ca3c-bc98-c259e28d29d1.md "StructuralSectionGeneralR Class") Autodesk.Revit.DB.Structure.StructuralSections..::..StructuralSectionPipeStandard
 # See Also
-
-[StructuralSectionPipeStandard Members](867a2fd4-f018-4320-5464-f28e7174ffb3.md)
-
-[Autodesk.Revit.DB.Structure.StructuralSections Namespace](09862f38-63f6-a5f8-e560-ae775901bc92.md)
-
+[StructuralSectionPipeStandard Members](867a2fd4-f018-4320-5464-f28e7174ffb3.md "StructuralSectionPipeStandard Members")
+[Autodesk.Revit.DB.Structure.StructuralSections Namespace](09862f38-63f6-a5f8-e560-ae775901bc92.md "Autodesk.Revit.DB.Structure.StructuralSections Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

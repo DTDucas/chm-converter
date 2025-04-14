@@ -1,32 +1,25 @@
+# TriOrQuadFacet Properties
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
 ---  
-  
 C#Visual BasicVisual C++
-
 Include Protected MembersInclude Inherited Members
-
 Revit 2024 API  
 ---  
 TriOrQuadFacet Properties  
-[TriOrQuadFacet Class](9d1875be-5241-3381-2a56-674b2ee39d95.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[TriOrQuadFacet Class](9d1875be-5241-3381-2a56-674b2ee39d95.md "TriOrQuadFacet Class") See Also  
 ---  
-  
-The [TriOrQuadFacet](9d1875be-5241-3381-2a56-674b2ee39d95.md) type exposes the following members.
-
+The [TriOrQuadFacet](9d1875be-5241-3381-2a56-674b2ee39d95.md "TriOrQuadFacet Class") type exposes the following members.
 # Properties
-
-|  | Name | Description |
+| Name | Description |
+| --- | --- |
 | --- | --- | --- |
-|  | [IsValidObject](c742eef4-8b6f-a71f-e87b-0a06b7758338.md) | Specifies whether the .NET object represents a valid Revit entity. |
-|  | [Normal](1d624286-f58a-f6e1-2695-450af9f897d3.md) | A unit normal vector for this facet. |
-|  | [NumberOfVertices](37e5adf5-13c4-486d-1f8e-c07b830d03e1.md) | The number of vertices (3 for a triangle, 4 for a quadrilateral, 0 for an unset TriOrQuadFacet). |
-  
+| [IsValidObject](c742eef4-8b6f-a71f-e87b-0a06b7758338.md "IsValidObject Property") | Specifies whether the .NET object represents a valid Revit entity. |
+| [Normal](1d624286-f58a-f6e1-2695-450af9f897d3.md "Normal Property") | A unit normal vector for this facet. |
+| [NumberOfVertices](37e5adf5-13c4-486d-1f8e-c07b830d03e1.md "NumberOfVertices Property") | The number of vertices (3 for a triangle, 4 for a quadrilateral, 0 for an unset TriOrQuadFacet). |
+
 # See Also
-
-[TriOrQuadFacet Class](9d1875be-5241-3381-2a56-674b2ee39d95.md)
-
-[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)
-
+[TriOrQuadFacet Class](9d1875be-5241-3381-2a56-674b2ee39d95.md "TriOrQuadFacet Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)
