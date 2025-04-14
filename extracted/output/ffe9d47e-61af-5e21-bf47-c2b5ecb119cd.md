@@ -1,35 +1,28 @@
+# ExternalResourceServerUtils Members
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
 ---  
-  
 C#Visual BasicVisual C++
-
 Include Protected MembersInclude Inherited Members
-
 Revit 2024 API  
 ---  
 ExternalResourceServerUtils Members  
-[ExternalResourceServerUtils Class](a3147faa-ddc7-6cc1-8906-260582b6bc4a.md) Methods See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[ExternalResourceServerUtils Class](a3147faa-ddc7-6cc1-8906-260582b6bc4a.md "ExternalResourceServerUtils Class") Methods See Also  
 ---  
-  
-The [ExternalResourceServerUtils](a3147faa-ddc7-6cc1-8906-260582b6bc4a.md) type exposes the following members.
-
+The [ExternalResourceServerUtils](a3147faa-ddc7-6cc1-8906-260582b6bc4a.md "ExternalResourceServerUtils Class") type exposes the following members.
 # Methods
-
-|  | Name | Description |
+| Name | Description |
+| --- | --- |
 | --- | --- | --- |
-|  | [IsValidShortName](5d7f45ca-6e12-0979-2e6c-e6959e1617de.md) | Checks whether the name is a valid short name for the external resource server. |
-|  | [ServerSupportsAssemblyCodeData](7db6277b-f48f-a7e9-6bd4-2798999cb9df.md) | Checks that the server referenced by the given ExternalResourceReference supports AssemblyCodeData. |
-|  | [ServerSupportsCADLinks](66d581a3-9a20-d3ba-47a3-6d17e52fda56.md) | Checks that the server referenced by the given ExternalResourceReference supports CAD links. |
-|  | [ServerSupportsIFCLinks](71ee69fe-7a99-2af7-fb5e-d6e1533ea16e.md) | Checks that the server referenced by the given ExternalResourceReference supports IFC links. |
-|  | [ServerSupportsKeynotes](ef3003e0-6e4e-5b6f-1b66-0af06f90b89a.md) | Checks that the server referenced by the given ExternalResourceReference supports KeynoteTable data. |
-|  | [ServerSupportsRevitLinks](154a8896-8d7c-ef67-3168-b91af2df0bcc.md) | Checks that the server referenced by the given ExternalResourceReference supports Revit links. |
-  
+| [IsValidShortName](5d7f45ca-6e12-0979-2e6c-e6959e1617de.md "IsValidShortName Method") | Checks whether the name is a valid short name for the external resource server. |
+| [ServerSupportsAssemblyCodeData](7db6277b-f48f-a7e9-6bd4-2798999cb9df.md "ServerSupportsAssemblyCodeData Method") | Checks that the server referenced by the given ExternalResourceReference supports AssemblyCodeData. |
+| [ServerSupportsCADLinks](66d581a3-9a20-d3ba-47a3-6d17e52fda56.md "ServerSupportsCADLinks Method") | Checks that the server referenced by the given ExternalResourceReference supports CAD links. |
+| [ServerSupportsIFCLinks](71ee69fe-7a99-2af7-fb5e-d6e1533ea16e.md "ServerSupportsIFCLinks Method") | Checks that the server referenced by the given ExternalResourceReference supports IFC links. |
+| [ServerSupportsKeynotes](ef3003e0-6e4e-5b6f-1b66-0af06f90b89a.md "ServerSupportsKeynotes Method") | Checks that the server referenced by the given ExternalResourceReference supports KeynoteTable data. |
+| [ServerSupportsRevitLinks](154a8896-8d7c-ef67-3168-b91af2df0bcc.md "ServerSupportsRevitLinks Method") | Checks that the server referenced by the given ExternalResourceReference supports Revit links. |
+
 # See Also
-
-[ExternalResourceServerUtils Class](a3147faa-ddc7-6cc1-8906-260582b6bc4a.md)
-
-[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)
-
+[ExternalResourceServerUtils Class](a3147faa-ddc7-6cc1-8906-260582b6bc4a.md "ExternalResourceServerUtils Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)
