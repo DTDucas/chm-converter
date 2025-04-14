@@ -1,54 +1,44 @@
+# TypeId Property
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
 ---  
-  
 C#Visual BasicVisual C++
-
 Revit 2024 API  
 ---  
 AlignmentStationLabelSetOptions..::..TypeId Property   
-[AlignmentStationLabelSetOptions Class](15f4337d-738d-ec32-e7bc-4f2c569f4c59.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[AlignmentStationLabelSetOptions Class](15f4337d-738d-ec32-e7bc-4f2c569f4c59.md "AlignmentStationLabelSetOptions Class") See Also  
 ---  
-  
-Specifies the ElementId of the labels' type. The default value is InvalidElementId. in this case, [CreateSet(Alignment, View, AlignmentStationLabelSetOptions)](bbb3fb20-cbc6-f6aa-cc23-ae7ad73747b3.md) will throw an exception. 
-
-**Namespace:** [Autodesk.Revit.DB.Infrastructure](cedea963-42a0-acf8-0f0e-5477c4212ae9.md)**Assembly:** Autodesk.CivilAlignments.DBApplication (in Autodesk.CivilAlignments.DBApplication.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2021.1 
-
+Specifies the ElementId of the labels' type. The default value is InvalidElementId. in this case, [CreateSet(Alignment, View, AlignmentStationLabelSetOptions)](bbb3fb20-cbc6-f6aa-cc23-ae7ad73747b3.md "CreateSet Method") will throw an exception. 
+**Namespace:** [Autodesk.Revit.DB.Infrastructure](cedea963-42a0-acf8-0f0e-5477c4212ae9.md "Autodesk.Revit.DB.Infrastructure Namespace")**Assembly:** Autodesk.CivilAlignments.DBApplication (in Autodesk.CivilAlignments.DBApplication.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2021.1 
 # Syntax
-
 C#  
 ---  
-      
-    
-    public [ElementId](44f3f7b1-3229-3404-93c9-dc5e70337dd6.md) TypeId { get; set; }  
+```text
+public ElementId TypeId { get; set; }
+```
   
 Visual Basic  
 ---  
-      
-    
-    Public Property TypeId As [ElementId](44f3f7b1-3229-3404-93c9-dc5e70337dd6.md)
-    	Get
-    	Set  
+```text
+Public Property TypeId As ElementId
+	Get
+	Set
+```
   
 Visual C++  
 ---  
-      
-    
-    public:
-    property [ElementId](44f3f7b1-3229-3404-93c9-dc5e70337dd6.md)^ TypeId {
-    	[ElementId](44f3f7b1-3229-3404-93c9-dc5e70337dd6.md)^ get ();
-    	void set ([ElementId](44f3f7b1-3229-3404-93c9-dc5e70337dd6.md)^ value);
-    }  
+```text
+public:
+property ElementId^ TypeId {
+	ElementId^ get ();
+	void set (ElementId^ value);
+}
+```
   
 # Remarks
-
-Recommended types can be found using [IsRecommendedTypeForSet(Element)](df3f1355-5c15-5665-23e6-520ce91c8815.md) Other valid types can be found using [IsValidType(Element)](ff11b964-e6e7-9dad-fbf1-461244fcf010.md). 
-
+Recommended types can be found using [IsRecommendedTypeForSet(Element)](df3f1355-5c15-5665-23e6-520ce91c8815.md "IsRecommendedTypeForSet Method") Other valid types can be found using [IsValidType(Element)](ff11b964-e6e7-9dad-fbf1-461244fcf010.md "IsValidType Method"). 
 # See Also
-
-[AlignmentStationLabelSetOptions Class](15f4337d-738d-ec32-e7bc-4f2c569f4c59.md)
-
-[Autodesk.Revit.DB.Infrastructure Namespace](cedea963-42a0-acf8-0f0e-5477c4212ae9.md)
-
+[AlignmentStationLabelSetOptions Class](15f4337d-738d-ec32-e7bc-4f2c569f4c59.md "AlignmentStationLabelSetOptions Class")
+[Autodesk.Revit.DB.Infrastructure Namespace](cedea963-42a0-acf8-0f0e-5477c4212ae9.md "Autodesk.Revit.DB.Infrastructure Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

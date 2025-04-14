@@ -1,68 +1,57 @@
+# Initialize Method
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
 ---  
-  
 C#Visual BasicVisual C++
-
 Revit 2024 API  
 ---  
 IFCTransformSetter..::..Initialize Method   
-[IFCTransformSetter Class](75b9525d-3b8d-70d8-55de-a193b9eb5e76.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[IFCTransformSetter Class](75b9525d-3b8d-70d8-55de-a193b9eb5e76.md "IFCTransformSetter Class") See Also  
 ---  
-  
 Initializes the transformation in the transform setter. 
-
-**Namespace:** [Autodesk.Revit.DB.IFC](b823fafb-1ba1-896b-4097-142c2817ce74.md)**Assembly:** RevitAPIIFC (in RevitAPIIFC.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2012 
-
+**Namespace:** [Autodesk.Revit.DB.IFC](b823fafb-1ba1-896b-4097-142c2817ce74.md "Autodesk.Revit.DB.IFC Namespace")**Assembly:** RevitAPIIFC (in RevitAPIIFC.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2012 
 # Syntax
-
 C#  
 ---  
-      
-    
-    public void Initialize(
-    	[ExporterIFC](c8697b81-e080-9202-14d3-ec883f951521.md) exporterIFC,
-    	[Transform](58dd01c8-b3fc-7142-e4f3-c524079a282d.md) transform
-    )  
+```text
+public void Initialize(
+	ExporterIFC exporterIFC,
+	Transform transform
+)
+```
   
 Visual Basic  
 ---  
-      
-    
-    Public Sub Initialize ( _
-    	exporterIFC As [ExporterIFC](c8697b81-e080-9202-14d3-ec883f951521.md), _
-    	transform As [Transform](58dd01c8-b3fc-7142-e4f3-c524079a282d.md) _
-    )  
+```text
+Public Sub Initialize ( _
+	exporterIFC As ExporterIFC, _
+	transform As Transform _
+)
+```
   
 Visual C++  
 ---  
-      
-    
-    public:
-    void Initialize(
-    	[ExporterIFC](c8697b81-e080-9202-14d3-ec883f951521.md)^ exporterIFC, 
-    	[Transform](58dd01c8-b3fc-7142-e4f3-c524079a282d.md)^ transform
-    )  
+```text
+public:
+void Initialize(
+	ExporterIFC^ exporterIFC, 
+	Transform^ transform
+)
+```
   
-#### Parameters
-
+# ### Parameters
 exporterIFC
-    Type: [Autodesk.Revit.DB.IFC..::..ExporterIFC](c8697b81-e080-9202-14d3-ec883f951521.md) The exporter. 
-
+    Type: [Autodesk.Revit.DB.IFC..::..ExporterIFC](c8697b81-e080-9202-14d3-ec883f951521.md "ExporterIFC Class") The exporter. 
 transform
-    Type: [Autodesk.Revit.DB..::..Transform](58dd01c8-b3fc-7142-e4f3-c524079a282d.md) The transform. 
-
+    Type: [Autodesk.Revit.DB..::..Transform](58dd01c8-b3fc-7142-e4f3-c524079a282d.md "Transform Class") The transform. 
 # Exceptions
-
 | Exception | Condition |
 | --- | --- |
-| [Autodesk.Revit.Exceptions..::..ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md) | A non-optional argument was null |
-  
+| --- | --- |
+| [Autodesk.Revit.Exceptions..::..ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md "ArgumentNullException Class") | A non-optional argument was null |
+
 # See Also
-
-[IFCTransformSetter Class](75b9525d-3b8d-70d8-55de-a193b9eb5e76.md)
-
-[Autodesk.Revit.DB.IFC Namespace](b823fafb-1ba1-896b-4097-142c2817ce74.md)
-
+[IFCTransformSetter Class](75b9525d-3b8d-70d8-55de-a193b9eb5e76.md "IFCTransformSetter Class")
+[Autodesk.Revit.DB.IFC Namespace](b823fafb-1ba1-896b-4097-142c2817ce74.md "Autodesk.Revit.DB.IFC Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

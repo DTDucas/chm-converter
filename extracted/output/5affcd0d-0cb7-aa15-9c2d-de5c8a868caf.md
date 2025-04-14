@@ -1,33 +1,26 @@
+# TaskDialogShowingEventArgs Properties
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
 ---  
-  
 C#Visual BasicVisual C++
-
 Include Protected MembersInclude Inherited Members
-
 Revit 2024 API  
 ---  
 TaskDialogShowingEventArgs Properties  
-[TaskDialogShowingEventArgs Class](96cc0900-708b-5a2c-8d07-b2596ec20700.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[TaskDialogShowingEventArgs Class](96cc0900-708b-5a2c-8d07-b2596ec20700.md "TaskDialogShowingEventArgs Class") See Also  
 ---  
-  
-The [TaskDialogShowingEventArgs](96cc0900-708b-5a2c-8d07-b2596ec20700.md) type exposes the following members.
-
+The [TaskDialogShowingEventArgs](96cc0900-708b-5a2c-8d07-b2596ec20700.md "TaskDialogShowingEventArgs Class") type exposes the following members.
 # Properties
-
-|  | Name | Description |
+| Name | Description |
+| --- | --- |
 | --- | --- | --- |
-|  | [Cancellable](a393138a-34b5-1724-aa69-92cef651482b.md) | Indicates whether an event may be cancelled by an event delegate.  (Inherited from [RevitAPIEventArgs](7c98499c-e345-cfda-ef89-48eccd3c9992.md).) |
-|  | [DialogId](7311c9d6-f223-f4c2-0b7a-197e42e5ee61.md) | A unique string identifier for DialogBox and TaskDialog type dialogs in Revit.  (Inherited from [DialogBoxShowingEventArgs](8b6b969f-45d2-5b90-ca6d-593348ddf8d4.md).) |
-|  | [IsValidObject](35c0066a-b3dc-9d37-c79e-c29f90713b2d.md) | Specifies whether the .NET object represents a valid Revit entity.  (Inherited from [RevitAPIEventArgs](7c98499c-e345-cfda-ef89-48eccd3c9992.md).) |
-|  | [Message](235c3a07-198c-4705-4ace-437efd36a150.md) | The message that has been displayed in the dialog box. |
-  
+| [Cancellable](a393138a-34b5-1724-aa69-92cef651482b.md "Cancellable Property") | Indicates whether an event may be cancelled by an event delegate.  (Inherited from [RevitAPIEventArgs](7c98499c-e345-cfda-ef89-48eccd3c9992.md "RevitAPIEventArgs Class").) |
+| [DialogId](7311c9d6-f223-f4c2-0b7a-197e42e5ee61.md "DialogId Property") | A unique string identifier for DialogBox and TaskDialog type dialogs in Revit.  (Inherited from [DialogBoxShowingEventArgs](8b6b969f-45d2-5b90-ca6d-593348ddf8d4.md "DialogBoxShowingEventArgs Class").) |
+| [IsValidObject](35c0066a-b3dc-9d37-c79e-c29f90713b2d.md "IsValidObject Property") | Specifies whether the .NET object represents a valid Revit entity.  (Inherited from [RevitAPIEventArgs](7c98499c-e345-cfda-ef89-48eccd3c9992.md "RevitAPIEventArgs Class").) |
+| [Message](235c3a07-198c-4705-4ace-437efd36a150.md "Message Property") | The message that has been displayed in the dialog box. |
+
 # See Also
-
-[TaskDialogShowingEventArgs Class](96cc0900-708b-5a2c-8d07-b2596ec20700.md)
-
-[Autodesk.Revit.UI.Events Namespace](21d3e79a-2484-60b0-b4c6-5cf65cd96039.md)
-
+[TaskDialogShowingEventArgs Class](96cc0900-708b-5a2c-8d07-b2596ec20700.md "TaskDialogShowingEventArgs Class")
+[Autodesk.Revit.UI.Events Namespace](21d3e79a-2484-60b0-b4c6-5cf65cd96039.md "Autodesk.Revit.UI.Events Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

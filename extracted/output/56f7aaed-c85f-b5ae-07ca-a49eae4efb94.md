@@ -1,78 +1,64 @@
+# IsCurveLoopsInsideHostBoundaries Method
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
 ---  
-  
 C#Visual BasicVisual C++
-
 Revit 2024 API  
 ---  
 AreaLoad..::..IsCurveLoopsInsideHostBoundaries Method   
-[AreaLoad Class](5dc205a9-cafd-911b-6a56-26f2e8bfcdc1.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[AreaLoad Class](5dc205a9-cafd-911b-6a56-26f2e8bfcdc1.md "AreaLoad Class") See Also  
 ---  
-  
 Checks if contour loops is inside host boundaries. 
-
-**Namespace:** [Autodesk.Revit.DB.Structure](d586b341-f687-9d90-e96d-255806b7d4fc.md)**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2024 
-
+**Namespace:** [Autodesk.Revit.DB.Structure](d586b341-f687-9d90-e96d-255806b7d4fc.md "Autodesk.Revit.DB.Structure Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2024 
 # Syntax
-
 C#  
 ---  
-      
-    
-    public static bool IsCurveLoopsInsideHostBoundaries(
-    	[Document](db03274b-a107-aa32-9034-f3e0df4bb1ec.md) doc,
-    	[ElementId](44f3f7b1-3229-3404-93c9-dc5e70337dd6.md) hostId,
-    	IList<[CurveLoop](84824924-cb89-9e20-de6e-3461f429dfd6.md)> loops
-    )  
+```text
+public static bool IsCurveLoopsInsideHostBoundaries(
+	Document doc,
+	ElementId hostId,
+	IList<CurveLoop> loops
+)
+```
   
 Visual Basic  
 ---  
-      
-    
-    Public Shared Function IsCurveLoopsInsideHostBoundaries ( _
-    	doc As [Document](db03274b-a107-aa32-9034-f3e0df4bb1ec.md), _
-    	hostId As [ElementId](44f3f7b1-3229-3404-93c9-dc5e70337dd6.md), _
-    	loops As IList(Of [CurveLoop](84824924-cb89-9e20-de6e-3461f429dfd6.md)) _
-    ) As Boolean  
+```text
+Public Shared Function IsCurveLoopsInsideHostBoundaries ( _
+	doc As Document, _
+	hostId As ElementId, _
+	loops As IList(Of CurveLoop) _
+) As Boolean
+```
   
 Visual C++  
 ---  
-      
-    
-    public:
-    static bool IsCurveLoopsInsideHostBoundaries(
-    	[Document](db03274b-a107-aa32-9034-f3e0df4bb1ec.md)^ doc, 
-    	[ElementId](44f3f7b1-3229-3404-93c9-dc5e70337dd6.md)^ hostId, 
-    	IList<[CurveLoop](84824924-cb89-9e20-de6e-3461f429dfd6.md)^>^ loops
-    )  
+```text
+public:
+static bool IsCurveLoopsInsideHostBoundaries(
+	Document^ doc, 
+	ElementId^ hostId, 
+	IList<CurveLoop^>^ loops
+)
+```
   
-#### Parameters
-
+# ### Parameters
 doc
-    Type: [Autodesk.Revit.DB..::..Document](db03274b-a107-aa32-9034-f3e0df4bb1ec.md) Document. 
-
+    Type: [Autodesk.Revit.DB..::..Document](db03274b-a107-aa32-9034-f3e0df4bb1ec.md "Document Class") Document. 
 hostId
-    Type: [Autodesk.Revit.DB..::..ElementId](44f3f7b1-3229-3404-93c9-dc5e70337dd6.md) The id of the analytical element that is about to host a load 
-
+    Type: [Autodesk.Revit.DB..::..ElementId](44f3f7b1-3229-3404-93c9-dc5e70337dd6.md "ElementId Class") The id of the analytical element that is about to host a load 
 loops
-    Type: System.Collections.Generic..::..IList<(Of <(<'[CurveLoop](84824924-cb89-9e20-de6e-3461f429dfd6.md)>)>)> CurveLoops to be checked. 
-
-#### Return Value
-
+    Type: System.Collections.Generic..::..IList<(Of <(<'[CurveLoop](84824924-cb89-9e20-de6e-3461f429dfd6.md "CurveLoop Class")>)>)> CurveLoops to be checked. 
+# ### Return Value
 Returns true if area load is positioned with entire distribution over the host, false otherwise. 
-
 # Exceptions
-
 | Exception | Condition |
 | --- | --- |
-| [Autodesk.Revit.Exceptions..::..ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md) | A non-optional argument was null |
-  
+| --- | --- |
+| [Autodesk.Revit.Exceptions..::..ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md "ArgumentNullException Class") | A non-optional argument was null |
+
 # See Also
-
-[AreaLoad Class](5dc205a9-cafd-911b-6a56-26f2e8bfcdc1.md)
-
-[Autodesk.Revit.DB.Structure Namespace](d586b341-f687-9d90-e96d-255806b7d4fc.md)
-
+[AreaLoad Class](5dc205a9-cafd-911b-6a56-26f2e8bfcdc1.md "AreaLoad Class")
+[Autodesk.Revit.DB.Structure Namespace](d586b341-f687-9d90-e96d-255806b7d4fc.md "Autodesk.Revit.DB.Structure Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

@@ -1,52 +1,42 @@
+# MinimumThickness Property
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
 ---  
-  
 C#Visual BasicVisual C++
-
 Revit 2024 API  
 ---  
 Application..::..MinimumThickness Property   
-[Application Class](94db8ea8-d2c3-5e71-8030-466bcb8e4426.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[Application Class](94db8ea8-d2c3-5e71-8030-466bcb8e4426.md "Application Class") See Also  
 ---  
-  
 The minimum thickness allowed in Revit for a variety of geometric constructs. These include blends, extrusions, and wall layers. 
-
-**Namespace:** [Autodesk.Revit.ApplicationServices](91957e18-2935-006c-83ab-3b5b9dbb5928.md)**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2015 
-
+**Namespace:** [Autodesk.Revit.ApplicationServices](91957e18-2935-006c-83ab-3b5b9dbb5928.md "Autodesk.Revit.ApplicationServices Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2015 
 # Syntax
-
 C#  
 ---  
-      
-    
-    public static double MinimumThickness { get; }  
+```text
+public static double MinimumThickness { get; }
+```
   
 Visual Basic  
 ---  
-      
-    
-    Public Shared ReadOnly Property MinimumThickness As Double
-    	Get  
+```text
+Public Shared ReadOnly Property MinimumThickness As Double
+	Get
+```
   
 Visual C++  
 ---  
-      
-    
-    public:
-    static property double MinimumThickness {
-    	double get ();
-    }  
+```text
+public:
+static property double MinimumThickness {
+	double get ();
+}
+```
   
 # Remarks
-
 Do not use this value for any purpose other than its intended purpose. If you want to check for valid thickness value, use the function isValidThickness. 
-
 # See Also
-
-[Application Class](94db8ea8-d2c3-5e71-8030-466bcb8e4426.md)
-
-[Autodesk.Revit.ApplicationServices Namespace](91957e18-2935-006c-83ab-3b5b9dbb5928.md)
-
+[Application Class](94db8ea8-d2c3-5e71-8030-466bcb8e4426.md "Application Class")
+[Autodesk.Revit.ApplicationServices Namespace](91957e18-2935-006c-83ab-3b5b9dbb5928.md "Autodesk.Revit.ApplicationServices Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

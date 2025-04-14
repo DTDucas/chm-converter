@@ -1,49 +1,39 @@
+# SpatialElementFromToCalculationPoints Class
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
 ---  
-  
 C#Visual BasicVisual C++
-
 Revit 2024 API  
 ---  
 SpatialElementFromToCalculationPoints Class  
-[Members](c6acefca-273e-148a-f43a-8597f02345d0.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[Members](c6acefca-273e-148a-f43a-8597f02345d0.md "SpatialElementFromToCalculationPoints Members") See Also  
 ---  
-  
 SpatialElementFromToCalculationPoints is used to specify the search points for a family instance which connects two rooms or spaces, such as a door or window. The points determine which room or space is considered the "from" and which is considered the "to". 
-
-**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2014 
-
+**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2014 
 # Syntax
-
 C#  
 ---  
-      
-    
-    public class SpatialElementFromToCalculationPoints : [SpatialElementCalculationLocation](f4fed5e0-0964-a973-c8f5-7beb046a2849.md)  
+```text
+public class SpatialElementFromToCalculationPoints : SpatialElementCalculationLocation
+```
   
 Visual Basic  
 ---  
-      
-    
-    Public Class SpatialElementFromToCalculationPoints _
-    	Inherits [SpatialElementCalculationLocation](f4fed5e0-0964-a973-c8f5-7beb046a2849.md)  
+```text
+Public Class SpatialElementFromToCalculationPoints _
+	Inherits SpatialElementCalculationLocation
+```
   
 Visual C++  
 ---  
-      
-    
-    public ref class SpatialElementFromToCalculationPoints : public [SpatialElementCalculationLocation](f4fed5e0-0964-a973-c8f5-7beb046a2849.md)  
+```text
+public ref class SpatialElementFromToCalculationPoints : public SpatialElementCalculationLocation
+```
   
 # Inheritance Hierarchy
-
-System..::..Object [Autodesk.Revit.DB..::..Element](eb16114f-69ea-f4de-0d0d-f7388b105a16.md) [Autodesk.Revit.DB..::..SpatialElementCalculationLocation](f4fed5e0-0964-a973-c8f5-7beb046a2849.md) Autodesk.Revit.DB..::..SpatialElementFromToCalculationPoints
-
+System..::..Object [Autodesk.Revit.DB..::..Element](eb16114f-69ea-f4de-0d0d-f7388b105a16.md "Element Class") [Autodesk.Revit.DB..::..SpatialElementCalculationLocation](f4fed5e0-0964-a973-c8f5-7beb046a2849.md "SpatialElementCalculationLocation Class") Autodesk.Revit.DB..::..SpatialElementFromToCalculationPoints
 # See Also
-
-[SpatialElementFromToCalculationPoints Members](c6acefca-273e-148a-f43a-8597f02345d0.md)
-
-[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)
-
+[SpatialElementFromToCalculationPoints Members](c6acefca-273e-148a-f43a-8597f02345d0.md "SpatialElementFromToCalculationPoints Members")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)
