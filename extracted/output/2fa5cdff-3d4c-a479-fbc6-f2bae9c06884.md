@@ -1,60 +1,50 @@
+# ForceVector1 Property
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
 ---  
-  
 C#Visual BasicVisual C++
-
 Revit 2024 API  
 ---  
 AreaLoad..::..ForceVector1 Property   
-[AreaLoad Class](5dc205a9-cafd-911b-6a56-26f2e8bfcdc1.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[AreaLoad Class](5dc205a9-cafd-911b-6a56-26f2e8bfcdc1.md "AreaLoad Class") See Also  
 ---  
-  
 The force vector applied to the 1st reference point of the area load, oriented according to OrientTo setting. 
-
-**Namespace:** [Autodesk.Revit.DB.Structure](d586b341-f687-9d90-e96d-255806b7d4fc.md)**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2016 
-
+**Namespace:** [Autodesk.Revit.DB.Structure](d586b341-f687-9d90-e96d-255806b7d4fc.md "Autodesk.Revit.DB.Structure Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2016 
 # Syntax
-
 C#  
 ---  
-      
-    
-    public [XYZ](c2fd995c-95c0-58fb-f5de-f3246cbc5600.md) ForceVector1 { get; set; }  
+```text
+public XYZ ForceVector1 { get; set; }
+```
   
 Visual Basic  
 ---  
-      
-    
-    Public Property ForceVector1 As [XYZ](c2fd995c-95c0-58fb-f5de-f3246cbc5600.md)
-    	Get
-    	Set  
+```text
+Public Property ForceVector1 As XYZ
+	Get
+	Set
+```
   
 Visual C++  
 ---  
-      
-    
-    public:
-    property [XYZ](c2fd995c-95c0-58fb-f5de-f3246cbc5600.md)^ ForceVector1 {
-    	[XYZ](c2fd995c-95c0-58fb-f5de-f3246cbc5600.md)^ get ();
-    	void set ([XYZ](c2fd995c-95c0-58fb-f5de-f3246cbc5600.md)^ value);
-    }  
+```text
+public:
+property XYZ^ ForceVector1 {
+	XYZ^ get ();
+	void set (XYZ^ value);
+}
+```
   
 # Remarks
-
 The default force unit is kN/m^2 for metric, and ksf for imperial. Use UnitUtils class methods to convert value from or to internal units. 
-
 # Exceptions
-
 | Exception | Condition |
 | --- | --- |
-| [Autodesk.Revit.Exceptions..::..ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md) | When setting this property: A non-optional argument was null |
-  
+| --- | --- |
+| [Autodesk.Revit.Exceptions..::..ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md "ArgumentNullException Class") | When setting this property: A non-optional argument was null |
+
 # See Also
-
-[AreaLoad Class](5dc205a9-cafd-911b-6a56-26f2e8bfcdc1.md)
-
-[Autodesk.Revit.DB.Structure Namespace](d586b341-f687-9d90-e96d-255806b7d4fc.md)
-
+[AreaLoad Class](5dc205a9-cafd-911b-6a56-26f2e8bfcdc1.md "AreaLoad Class")
+[Autodesk.Revit.DB.Structure Namespace](d586b341-f687-9d90-e96d-255806b7d4fc.md "Autodesk.Revit.DB.Structure Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

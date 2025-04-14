@@ -1,43 +1,36 @@
+# BeforeExecutedEventArgs Members
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
 ---  
-  
 C#Visual BasicVisual C++
-
 Include Protected MembersInclude Inherited Members
-
 Revit 2024 API  
 ---  
 BeforeExecutedEventArgs Members  
-[BeforeExecutedEventArgs Class](fa2b2985-1b98-420c-556a-3888b7929a5a.md) Methods Properties See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[BeforeExecutedEventArgs Class](fa2b2985-1b98-420c-556a-3888b7929a5a.md "BeforeExecutedEventArgs Class") Methods Properties See Also  
 ---  
-  
-The [BeforeExecutedEventArgs](fa2b2985-1b98-420c-556a-3888b7929a5a.md) type exposes the following members.
-
+The [BeforeExecutedEventArgs](fa2b2985-1b98-420c-556a-3888b7929a5a.md "BeforeExecutedEventArgs Class") type exposes the following members.
 # Methods
-
-|  | Name | Description |
+| Name | Description |
+| --- | --- |
 | --- | --- | --- |
-|  | Equals | Determines whether the specified Object is equal to the current Object. (Inherited from Object.) |
-|  | GetHashCode | Serves as a hash function for a particular type.  (Inherited from Object.) |
-|  | GetType | Gets the Type of the current instance. (Inherited from Object.) |
-|  | ToString | Returns a string that represents the current object. (Inherited from Object.) |
-  
+| Equals | Determines whether the specified Object is equal to the current Object. (Inherited from Object.) |
+| GetHashCode | Serves as a hash function for a particular type.  (Inherited from Object.) |
+| GetType | Gets the Type of the current instance. (Inherited from Object.) |
+| ToString | Returns a string that represents the current object. (Inherited from Object.) |
+
 # Properties
-
-|  | Name | Description |
+| Name | Description |
+| --- | --- |
 | --- | --- | --- |
-|  | [ActiveDocument](c9769a52-5a67-3f36-e10c-676617376366.md) | The active document.  (Inherited from [CommandEventArgs](c3d77fea-4752-aade-9e0b-95cc79461aa6.md).) |
-|  | [Cancel](a6f19b89-d365-6163-81e5-57849581e27e.md) | Indicates whether the event is being cancelled. When the event is cancellable, set the property to True to cancel it.  (Inherited from [RevitEventArgs](2995a67a-3135-8032-a92a-079b6f9d6954.md).) |
-|  | [Cancellable](57e27fac-4938-589c-154d-5d2e60d89bae.md) | Indicates whether an event may be cancelled by an event delegate.  (Inherited from [RevitEventArgs](2995a67a-3135-8032-a92a-079b6f9d6954.md).) |
-|  | [CommandId](b1c1d16a-6515-25e5-c639-7294b28c5224.md) | The command id.  (Inherited from [CommandEventArgs](c3d77fea-4752-aade-9e0b-95cc79461aa6.md).) |
-|  | [UsingCommandData](604c4a88-6d23-9067-125d-3ddac0548bbb.md) | Indicates whether or not the Revit journal will include custom data populated by the application associated with this command. |
-  
+| [ActiveDocument](c9769a52-5a67-3f36-e10c-676617376366.md "ActiveDocument Property") | The active document.  (Inherited from [CommandEventArgs](c3d77fea-4752-aade-9e0b-95cc79461aa6.md "CommandEventArgs Class").) |
+| [Cancel](a6f19b89-d365-6163-81e5-57849581e27e.md "Cancel Property") | Indicates whether the event is being cancelled. When the event is cancellable, set the property to True to cancel it.  (Inherited from [RevitEventArgs](2995a67a-3135-8032-a92a-079b6f9d6954.md "RevitEventArgs Class").) |
+| [Cancellable](57e27fac-4938-589c-154d-5d2e60d89bae.md "Cancellable Property") | Indicates whether an event may be cancelled by an event delegate.  (Inherited from [RevitEventArgs](2995a67a-3135-8032-a92a-079b6f9d6954.md "RevitEventArgs Class").) |
+| [CommandId](b1c1d16a-6515-25e5-c639-7294b28c5224.md "CommandId Property") | The command id.  (Inherited from [CommandEventArgs](c3d77fea-4752-aade-9e0b-95cc79461aa6.md "CommandEventArgs Class").) |
+| [UsingCommandData](604c4a88-6d23-9067-125d-3ddac0548bbb.md "UsingCommandData Property") | Indicates whether or not the Revit journal will include custom data populated by the application associated with this command. |
+
 # See Also
-
-[BeforeExecutedEventArgs Class](fa2b2985-1b98-420c-556a-3888b7929a5a.md)
-
-[Autodesk.Revit.UI.Events Namespace](21d3e79a-2484-60b0-b4c6-5cf65cd96039.md)
-
+[BeforeExecutedEventArgs Class](fa2b2985-1b98-420c-556a-3888b7929a5a.md "BeforeExecutedEventArgs Class")
+[Autodesk.Revit.UI.Events Namespace](21d3e79a-2484-60b0-b4c6-5cf65cd96039.md "Autodesk.Revit.UI.Events Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

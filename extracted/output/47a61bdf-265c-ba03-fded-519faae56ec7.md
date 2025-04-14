@@ -1,36 +1,29 @@
+# DimensionSegment Methods
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
 ---  
-  
 C#Visual BasicVisual C++
-
 Include Protected MembersInclude Inherited Members
-
 Revit 2024 API  
 ---  
 DimensionSegment Methods  
-[DimensionSegment Class](36b254a0-3dc5-7bdc-d6b4-986e5d82ddbf.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[DimensionSegment Class](36b254a0-3dc5-7bdc-d6b4-986e5d82ddbf.md "DimensionSegment Class") See Also  
 ---  
-  
-The [DimensionSegment](36b254a0-3dc5-7bdc-d6b4-986e5d82ddbf.md) type exposes the following members.
-
+The [DimensionSegment](36b254a0-3dc5-7bdc-d6b4-986e5d82ddbf.md "DimensionSegment Class") type exposes the following members.
 # Methods
-
-|  | Name | Description |
+| Name | Description |
+| --- | --- |
 | --- | --- | --- |
-|  | [Dispose](7c03212a-b587-1c89-3912-efea0d2619c5.md) | Causes the object to release immediately any resources it may be utilizing. (Inherited from [APIObject](beb86ef5-39ad-3f0d-0cd9-0c929387a2bb.md).) |
-|  | Equals | Determines whether the specified Object is equal to the current Object. (Inherited from Object.) |
-|  | GetHashCode | Serves as a hash function for a particular type.  (Inherited from Object.) |
-|  | GetType | Gets the Type of the current instance. (Inherited from Object.) |
-|  | [IsTextPositionAdjustable](9f316c9b-ebb4-a3d3-781d-3cf0726b352e.md) | Indicates if this dimension is supported to set/get TextPosition/LeaderPosition. |
-|  | [ResetTextPosition](36a8d542-a567-80de-6da7-28b28af0aa4b.md) | Resets the text position of the segment to the initial position determined by its type and parameters. |
-|  | ToString | Returns a string that represents the current object. (Inherited from Object.) |
-  
+| [Dispose](7c03212a-b587-1c89-3912-efea0d2619c5.md "Dispose Method") | Causes the object to release immediately any resources it may be utilizing. (Inherited from [APIObject](beb86ef5-39ad-3f0d-0cd9-0c929387a2bb.md "APIObject Class").) |
+| Equals | Determines whether the specified Object is equal to the current Object. (Inherited from Object.) |
+| GetHashCode | Serves as a hash function for a particular type.  (Inherited from Object.) |
+| GetType | Gets the Type of the current instance. (Inherited from Object.) |
+| [IsTextPositionAdjustable](9f316c9b-ebb4-a3d3-781d-3cf0726b352e.md "IsTextPositionAdjustable Method") | Indicates if this dimension is supported to set/get TextPosition/LeaderPosition. |
+| [ResetTextPosition](36a8d542-a567-80de-6da7-28b28af0aa4b.md "ResetTextPosition Method") | Resets the text position of the segment to the initial position determined by its type and parameters. |
+| ToString | Returns a string that represents the current object. (Inherited from Object.) |
+
 # See Also
-
-[DimensionSegment Class](36b254a0-3dc5-7bdc-d6b4-986e5d82ddbf.md)
-
-[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)
-
+[DimensionSegment Class](36b254a0-3dc5-7bdc-d6b4-986e5d82ddbf.md "DimensionSegment Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

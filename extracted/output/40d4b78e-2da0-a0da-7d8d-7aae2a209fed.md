@@ -1,60 +1,50 @@
+# EmitLength Property
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
 ---  
-  
 C#Visual BasicVisual C++
-
 Revit 2024 API  
 ---  
 RectangleLightShape..::..EmitLength Property   
-[RectangleLightShape Class](1b9a5edf-d0dc-ce3b-cedd-75c01e431bac.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[RectangleLightShape Class](1b9a5edf-d0dc-ce3b-cedd-75c01e431bac.md "RectangleLightShape Class") See Also  
 ---  
-  
 The emit length. 
-
-**Namespace:** [Autodesk.Revit.DB.Lighting](a6a04f07-7fd2-0a4e-12e7-01842ee6daaf.md)**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2013 
-
+**Namespace:** [Autodesk.Revit.DB.Lighting](a6a04f07-7fd2-0a4e-12e7-01842ee6daaf.md "Autodesk.Revit.DB.Lighting Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2013 
 # Syntax
-
 C#  
 ---  
-      
-    
-    public double EmitLength { get; set; }  
+```text
+public double EmitLength { get; set; }
+```
   
 Visual Basic  
 ---  
-      
-    
-    Public Property EmitLength As Double
-    	Get
-    	Set  
+```text
+Public Property EmitLength As Double
+	Get
+	Set
+```
   
 Visual C++  
 ---  
-      
-    
-    public:
-    property double EmitLength {
-    	double get ();
-    	void set (double value);
-    }  
+```text
+public:
+property double EmitLength {
+	double get ();
+	void set (double value);
+}
+```
   
-#### Field Value
-
+# ### Field Value
 The emit length as a numerical value in feet between 1.0e-9 and 30000.0 
-
 # Exceptions
-
 | Exception | Condition |
 | --- | --- |
-| [Autodesk.Revit.Exceptions..::..ArgumentOutOfRangeException](60f148c9-ece0-a6bb-4e12-bb4a9c8c8a24.md) | When setting this property: The shape dimension is not valid because it is not between 1.0e-9 and 30000.0. |
-  
+| --- | --- |
+| [Autodesk.Revit.Exceptions..::..ArgumentOutOfRangeException](60f148c9-ece0-a6bb-4e12-bb4a9c8c8a24.md "ArgumentOutOfRangeException Class") | When setting this property: The shape dimension is not valid because it is not between 1.0e-9 and 30000.0. |
+
 # See Also
-
-[RectangleLightShape Class](1b9a5edf-d0dc-ce3b-cedd-75c01e431bac.md)
-
-[Autodesk.Revit.DB.Lighting Namespace](a6a04f07-7fd2-0a4e-12e7-01842ee6daaf.md)
-
+[RectangleLightShape Class](1b9a5edf-d0dc-ce3b-cedd-75c01e431bac.md "RectangleLightShape Class")
+[Autodesk.Revit.DB.Lighting Namespace](a6a04f07-7fd2-0a4e-12e7-01842ee6daaf.md "Autodesk.Revit.DB.Lighting Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

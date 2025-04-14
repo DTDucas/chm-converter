@@ -1,33 +1,26 @@
+# ViewOrientation3D Properties
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
 ---  
-  
 C#Visual BasicVisual C++
-
 Include Protected MembersInclude Inherited Members
-
 Revit 2024 API  
 ---  
 ViewOrientation3D Properties  
-[ViewOrientation3D Class](027b44d6-a473-4e99-4b43-c938847ea7e3.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[ViewOrientation3D Class](027b44d6-a473-4e99-4b43-c938847ea7e3.md "ViewOrientation3D Class") See Also  
 ---  
-  
-The [ViewOrientation3D](027b44d6-a473-4e99-4b43-c938847ea7e3.md) type exposes the following members.
-
+The [ViewOrientation3D](027b44d6-a473-4e99-4b43-c938847ea7e3.md "ViewOrientation3D Class") type exposes the following members.
 # Properties
-
-|  | Name | Description |
+| Name | Description |
+| --- | --- |
 | --- | --- | --- |
-|  | [EyePosition](7bef48d3-de78-1b04-5226-619faba2249b.md) | The eye position point |
-|  | [ForwardDirection](225b68cf-de90-8e5f-f2b2-0b9b95a245f8.md) | The forward direction vector |
-|  | [IsValidObject](6bac8856-7256-be9c-7578-ad951541ecc4.md) | Specifies whether the .NET object represents a valid Revit entity. |
-|  | [UpDirection](1353f55a-719d-75d2-a095-a70fbde71a4c.md) | The up direction vector |
-  
+| [EyePosition](7bef48d3-de78-1b04-5226-619faba2249b.md "EyePosition Property") | The eye position point |
+| [ForwardDirection](225b68cf-de90-8e5f-f2b2-0b9b95a245f8.md "ForwardDirection Property") | The forward direction vector |
+| [IsValidObject](6bac8856-7256-be9c-7578-ad951541ecc4.md "IsValidObject Property") | Specifies whether the .NET object represents a valid Revit entity. |
+| [UpDirection](1353f55a-719d-75d2-a095-a70fbde71a4c.md "UpDirection Property") | The up direction vector |
+
 # See Also
-
-[ViewOrientation3D Class](027b44d6-a473-4e99-4b43-c938847ea7e3.md)
-
-[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)
-
+[ViewOrientation3D Class](027b44d6-a473-4e99-4b43-c938847ea7e3.md "ViewOrientation3D Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

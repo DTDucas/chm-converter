@@ -1,37 +1,30 @@
+# AnalysisDisplayDiagramSettings Properties
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
 ---  
-  
 C#Visual BasicVisual C++
-
 Include Protected MembersInclude Inherited Members
-
 Revit 2024 API  
 ---  
 AnalysisDisplayDiagramSettings Properties  
-[AnalysisDisplayDiagramSettings Class](57e0c5ff-555c-7345-ac24-3592207a4d70.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[AnalysisDisplayDiagramSettings Class](57e0c5ff-555c-7345-ac24-3592207a4d70.md "AnalysisDisplayDiagramSettings Class") See Also  
 ---  
-  
-The [AnalysisDisplayDiagramSettings](57e0c5ff-555c-7345-ac24-3592207a4d70.md) type exposes the following members.
-
+The [AnalysisDisplayDiagramSettings](57e0c5ff-555c-7345-ac24-3592207a4d70.md "AnalysisDisplayDiagramSettings Class") type exposes the following members.
 # Properties
-
-|  | Name | Description |
+| Name | Description |
+| --- | --- |
 | --- | --- | --- |
-|  | [FenceType](61563e0a-b479-729c-95c9-a7cc387884d0.md) | Type of diagram fence visualization. |
-|  | [IsValidObject](3c856db3-000f-0701-2c98-0166f725c53f.md) | Specifies whether the .NET object represents a valid Revit entity. |
-|  | [OutlineColor](d4a4b1af-8bea-8573-8113-1a5a85cf0a26.md) | Color of outline and fence lines in the diagram. |
-|  | [OutlineLineWeight](da2ddbee-e3c2-ed8e-2f09-9290d08b19a6.md) | Line weight of outline and fence lines in the diagram. |
-|  | [Rounding](2f5d4eb9-6eb3-0aa6-3baf-9d50d2edb03b.md) | Increment to which numeric values of analysis results are rounded in diagram. |
-|  | [TextLabelType](f7968a9e-6a5c-c190-6136-8a434df474e5.md) | Type of diagram text label visualization. |
-|  | [TextTypeId](579f8e27-2830-55ea-93d7-14598f234b9f.md) | Element id of text associated with the settings. |
-|  | [Transparency](417445e0-0fb3-3a01-3332-657f66d4cb27.md) | Transparency percentage of diagram color fill |
-  
+| [FenceType](61563e0a-b479-729c-95c9-a7cc387884d0.md "FenceType Property") | Type of diagram fence visualization. |
+| [IsValidObject](3c856db3-000f-0701-2c98-0166f725c53f.md "IsValidObject Property") | Specifies whether the .NET object represents a valid Revit entity. |
+| [OutlineColor](d4a4b1af-8bea-8573-8113-1a5a85cf0a26.md "OutlineColor Property") | Color of outline and fence lines in the diagram. |
+| [OutlineLineWeight](da2ddbee-e3c2-ed8e-2f09-9290d08b19a6.md "OutlineLineWeight Property") | Line weight of outline and fence lines in the diagram. |
+| [Rounding](2f5d4eb9-6eb3-0aa6-3baf-9d50d2edb03b.md "Rounding Property") | Increment to which numeric values of analysis results are rounded in diagram. |
+| [TextLabelType](f7968a9e-6a5c-c190-6136-8a434df474e5.md "TextLabelType Property") | Type of diagram text label visualization. |
+| [TextTypeId](579f8e27-2830-55ea-93d7-14598f234b9f.md "TextTypeId Property") | Element id of text associated with the settings. |
+| [Transparency](417445e0-0fb3-3a01-3332-657f66d4cb27.md "Transparency Property") | Transparency percentage of diagram color fill |
+
 # See Also
-
-[AnalysisDisplayDiagramSettings Class](57e0c5ff-555c-7345-ac24-3592207a4d70.md)
-
-[Autodesk.Revit.DB.Analysis Namespace](958e2e12-587d-f188-5d7b-f13d7dbfdf48.md)
-
+[AnalysisDisplayDiagramSettings Class](57e0c5ff-555c-7345-ac24-3592207a4d70.md "AnalysisDisplayDiagramSettings Class")
+[Autodesk.Revit.DB.Analysis Namespace](958e2e12-587d-f188-5d7b-f13d7dbfdf48.md "Autodesk.Revit.DB.Analysis Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

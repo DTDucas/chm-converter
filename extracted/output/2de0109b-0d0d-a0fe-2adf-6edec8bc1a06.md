@@ -1,49 +1,39 @@
+# PipeSettings Class
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
 ---  
-  
 C#Visual BasicVisual C++
-
 Revit 2024 API  
 ---  
 PipeSettings Class  
-[Members](bf33b62e-f3cd-8968-b2a1-05b0b7e55078.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[Members](bf33b62e-f3cd-8968-b2a1-05b0b7e55078.md "PipeSettings Members") See Also  
 ---  
-  
 The pipe setting class. 
-
-**Namespace:** [Autodesk.Revit.DB.Plumbing](cc553597-37c2-fcd9-6025-d904c129c80a.md)**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2012 
-
+**Namespace:** [Autodesk.Revit.DB.Plumbing](cc553597-37c2-fcd9-6025-d904c129c80a.md "Autodesk.Revit.DB.Plumbing Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2012 
 # Syntax
-
 C#  
 ---  
-      
-    
-    public class PipeSettings : [Element](eb16114f-69ea-f4de-0d0d-f7388b105a16.md)  
+```text
+public class PipeSettings : Element
+```
   
 Visual Basic  
 ---  
-      
-    
-    Public Class PipeSettings _
-    	Inherits [Element](eb16114f-69ea-f4de-0d0d-f7388b105a16.md)  
+```text
+Public Class PipeSettings _
+	Inherits Element
+```
   
 Visual C++  
 ---  
-      
-    
-    public ref class PipeSettings : public [Element](eb16114f-69ea-f4de-0d0d-f7388b105a16.md)  
+```text
+public ref class PipeSettings : public Element
+```
   
 # Inheritance Hierarchy
-
-System..::..Object [Autodesk.Revit.DB..::..Element](eb16114f-69ea-f4de-0d0d-f7388b105a16.md) Autodesk.Revit.DB.Plumbing..::..PipeSettings
-
+System..::..Object [Autodesk.Revit.DB..::..Element](eb16114f-69ea-f4de-0d0d-f7388b105a16.md "Element Class") Autodesk.Revit.DB.Plumbing..::..PipeSettings
 # See Also
-
-[PipeSettings Members](bf33b62e-f3cd-8968-b2a1-05b0b7e55078.md)
-
-[Autodesk.Revit.DB.Plumbing Namespace](cc553597-37c2-fcd9-6025-d904c129c80a.md)
-
+[PipeSettings Members](bf33b62e-f3cd-8968-b2a1-05b0b7e55078.md "PipeSettings Members")
+[Autodesk.Revit.DB.Plumbing Namespace](cc553597-37c2-fcd9-6025-d904c129c80a.md "Autodesk.Revit.DB.Plumbing Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)

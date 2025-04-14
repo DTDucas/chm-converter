@@ -1,31 +1,24 @@
+# DoubleParameterValue Constructor
+
 ﻿
-
-Collapse AllExpand All Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
 ---  
-  
 C#Visual BasicVisual C++
-
 Include Protected MembersInclude Inherited Members
-
 Revit 2024 API  
 ---  
 DoubleParameterValue Constructor   
-[DoubleParameterValue Class](561ef32b-c3bc-3847-ef2a-27f4a011e650.md) See Also [Send Feedback](javascript:SubmitFeedback\('revitapifeedback@autodesk.com','Revit 2024 API','','','','%0\\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\\A%0\\d','Customer%20Feedback'\);)  
+[DoubleParameterValue Class](561ef32b-c3bc-3847-ef2a-27f4a011e650.md "DoubleParameterValue Class") See Also  
 ---  
-  
 # Overload List
-
-|  | Name | Description |
+| Name | Description |
+| --- | --- |
 | --- | --- | --- |
-|  | [DoubleParameterValue()()()()](88ede5e0-76a3-5fb0-d86b-dce75f75fb23.md) | Default constructor |
-|  | [DoubleParameterValue(Double)](f79896dc-aefe-b05f-7995-16fc47d5c58b.md) | Value constructor |
-  
+| [DoubleParameterValue()()()()](88ede5e0-76a3-5fb0-d86b-dce75f75fb23.md "DoubleParameterValue Constructor") | Default constructor |
+| [DoubleParameterValue(Double)](f79896dc-aefe-b05f-7995-16fc47d5c58b.md "DoubleParameterValue Constructor \(Double\)") | Value constructor |
+
 # See Also
-
-[DoubleParameterValue Class](561ef32b-c3bc-3847-ef2a-27f4a011e650.md)
-
-[DoubleParameterValue Members](c5737e49-56cb-583b-afb6-f24b1e4527ec.md)
-
-[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md)
-
+[DoubleParameterValue Class](561ef32b-c3bc-3847-ef2a-27f4a011e650.md "DoubleParameterValue Class")
+[DoubleParameterValue Members](c5737e49-56cb-583b-afb6-f24b1e4527ec.md "DoubleParameterValue Members")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
 Send comments on this topic to [Autodesk](mailto:revitapifeedback%40autodesk.com?Subject=Revit 2024 API)
