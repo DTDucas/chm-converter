@@ -1,0 +1,40 @@
+# FamilyNoExternalParametersError Property (2024)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2024 API  
+---  
+BuiltInFailures..::..FamilyFailures..::..FamilyNoExternalParametersError Property   
+[BuiltInFailures..::..FamilyFailures Class](4b2a4d9d-f77b-e466-e78a-df1ca741ec72.md "BuiltInFailures.FamilyFailures Class") See Also  
+---  
+Family's Category can't be changed because the Family contains Shared Parameters which are not permitted in the new Category. 
+**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)
+# Syntax
+C#  
+---  
+```text
+public static FailureDefinitionId FamilyNoExternalParametersError { get; }
+```
+  
+Visual Basic  
+---  
+```text
+Public Shared ReadOnly Property FamilyNoExternalParametersError As FailureDefinitionId
+	Get
+```
+  
+Visual C++  
+---  
+```text
+public:
+static property FailureDefinitionId^ FamilyNoExternalParametersError {
+	FailureDefinitionId^ get ();
+}
+```
+  
+# See Also
+[BuiltInFailures..::..FamilyFailures Class](4b2a4d9d-f77b-e466-e78a-df1ca741ec72.md "BuiltInFailures.FamilyFailures Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
+Send comments on this topic to 

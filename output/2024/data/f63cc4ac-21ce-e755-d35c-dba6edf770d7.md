@@ -1,0 +1,40 @@
+# ExtrusionTooThin Property (2024)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2024 API  
+---  
+BuiltInFailures..::..ExtrusionFailures..::..ExtrusionTooThin Property   
+[BuiltInFailures..::..ExtrusionFailures Class](9f8038cb-670f-cf03-b7a4-423af7c20a60.md "BuiltInFailures.ExtrusionFailures Class") See Also  
+---  
+Extrusion is too thin. 
+**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)
+# Syntax
+C#  
+---  
+```text
+public static FailureDefinitionId ExtrusionTooThin { get; }
+```
+  
+Visual Basic  
+---  
+```text
+Public Shared ReadOnly Property ExtrusionTooThin As FailureDefinitionId
+	Get
+```
+  
+Visual C++  
+---  
+```text
+public:
+static property FailureDefinitionId^ ExtrusionTooThin {
+	FailureDefinitionId^ get ();
+}
+```
+  
+# See Also
+[BuiltInFailures..::..ExtrusionFailures Class](9f8038cb-670f-cf03-b7a4-423af7c20a60.md "BuiltInFailures.ExtrusionFailures Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
+Send comments on this topic to 

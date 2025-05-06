@@ -1,0 +1,48 @@
+# TextTypeId Property (2024)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2024 API  
+---  
+AnalysisDisplayDeformedShapeSettings..::..TextTypeId Property   
+[AnalysisDisplayDeformedShapeSettings Class](2d0041c8-1cb8-354f-678f-5719797c76fc.md "AnalysisDisplayDeformedShapeSettings Class") See Also  
+---  
+Element id of text associated with the settings. 
+**Namespace:** [Autodesk.Revit.DB.Analysis](958e2e12-587d-f188-5d7b-f13d7dbfdf48.md "Autodesk.Revit.DB.Analysis Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2013 
+# Syntax
+C#  
+---  
+```text
+public ElementId TextTypeId { get; set; }
+```
+  
+Visual Basic  
+---  
+```text
+Public Property TextTypeId As ElementId
+	Get
+	Set
+```
+  
+Visual C++  
+---  
+```text
+public:
+property ElementId^ TextTypeId {
+	ElementId^ get ();
+	void set (ElementId^ value);
+}
+```
+  
+# Exceptions
+| Exception | Condition |
+| --- | --- |
+| --- | --- |
+| [Autodesk.Revit.Exceptions..::..ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md "ArgumentNullException Class") | When setting this property: A non-optional argument was null |
+
+# See Also
+[AnalysisDisplayDeformedShapeSettings Class](2d0041c8-1cb8-354f-678f-5719797c76fc.md "AnalysisDisplayDeformedShapeSettings Class")
+[Autodesk.Revit.DB.Analysis Namespace](958e2e12-587d-f188-5d7b-f13d7dbfdf48.md "Autodesk.Revit.DB.Analysis Namespace")
+Send comments on this topic to 

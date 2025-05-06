@@ -1,0 +1,42 @@
+# MetallicpaintTopcoatGlossy Property (2022)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2022 API  
+---  
+MetallicPaint..::..MetallicpaintTopcoatGlossy Property   
+[MetallicPaint Class](fee435aa-5e3f-14c6-1566-5c8fd2d63eb8.md "MetallicPaint Class") See Also  
+---  
+The property labeled "Glossiness" from the "MetallicPaint" schema. 
+**Namespace:** [Autodesk.Revit.DB.Visual](f5a10581-6ac2-be19-0e32-f87d05bc8b83.md "Autodesk.Revit.DB.Visual Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 22.0.0.0 (22.1.0.0)**Since:** 2018.1 
+# Syntax
+C#  
+---  
+```text
+public static string MetallicpaintTopcoatGlossy { get; }
+```
+  
+Visual Basic  
+---  
+```text
+Public Shared ReadOnly Property MetallicpaintTopcoatGlossy As String
+	Get
+```
+  
+Visual C++  
+---  
+```text
+public:
+static property String^ MetallicpaintTopcoatGlossy {
+	String^ get ();
+}
+```
+  
+# Remarks
+This property is of type "AssetPropertyDouble" within the range of "0, 1". 
+# See Also
+[MetallicPaint Class](fee435aa-5e3f-14c6-1566-5c8fd2d63eb8.md "MetallicPaint Class")
+[Autodesk.Revit.DB.Visual Namespace](f5a10581-6ac2-be19-0e32-f87d05bc8b83.md "Autodesk.Revit.DB.Visual Namespace")
+Send comments on this topic to 

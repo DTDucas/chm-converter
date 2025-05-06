@@ -1,0 +1,40 @@
+# FtSup3 Property (2023)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2023 API  
+---  
+SymbolTypeId..::..FtSup3 Property   
+[SymbolTypeId Class](6f430fd2-cbd1-237a-d4f5-4c9697e945e1.md "SymbolTypeId Class") See Also  
+---  
+Symbol ftÂ³, indicating unit Cubic feet. 
+**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 23.0.0.0 (23.1.0.0)**Since:** 2021 
+# Syntax
+C#  
+---  
+```text
+public static ForgeTypeId FtSup3 { get; }
+```
+  
+Visual Basic  
+---  
+```text
+Public Shared ReadOnly Property FtSup3 As ForgeTypeId
+	Get
+```
+  
+Visual C++  
+---  
+```text
+public:
+static property ForgeTypeId^ FtSup3 {
+	ForgeTypeId^ get ();
+}
+```
+  
+# See Also
+[SymbolTypeId Class](6f430fd2-cbd1-237a-d4f5-4c9697e945e1.md "SymbolTypeId Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
+Send comments on this topic to 

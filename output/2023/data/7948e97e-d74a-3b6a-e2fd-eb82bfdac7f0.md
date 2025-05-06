@@ -1,0 +1,44 @@
+# BackgroundImageFit Enumeration (2023)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2023 API  
+---  
+BackgroundImageFit Enumeration  
+See Also  
+---  
+Indicates the background image fit type in rendering settings. 
+**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 23.0.0.0 (23.1.0.0)**Since:** 2013 
+# Syntax
+C#  
+---  
+```text
+public enum BackgroundImageFit
+```
+  
+Visual Basic  
+---  
+```text
+Public Enumeration BackgroundImageFit
+```
+  
+Visual C++  
+---  
+```text
+public enum class BackgroundImageFit
+```
+  
+# Members
+| Member name | Description |
+| --- | --- |
+| --- | --- |
+| None | No scale applied to the image; it will keep its original size. |
+| Vertical | The image is proportionally resized so its height matches the view's height. |
+| Horizontal | The image is proportionally resized so its width matches the view's width. |
+| Stretch | The image is stretched in both directions so it matches the view's size. |
+
+# See Also
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
+Send comments on this topic to 

@@ -1,0 +1,46 @@
+# GetTargetHostFaceReference Method (2024)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2024 API  
+---  
+RebarConstraint..::..GetTargetHostFaceReference Method   
+[RebarConstraint Class](748823c8-f059-68c1-d7b5-7cfaba93a445.md "RebarConstraint Class") See Also  
+---  
+Returns a reference to the host Element face to which the RebarConstraint is attached. The RebarConstraintType of the RebarConstraint must be 'FixedDistanceToHostFace' or 'ToCover.' Will throw exception if it's a multi target constraint. 
+**Namespace:** [Autodesk.Revit.DB.Structure](d586b341-f687-9d90-e96d-255806b7d4fc.md "Autodesk.Revit.DB.Structure Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2014 
+# Syntax
+C#  
+---  
+```text
+public Reference GetTargetHostFaceReference()
+```
+  
+Visual Basic  
+---  
+```text
+Public Function GetTargetHostFaceReference As Reference
+```
+  
+Visual C++  
+---  
+```text
+public:
+Reference^ GetTargetHostFaceReference()
+```
+  
+# ### Return Value
+Requested reference. 
+# Exceptions
+| Exception | Condition |
+| --- | --- |
+| --- | --- |
+| [Autodesk.Revit.Exceptions..::..InvalidOperationException](9e715f03-3884-e539-4dd6-8d7545733adc.md "InvalidOperationException Class") | RebarConstraint is no longer valid. -or- The RebarConstraint is not of RebarConstraintType 'FixedDistanceToHostFace' or 'ToCover.' -or- Multi target constraint. Consider using the indexed version of the method. |
+
+# See Also
+[RebarConstraint Class](748823c8-f059-68c1-d7b5-7cfaba93a445.md "RebarConstraint Class")
+[GetTargetHostFaceReference Overload](ae76f8f5-0c2f-c059-fc30-5f112355affc.md "GetTargetHostFaceReference Method")
+[Autodesk.Revit.DB.Structure Namespace](d586b341-f687-9d90-e96d-255806b7d4fc.md "Autodesk.Revit.DB.Structure Namespace")
+Send comments on this topic to 

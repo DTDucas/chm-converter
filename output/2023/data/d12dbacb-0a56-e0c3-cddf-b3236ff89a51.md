@@ -1,0 +1,43 @@
+# ArgumentNullException Members (2023)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+---  
+C#Visual BasicVisual C++
+Include Protected MembersInclude Inherited Members
+Revit 2023 API  
+---  
+ArgumentNullException Members  
+[ArgumentNullException Class](631e1424-60f4-929b-4e52-dda9dcd26316.md "ArgumentNullException Class") Methods Properties See Also  
+---  
+The [ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md "ArgumentNullException Class") type exposes the following members.
+# Methods
+| Name | Description |
+| --- | --- |
+| --- | --- | --- |
+| Equals | Determines whether the specified Object is equal to the current Object. (Inherited from Object.) |
+| GetBaseException | When overridden in a derived class, returns the Exception that is the root cause of one or more subsequent exceptions. (Inherited from Exception.) |
+| GetHashCode | Serves as a hash function for a particular type.  (Inherited from Object.) |
+| [GetObjectData](a16a5ed5-4ad2-2b09-21cc-622637e01b8b.md "GetObjectData Method") | Retrieves data needed to serialize the target object. (Overrides [ArgumentException..::..GetObjectData(SerializationInfo, StreamingContext)](ffd259c2-53ec-f232-02e1-135ba0a6ccfd.md "GetObjectData Method").) |
+| GetType | Gets the runtime type of the current instance. (Inherited from Exception.) |
+| ToString | Creates and returns a string representation of the current exception. (Inherited from Exception.) |
+
+# Properties
+| Name | Description |
+| --- | --- |
+| --- | --- | --- |
+| Data | Gets a collection of key/value pairs that provide additional user-defined information about the exception. (Inherited from Exception.) |
+| [FunctionId](84bd650f-9f87-dccb-4dd4-b23ca890b8b9.md "FunctionId Property") | The information of the function throwing the exception. (Inherited from [ApplicationException](05012a96-16ea-ace7-6115-b45406dacead.md "ApplicationException Class").) |
+| HelpLink | Gets or sets a link to the help file associated with this exception. (Inherited from Exception.) |
+| HResult | Gets or sets HRESULT, a coded numerical value that is assigned to a specific exception. (Inherited from Exception.) |
+| InnerException | Gets the Exception instance that caused the current exception. (Inherited from Exception.) |
+| [Message](c2498b95-ccc5-95cc-d5c2-7e732615e940.md "Message Property") | Gets the error message and the parameter name, or only the error message if no parameter name is set. (Inherited from [ArgumentException](2e6e4206-97a8-dd4b-df5d-4269f4bb6088.md "ArgumentException Class").) |
+| [ParamName](cf17c2e6-aa4a-3d6a-6fd2-fad6395336df.md "ParamName Property") | Gets the name of the parameter that causes this exception. (Inherited from [ArgumentException](2e6e4206-97a8-dd4b-df5d-4269f4bb6088.md "ArgumentException Class").) |
+| Source | Gets or sets the name of the application or the object that causes the error. (Inherited from Exception.) |
+| StackTrace | Gets a string representation of the immediate frames on the call stack. (Inherited from Exception.) |
+| TargetSite | Gets the method that throws the current exception. (Inherited from Exception.) |
+
+# See Also
+[ArgumentNullException Class](631e1424-60f4-929b-4e52-dda9dcd26316.md "ArgumentNullException Class")
+[Autodesk.Revit.Exceptions Namespace](e3bbc463-dccb-6964-e8ef-697c9ed07a27.md "Autodesk.Revit.Exceptions Namespace")
+Send comments on this topic to 

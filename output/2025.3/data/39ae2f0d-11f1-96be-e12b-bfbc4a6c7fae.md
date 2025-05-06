@@ -1,0 +1,3 @@
+# ImageType.GetImage Method (2025.3)
+
+﻿

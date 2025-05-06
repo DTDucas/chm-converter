@@ -1,0 +1,48 @@
+# UIDocument Methods (2022)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+---  
+C#Visual BasicVisual C++
+Include Protected MembersInclude Inherited Members
+Revit 2022 API  
+---  
+UIDocument Methods  
+[UIDocument Class](295b48c8-0571-ad5c-eead-baea84a6787c.md "UIDocument Class") See Also  
+---  
+The [UIDocument](295b48c8-0571-ad5c-eead-baea84a6787c.md "UIDocument Class") type exposes the following members.
+# Methods
+| Name | Description |
+| --- | --- |
+| --- | --- | --- |
+| [CanPlaceElementType](d9264f5e-333d-73df-0f9a-02b4c0722206.md "CanPlaceElementType Method") | Verifies that the user can be prompted to place the input element type interactively. |
+| [Dispose](47d89c68-0225-a534-5ace-b252cf90bfd7.md "Dispose Method") |
+| Equals | Determines whether the specified Object is equal to the current Object. (Inherited from Object.) |
+| GetHashCode | Serves as a hash function for a particular type.  (Inherited from Object.) |
+| [GetOpenUIViews](1ac8b262-9085-07e9-cef6-85377e8c70f3.md "GetOpenUIViews Method") | Get a list of all open view windows in the Revit user interface. |
+| [GetPlacementTypes](3069f4c9-3caa-7a3f-f739-375482380805.md "GetPlacementTypes Method") | Get a collection of valid placement types for input family symbol. |
+| [GetRevitUIFamilyLoadOptions](8475fa65-390b-f227-baa8-24db9b632506.md "GetRevitUIFamilyLoadOptions Method") | Return the option object that allows you to use Revit's dialog boxes to let the user respond to questions that arise during loading of families. |
+| [GetSketchGalleryOptions](3324ef29-2fd8-1760-f47a-030f5e2ccb2f.md "GetSketchGalleryOptions Method") | Gets the valid sketch gallery options of a family symbol. |
+| GetType | Gets the Type of the current instance. (Inherited from Object.) |
+| [PostRequestForElementTypePlacement](f9bf4ed3-0354-6bc1-6db3-e34fcbace950.md "PostRequestForElementTypePlacement Method") | Places a request on Revit's command queue for the user to place instances of the specified ElementType. This does not execute immediately, but instead when control returns to Revit from the current API context. |
+| [PromptForFamilyInstancePlacement(FamilySymbol)](33d1a534-161c-6b25-7336-caf753c69b78.md "PromptForFamilyInstancePlacement Method \(FamilySymbol\)") | Prompts the user to place instances of the specified FamilySymbol. |
+| [PromptForFamilyInstancePlacement(FamilySymbol, PromptForFamilyInstancePlacementOptions)](619d8d3f-ac64-26bf-cd82-0f6c37221367.md "PromptForFamilyInstancePlacement Method \(FamilySymbol, PromptForFamilyInstancePlacementOptions\)") | Prompts the user to place instances of the specified FamilySymbol. |
+| [PromptToMatchElementType](48e7741b-970c-8ee7-5987-914ca6e2f321.md "PromptToMatchElementType Method") | Prompts the user to select elements to change them to the input type. |
+| [PromptToPlaceElementTypeOnLegendView](f9f2c603-2a3d-f333-42ea-fecfad359c6f.md "PromptToPlaceElementTypeOnLegendView Method") | Prompts the user to place an element type onto a legend view. |
+| [PromptToPlaceViewOnSheet](32a59cc7-1e27-35b4-2dc3-2892f14dd760.md "PromptToPlaceViewOnSheet Method") | Prompts the user to place a specified view onto a sheet. |
+| [RefreshActiveView](5d9f248c-a1be-ac2e-1f4c-2219ed0fc5ae.md "RefreshActiveView Method") | Refresh the display of the active view in the active document. |
+| [RequestViewChange](a2e920d4-2849-282e-c25f-40a4d2cbef2d.md "RequestViewChange Method") | Requests an asynchronous change of the active view in the currently active document. |
+| [SaveAndClose](b7a3b928-bca9-d060-72b6-d7feaa2e8439.md "SaveAndClose Method") | Close the document, prompting the user for saving it when necessary. |
+| [SaveAs()()()()](32b06707-cfd5-837c-9951-791fd50a6bc9.md "SaveAs Method") | Saves the document to a file name obtained from the Revit user without prompting the user to overwrite file if it exists. |
+| [SaveAs(UISaveAsOptions)](7a5b49c3-f01d-9105-3b36-e04bea72887f.md "SaveAs Method \(UISaveAsOptions\)") | Saves the document to a file name obtained from the Revit user optionally prompting the user to overwrite file if it exists. |
+| [ShowElements(Element)](6c40c35b-1b2b-1741-dafa-5ab6b1744634.md "ShowElements Method \(Element\)") | Shows the element by zoom to fit. |
+| [ShowElements(ElementId)](4a60dd3d-3c60-9298-2252-b5e263c35e4c.md "ShowElements Method \(ElementId\)") | Shows the element by zoom to fit. |
+| [ShowElements(ICollection<(Of <<'(ElementId>)>>))](4c3aaa9a-679a-b49a-f162-48e199cc5b4b.md "ShowElements Method \(ICollection\(ElementId\)\)") | Shows the elements by zoom to fit. |
+| [ShowElements(ElementSet)](97a4f04c-5e3e-b2d5-f15c-d802bafd0dc3.md "ShowElements Method \(ElementSet\)") | Shows the elements by zoom to fit. |
+| ToString | Returns a string that represents the current object. (Inherited from Object.) |
+| [UpdateAllOpenViews](5cc3231e-ee7e-e1fc-2bd6-d164da617954.md "UpdateAllOpenViews Method") | Update all open views in this document after elements have been changed, deleted, selected or de-selected. Graphics in the views are fully redrawn regardless of which elements have changed. |
+
+# See Also
+[UIDocument Class](295b48c8-0571-ad5c-eead-baea84a6787c.md "UIDocument Class")
+[Autodesk.Revit.UI Namespace](e86fd90a-8957-02a6-da7f-ced248966e3e.md "Autodesk.Revit.UI Namespace")
+Send comments on this topic to 

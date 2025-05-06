@@ -1,0 +1,28 @@
+# LightShape Methods (2024)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+---  
+C#Visual BasicVisual C++
+Include Protected MembersInclude Inherited Members
+Revit 2024 API  
+---  
+LightShape Methods  
+[LightShape Class](6fc9d0d9-21ac-9192-0178-115be3a48dc7.md "LightShape Class") See Also  
+---  
+The [LightShape](6fc9d0d9-21ac-9192-0178-115be3a48dc7.md "LightShape Class") type exposes the following members.
+# Methods
+| Name | Description |
+| --- | --- |
+| --- | --- | --- |
+| [Clone](189b18d1-2efc-49f7-da12-a157c6a745b6.md "Clone Method") | Creates a copy of the LightShape derived object. |
+| [Dispose](342f5f07-befa-c392-35ec-83ad48763628.md "Dispose Method") |
+| Equals | Determines whether the specified Object is equal to the current Object. (Inherited from Object.) |
+| GetHashCode | Serves as a hash function for a particular type.  (Inherited from Object.) |
+| GetType | Gets the Type of the current instance. (Inherited from Object.) |
+| ToString | Returns a string that represents the current object. (Inherited from Object.) |
+
+# See Also
+[LightShape Class](6fc9d0d9-21ac-9192-0178-115be3a48dc7.md "LightShape Class")
+[Autodesk.Revit.DB.Lighting Namespace](a6a04f07-7fd2-0a4e-12e7-01842ee6daaf.md "Autodesk.Revit.DB.Lighting Namespace")
+Send comments on this topic to 

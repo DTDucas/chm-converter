@@ -1,0 +1,42 @@
+# PressureDrop Property (2023)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2023 API  
+---  
+DuctPressureDropData..::..PressureDrop Property   
+[DuctPressureDropData Class](53565301-b25a-cd38-0c68-bed19d619c25.md "DuctPressureDropData Class") See Also  
+---  
+The pressure drop of the duct. Units: (kg/(ftÂ·sÂ²)). 
+**Namespace:** [Autodesk.Revit.DB.Mechanical](0eafd899-5912-56fd-94b1-d286156e26fc.md "Autodesk.Revit.DB.Mechanical Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 23.0.0.0 (23.1.0.0)**Since:** 2014 
+# Syntax
+C#  
+---  
+```text
+public double PressureDrop { get; set; }
+```
+  
+Visual Basic  
+---  
+```text
+Public Property PressureDrop As Double
+	Get
+	Set
+```
+  
+Visual C++  
+---  
+```text
+public:
+property double PressureDrop {
+	double get ();
+	void set (double value);
+}
+```
+  
+# See Also
+[DuctPressureDropData Class](53565301-b25a-cd38-0c68-bed19d619c25.md "DuctPressureDropData Class")
+[Autodesk.Revit.DB.Mechanical Namespace](0eafd899-5912-56fd-94b1-d286156e26fc.md "Autodesk.Revit.DB.Mechanical Namespace")
+Send comments on this topic to 

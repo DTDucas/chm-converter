@@ -1,0 +1,40 @@
+# CannotSwapNestedGroups Property (2024)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2024 API  
+---  
+BuiltInFailures..::..GroupFailures..::..CannotSwapNestedGroups Property   
+[BuiltInFailures..::..GroupFailures Class](69df17ad-927e-db03-b55c-8efdb5397494.md "BuiltInFailures.GroupFailures Class") See Also  
+---  
+Can't replace because one Group is contained in the other. 
+**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)
+# Syntax
+C#  
+---  
+```text
+public static FailureDefinitionId CannotSwapNestedGroups { get; }
+```
+  
+Visual Basic  
+---  
+```text
+Public Shared ReadOnly Property CannotSwapNestedGroups As FailureDefinitionId
+	Get
+```
+  
+Visual C++  
+---  
+```text
+public:
+static property FailureDefinitionId^ CannotSwapNestedGroups {
+	FailureDefinitionId^ get ();
+}
+```
+  
+# See Also
+[BuiltInFailures..::..GroupFailures Class](69df17ad-927e-db03-b55c-8efdb5397494.md "BuiltInFailures.GroupFailures Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
+Send comments on this topic to 
