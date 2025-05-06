@@ -1,3 +1,0 @@
-# MullionTypeSetIterator Properties (2025.3)
-
-﻿

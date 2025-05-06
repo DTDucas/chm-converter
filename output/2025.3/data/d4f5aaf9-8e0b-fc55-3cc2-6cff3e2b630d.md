@@ -1,3 +1,0 @@
-# IDuctPressureDropServer.Calculate Method (2025.3)
-
-﻿

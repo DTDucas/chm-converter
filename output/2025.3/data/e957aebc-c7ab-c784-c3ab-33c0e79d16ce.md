@@ -1,3 +1,0 @@
-# DockablePane(DockablePane) Constructor (2025.3)
-
-﻿

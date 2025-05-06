@@ -1,3 +1,0 @@
-# MacroModuleIterator.MoveNext Method (2025.3)
-
-﻿
