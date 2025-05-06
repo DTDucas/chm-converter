@@ -1,0 +1,40 @@
+# ProjectionPlanesNotIntersect Property (2024)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2024 API  
+---  
+BuiltInFailures..::..AnalyticalModelFailures..::..ProjectionPlanesNotIntersect Property   
+[BuiltInFailures..::..AnalyticalModelFailures Class](3633d562-0e24-5cad-ec0f-02e6cc6ad731.md "BuiltInFailures.AnalyticalModelFailures Class") See Also  
+---  
+Can't project Analytical Model. Planes do not intersect each other. 
+**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)
+# Syntax
+C#  
+---  
+```text
+public static FailureDefinitionId ProjectionPlanesNotIntersect { get; }
+```
+  
+Visual Basic  
+---  
+```text
+Public Shared ReadOnly Property ProjectionPlanesNotIntersect As FailureDefinitionId
+	Get
+```
+  
+Visual C++  
+---  
+```text
+public:
+static property FailureDefinitionId^ ProjectionPlanesNotIntersect {
+	FailureDefinitionId^ get ();
+}
+```
+  
+# See Also
+[BuiltInFailures..::..AnalyticalModelFailures Class](3633d562-0e24-5cad-ec0f-02e6cc6ad731.md "BuiltInFailures.AnalyticalModelFailures Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
+Send comments on this topic to 

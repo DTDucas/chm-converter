@@ -1,0 +1,53 @@
+# AddCurve Method (2024)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2024 API  
+---  
+ViewShapeBuilder..::..AddCurve Method   
+[ViewShapeBuilder Class](f99edd24-4519-56d5-a5d6-aa1565a893af.md "ViewShapeBuilder Class") See Also  
+---  
+Add a curve to the GRep associated to this ViewShapeBuilder. 
+**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2015 
+# Syntax
+C#  
+---  
+```text
+public void AddCurve(
+	Curve GCurve
+)
+```
+  
+Visual Basic  
+---  
+```text
+Public Sub AddCurve ( _
+	GCurve As Curve _
+)
+```
+  
+Visual C++  
+---  
+```text
+public:
+void AddCurve(
+	Curve^ GCurve
+)
+```
+  
+# ### Parameters
+GCurve
+    Type: [Autodesk.Revit.DB..::..Curve](400cc9b6-9ff7-de85-6fd8-c20002209d25.md "Curve Class") The curve to be added. 
+# Exceptions
+| Exception | Condition |
+| --- | --- |
+| --- | --- |
+| [Autodesk.Revit.Exceptions..::..ArgumentException](2e6e4206-97a8-dd4b-df5d-4269f4bb6088.md "ArgumentException Class") | GCurve is not acceptable for view-specific shape representation that is currently being built. |
+| [Autodesk.Revit.Exceptions..::..ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md "ArgumentNullException Class") | A non-optional argument was null |
+
+# See Also
+[ViewShapeBuilder Class](f99edd24-4519-56d5-a5d6-aa1565a893af.md "ViewShapeBuilder Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
+Send comments on this topic to 

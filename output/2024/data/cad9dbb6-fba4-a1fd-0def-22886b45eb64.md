@@ -1,0 +1,42 @@
+# ClearWebHeight Property (2024)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2024 API  
+---  
+StructuralSectionISplitParallelFlange..::..ClearWebHeight Property   
+[StructuralSectionISplitParallelFlange Class](1e6f5fda-39bd-234c-1d53-af2228af774a.md "StructuralSectionISplitParallelFlange Class") See Also  
+---  
+Detailing depth between the web toes of the fillets, in.(mm) 
+**Namespace:** [Autodesk.Revit.DB.Structure.StructuralSections](09862f38-63f6-a5f8-e560-ae775901bc92.md "Autodesk.Revit.DB.Structure.StructuralSections Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)**Since:** 2015 
+# Syntax
+C#  
+---  
+```text
+public double ClearWebHeight { get; set; }
+```
+  
+Visual Basic  
+---  
+```text
+Public Property ClearWebHeight As Double
+	Get
+	Set
+```
+  
+Visual C++  
+---  
+```text
+public:
+property double ClearWebHeight {
+	double get ();
+	void set (double value);
+}
+```
+  
+# See Also
+[StructuralSectionISplitParallelFlange Class](1e6f5fda-39bd-234c-1d53-af2228af774a.md "StructuralSectionISplitParallelFlange Class")
+[Autodesk.Revit.DB.Structure.StructuralSections Namespace](09862f38-63f6-a5f8-e560-ae775901bc92.md "Autodesk.Revit.DB.Structure.StructuralSections Namespace")
+Send comments on this topic to 

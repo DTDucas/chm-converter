@@ -1,0 +1,23 @@
+# BuiltInFailures.DebugTabBindingFailures Properties (2024)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+---  
+C#Visual BasicVisual C++
+Include Protected MembersInclude Inherited Members
+Revit 2024 API  
+---  
+BuiltInFailures..::..DebugTabBindingFailures Properties  
+[BuiltInFailures..::..DebugTabBindingFailures Class](1dcfa779-46e3-130d-6ce8-fce704d28b30.md "BuiltInFailures.DebugTabBindingFailures Class") See Also  
+---  
+The [BuiltInFailures..::..DebugTabBindingFailures](1dcfa779-46e3-130d-6ce8-fce704d28b30.md "BuiltInFailures.DebugTabBindingFailures Class") type exposes the following members.
+# Properties
+| Name | Description |
+| --- | --- |
+| --- | --- | --- |
+| [OptionValueOutOfRange](29e4cc00-1eec-1e8d-733c-93ba1b852df4.md "OptionValueOutOfRange Property") | Value out of range for Options enum. |
+
+# See Also
+[BuiltInFailures..::..DebugTabBindingFailures Class](1dcfa779-46e3-130d-6ce8-fce704d28b30.md "BuiltInFailures.DebugTabBindingFailures Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
+Send comments on this topic to 
