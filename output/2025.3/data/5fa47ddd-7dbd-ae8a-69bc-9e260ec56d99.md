@@ -1,3 +1,0 @@
-# TopographySurface.Create(Document, IList<XYZ>, IList<PolymeshFacet>) Method (2025.3)
-
-﻿

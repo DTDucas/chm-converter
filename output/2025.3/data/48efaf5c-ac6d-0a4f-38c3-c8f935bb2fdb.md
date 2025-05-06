@@ -1,3 +1,0 @@
-# RevitServerException.GetObjectData Method (2025.3)
-
-﻿

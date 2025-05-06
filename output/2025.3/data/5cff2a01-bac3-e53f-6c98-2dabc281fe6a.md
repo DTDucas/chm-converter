@@ -1,3 +1,0 @@
-# BumpMap.TextureScaleLock Property (2025.3)
-
-﻿
