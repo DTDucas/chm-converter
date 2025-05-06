@@ -1,3 +1,0 @@
-# VertexIndexPairArray.Item Property (2025.3)
-
-﻿

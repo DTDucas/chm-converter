@@ -1,3 +1,0 @@
-# PaperSourceSet.GetEnumerator Method (2025.3)
-
-﻿
