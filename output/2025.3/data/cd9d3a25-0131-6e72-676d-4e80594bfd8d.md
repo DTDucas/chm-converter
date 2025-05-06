@@ -1,0 +1,3 @@
+# IFCExportOptions Constructor (2025.3)
+
+﻿
