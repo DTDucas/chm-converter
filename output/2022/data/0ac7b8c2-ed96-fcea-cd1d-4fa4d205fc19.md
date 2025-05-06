@@ -1,0 +1,59 @@
+# ExporterIFC Methods (2022)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+---  
+C#Visual BasicVisual C++
+Include Protected MembersInclude Inherited Members
+Revit 2022 API  
+---  
+ExporterIFC Methods  
+[ExporterIFC Class](c8697b81-e080-9202-14d3-ec883f951521.md "ExporterIFC Class") See Also  
+---  
+The [ExporterIFC](c8697b81-e080-9202-14d3-ec883f951521.md "ExporterIFC Class") type exposes the following members.
+# Methods
+| Name | Description |
+| --- | --- |
+| --- | --- | --- |
+| [AddBuildingStorey](08c5605c-b66f-baae-5684-d9dc7cf7121a.md "AddBuildingStorey Method") | Adds building storey to the exporter's internal cache. |
+| [ClearFaceWithElementHandleMap](5f97a843-1df7-64fb-f063-2e8f4899774d.md "ClearFaceWithElementHandleMap Method") | Clear face with element handle map. |
+| [Dispose](daa92a17-48ad-264e-8a7d-d2a8de070508.md "Dispose Method") |
+| Equals | Determines whether the specified Object is equal to the current Object. (Inherited from Object.) |
+| [FindSpaceBoundingElementHandle](facc8372-3b66-2b31-135c-852985763186.md "FindSpaceBoundingElementHandle Method") | Looks up the handle associated to the element and level id from the ExporterIFC's internal cache. |
+| [Get2DContextHandle](9e027616-9f33-ede2-d25f-1fe4e3b38445.md "Get2DContextHandle Method") | Obtains the IfcRepresentationContext handle to be used for 2D entities (Annotations). |
+| [Get3DContextHandle](e1ea52a9-9e2c-9704-cfab-d43fe87fd53b.md "Get3DContextHandle Method") | Obtains the IfcRepresentationContext or IfcRepresentationSubContext handle to be used for 3D entities (Model entities). |
+| [GetDoorWindowOpeningHandle](aa17a626-7f33-0984-6b2d-e8ff8b7e6423.md "GetDoorWindowOpeningHandle Method") | Get the handle to the opening associated with a hosted (door/window) element from the internal cache. |
+| [GetFamilyName](bbab76a2-98c3-e6d3-c8b2-829ebd5e45e5.md "GetFamilyName Method") | Gets the name of the element assigned to the current export state. |
+| [GetFile](1baac5bf-ee32-4d1c-0ba3-6193124c0d9c.md "GetFile Method") | Gets the handle to the IFC file being created during this export operation. |
+| GetHashCode | Serves as a hash function for a particular type.  (Inherited from Object.) |
+| [GetHostObjects](39ace44e-26a7-e530-2dc2-737a1e3f1479.md "GetHostObjects Method") | Returns a collection containing the host object handles in the document. |
+| [GetLayerNameForPresentationLayer](9bb2d5c4-40ef-661b-b49e-720e74a1ca57.md "GetLayerNameForPresentationLayer Method") | Get the layer name associated with an element from the default layer mapping table. |
+| [GetLevelInfo](c404ab36-866c-8ac8-a8b1-c60d963791ed.md "GetLevelInfo Method") | Returns an object representing the information about a level in the document. |
+| [GetLevelInfos](c7f1c52a-a0d0-cc15-4a08-1c476bb7509b.md "GetLevelInfos Method") | Returns a collection containing the information about all levels in the document. |
+| [GetMaterialIdForCurrentExportState](ea78908e-959b-dca9-06a2-abce0c4cef70.md "GetMaterialIdForCurrentExportState Method") | This gets the material id that is associated with the element in the current export state. |
+| [GetOptions](79e15a6b-3a5d-3aa1-c13a-5155356c5842.md "GetOptions Method") | Gets the collection of named options set by the exporter client. |
+| [GetOrCreateFillPattern](13faad3d-86f3-ed60-b3a3-78504c969716.md "GetOrCreateFillPattern Method") | Get (or create) the IfcFillPatternStyle associated with an ElementId. |
+| [GetPresentationLayerAssignments](7dad2ed6-30a7-1b25-5e5f-8a1d7389f103.md "GetPresentationLayerAssignments Method") | Get the list of the internally IfcPresentationLayerAssignments and their respective shape representations. |
+| [GetRelatedElements](dbab0f38-a7d9-8f42-5217-c41c8a5330f7.md "GetRelatedElements Method") | Gets all elements not associated to stories. |
+| [GetRelatedProducts](fa71bbad-420e-d073-7012-da63f6f4bd3e.md "GetRelatedProducts Method") | Gets all products not associated to stories. |
+| GetType | Gets the Type of the current instance. (Inherited from Object.) |
+| [PopExportState](719e062b-eea9-3010-33ad-e48dae367276.md "PopExportState Method") | Resets the internal state of the exporter to process the previously active input element (if any), or the default state if the stack is empty. |
+| [PopTransform](004039fe-8364-af98-6a51-7df026ea4fc0.md "PopTransform Method") | Resets the internal transform of the exporter to process the previously active input element (if any), or the default transform if the stack is empty. |
+| [PushExportState](84dee1b6-d008-e039-6f06-6e984920228c.md "PushExportState Method") | Sets the internal state of the exporter to process the geometry and properties of the input element. |
+| [PushTransform](bc1f8a42-7cbc-600a-9d1f-bcf80d6186e0.md "PushTransform Method") | Sets the internal transform of the exporter to process the geometry and properties of the input element. |
+| [RegisterDoorWindowForUncreatedOpening](688b2144-693c-544c-45db-e6257d21430b.md "RegisterDoorWindowForUncreatedOpening Method") | Registers a door or window in the ExporterIFC's internal cache. The ids registered correspond to openings in walls which have not been processed and created yet. |
+| [RegisterFaceWithElementHandle](f002582a-79a1-23b6-4278-2fabcb133444.md "RegisterFaceWithElementHandle Method") | Register face with element handle to make sure the openings created are related to the right element. |
+| [RegisterShapeForPresentationLayer](1e4e3d2a-b021-52cb-20ad-365aa3e5c525.md "RegisterShapeForPresentationLayer Method") | **Obsolete.** Sets an IfcShapeRepresentation to be used for the IfcPresentationLayerAssignment associated with the given Revit category and element. |
+| [RegisterSpaceBoundingElementHandle](9e2dc4fb-c062-f68d-af7f-fbbe7bd359e1.md "RegisterSpaceBoundingElementHandle Method") | Stores a handle representing a space bounding element to the ExporterIFC's internal cache. |
+| [RemoveBuildingStorey](e1dada57-54f4-ecbb-d3bf-75144f65c34e.md "RemoveBuildingStorey Method") | Removes an IFCLevelInfo corresponding to a level from the exporter's internal cache. |
+| [Set2DContextHandle](675a5b9e-9fa2-9dca-46c1-214197226adf.md "Set2DContextHandle Method") | Sets the IfcRepresentationContext handle to be used for 2D entities (Annotations). |
+| [Set3DContextHandle](94faf2de-158e-87bc-a9e0-ad0e6ff8eedc.md "Set3DContextHandle Method") | Sets the IfcRepresentationContext or IfcRepresentationSubContext handle to be used for 3D entities (Model entities). |
+| [SetFile](30eb507b-8796-ce4e-ec59-1684e1306a0f.md "SetFile Method") | Sets the handle to the IFC file being created during this export operation. |
+| [SetMaterialIdForCurrentExportState](af494e73-5135-bd2b-8d71-389fa5be3ec7.md "SetMaterialIdForCurrentExportState Method") | This sets the material id that is to be associated with the element in the current export state. |
+| [SetOwnerHistoryHandle](dbdb1fba-2cbb-1c18-56b8-f6f35bde1f3f.md "SetOwnerHistoryHandle Method") | Sets the handle to the IfcOwnerHistory for the file. |
+| ToString | Returns a string that represents the current object. (Inherited from Object.) |
+
+# See Also
+[ExporterIFC Class](c8697b81-e080-9202-14d3-ec883f951521.md "ExporterIFC Class")
+[Autodesk.Revit.DB.IFC Namespace](b823fafb-1ba1-896b-4097-142c2817ce74.md "Autodesk.Revit.DB.IFC Namespace")
+Send comments on this topic to 

@@ -1,0 +1,50 @@
+# PostScale Method (2022)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2022 API  
+---  
+Transform2D..::..PostScale Method   
+[Transform2D Class](49a13f08-08d7-95b1-d52e-65f90e6d4061.md "Transform2D Class") See Also  
+---  
+Scales both the linear and translational parts of this transformation and returns the result. 
+**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 22.0.0.0 (22.1.0.0)**Since:** 2021 
+# Syntax
+C#  
+---  
+```text
+public Transform2D PostScale(
+	double scale
+)
+```
+  
+Visual Basic  
+---  
+```text
+Public Function PostScale ( _
+	scale As Double _
+) As Transform2D
+```
+  
+Visual C++  
+---  
+```text
+public:
+Transform2D^ PostScale(
+	double scale
+)
+```
+  
+# ### Parameters
+scale
+    Type: System..::..Double The scale value. 
+# ### Return Value
+Returns a pointer to "this" [Transform2D](49a13f08-08d7-95b1-d52e-65f90e6d4061.md "Transform2D Class"). 
+# Remarks
+The resulting transformation is equivalent to the application of this transformation and then the uniform scale, in this order. 
+# See Also
+[Transform2D Class](49a13f08-08d7-95b1-d52e-65f90e6d4061.md "Transform2D Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
+Send comments on this topic to 
