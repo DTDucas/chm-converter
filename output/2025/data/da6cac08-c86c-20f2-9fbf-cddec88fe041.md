@@ -1,3 +1,0 @@
-# AnalysisDisplayMarkersAndTextSettings Constructor (2025)
-
-﻿
