@@ -1,0 +1,40 @@
+# PipePlumbingFixtureFlowService Property (2022)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2022 API  
+---  
+ExternalServices..::..BuiltInExternalServices..::..PipePlumbingFixtureFlowService Property   
+[ExternalServices..::..BuiltInExternalServices Class](f189eb3f-7a3a-2891-657a-e18cbf014987.md "ExternalServices.BuiltInExternalServices Class") See Also  
+---  
+The external service which permits registration of an alternate implementation for pipe fixture flow calculation. To use this service, programmers implement a server class that derives from IPipePlumbingFixtureFlowServer. 
+**Namespace:** [Autodesk.Revit.DB.ExternalService](a88f2d1d-c02f-a901-9543-44e4b5dd5fc9.md "Autodesk.Revit.DB.ExternalService Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 22.0.0.0 (22.1.0.0)
+# Syntax
+C#  
+---  
+```text
+public static ExternalServiceId PipePlumbingFixtureFlowService { get; }
+```
+  
+Visual Basic  
+---  
+```text
+Public Shared ReadOnly Property PipePlumbingFixtureFlowService As ExternalServiceId
+	Get
+```
+  
+Visual C++  
+---  
+```text
+public:
+static property ExternalServiceId^ PipePlumbingFixtureFlowService {
+	ExternalServiceId^ get ();
+}
+```
+  
+# See Also
+[ExternalServices..::..BuiltInExternalServices Class](f189eb3f-7a3a-2891-657a-e18cbf014987.md "ExternalServices.BuiltInExternalServices Class")
+[Autodesk.Revit.DB.ExternalService Namespace](a88f2d1d-c02f-a901-9543-44e4b5dd5fc9.md "Autodesk.Revit.DB.ExternalService Namespace")
+Send comments on this topic to 

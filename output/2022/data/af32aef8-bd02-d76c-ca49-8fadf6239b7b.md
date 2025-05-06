@@ -1,0 +1,38 @@
+# BuiltInFailures.CuttingFailures Class (2022)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2022 API  
+---  
+BuiltInFailures..::..CuttingFailures Class  
+[BuiltInFailures Class](eda15d4a-6b14-ee6b-0c44-6011077e6cfc.md "BuiltInFailures Class") [Members](c485d27e-a745-8351-2d24-6a41dd756be1.md "BuiltInFailures.CuttingFailures Members") See Also  
+---  
+Failures about Cutting. 
+**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 22.0.0.0 (22.1.0.0)
+# Syntax
+C#  
+---  
+```text
+public static class CuttingFailures
+```
+  
+Visual Basic  
+---  
+```text
+Public NotInheritable Class CuttingFailures
+```
+  
+Visual C++  
+---  
+```text
+public ref class CuttingFailures abstract sealed
+```
+  
+# Inheritance Hierarchy
+System..::..Object Autodesk.Revit.DB..::..BuiltInFailures..::..CuttingFailures
+# See Also
+[BuiltInFailures..::..CuttingFailures Members](c485d27e-a745-8351-2d24-6a41dd756be1.md "BuiltInFailures.CuttingFailures Members")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
+Send comments on this topic to 

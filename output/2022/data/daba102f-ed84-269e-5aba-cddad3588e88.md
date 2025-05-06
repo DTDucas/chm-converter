@@ -1,0 +1,39 @@
+# Dispose Method (2022)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2022 API  
+---  
+ForgeTypeId..::..Dispose Method   
+[ForgeTypeId Class](d9fcf276-9566-de83-2b0b-d89b65ccc8af.md "ForgeTypeId Class") See Also  
+---  
+Releases all resources used by the [ForgeTypeId](d9fcf276-9566-de83-2b0b-d89b65ccc8af.md "ForgeTypeId Class")
+**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 22.0.0.0 (22.1.0.0)
+# Syntax
+C#  
+---  
+```text
+public void Dispose()
+```
+  
+Visual Basic  
+---  
+```text
+Public Sub Dispose
+```
+  
+Visual C++  
+---  
+```text
+public:
+virtual void Dispose() sealed
+```
+  
+# ### Implements
+IDisposable..::..Dispose()()()()
+# See Also
+[ForgeTypeId Class](d9fcf276-9566-de83-2b0b-d89b65ccc8af.md "ForgeTypeId Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
+Send comments on this topic to 

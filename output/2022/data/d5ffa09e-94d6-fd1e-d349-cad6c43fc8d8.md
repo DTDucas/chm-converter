@@ -1,0 +1,42 @@
+# WebFillet Property (2022)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2022 API  
+---  
+StructuralSectionHotRolled..::..WebFillet Property   
+[StructuralSectionHotRolled Class](60cc6328-1e99-2a7b-03fb-983e52350e55.md "StructuralSectionHotRolled Class") See Also  
+---  
+Web Fillet - fillet radius between web and flange. 
+**Namespace:** [Autodesk.Revit.DB.Structure.StructuralSections](09862f38-63f6-a5f8-e560-ae775901bc92.md "Autodesk.Revit.DB.Structure.StructuralSections Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 22.0.0.0 (22.1.0.0)**Since:** 2015 
+# Syntax
+C#  
+---  
+```text
+public double WebFillet { get; set; }
+```
+  
+Visual Basic  
+---  
+```text
+Public Property WebFillet As Double
+	Get
+	Set
+```
+  
+Visual C++  
+---  
+```text
+public:
+property double WebFillet {
+	double get ();
+	void set (double value);
+}
+```
+  
+# See Also
+[StructuralSectionHotRolled Class](60cc6328-1e99-2a7b-03fb-983e52350e55.md "StructuralSectionHotRolled Class")
+[Autodesk.Revit.DB.Structure.StructuralSections Namespace](09862f38-63f6-a5f8-e560-ae775901bc92.md "Autodesk.Revit.DB.Structure.StructuralSections Namespace")
+Send comments on this topic to 

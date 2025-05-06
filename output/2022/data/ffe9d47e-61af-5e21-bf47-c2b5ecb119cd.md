@@ -1,0 +1,28 @@
+# ExternalResourceServerUtils Members (2022)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++  Members: Show All Members: Filtered Members: Filtered Members: Filtered   
+---  
+C#Visual BasicVisual C++
+Include Protected MembersInclude Inherited Members
+Revit 2022 API  
+---  
+ExternalResourceServerUtils Members  
+[ExternalResourceServerUtils Class](a3147faa-ddc7-6cc1-8906-260582b6bc4a.md "ExternalResourceServerUtils Class") Methods See Also  
+---  
+The [ExternalResourceServerUtils](a3147faa-ddc7-6cc1-8906-260582b6bc4a.md "ExternalResourceServerUtils Class") type exposes the following members.
+# Methods
+| Name | Description |
+| --- | --- |
+| --- | --- | --- |
+| [IsValidShortName](5d7f45ca-6e12-0979-2e6c-e6959e1617de.md "IsValidShortName Method") | Checks whether the name is a valid short name for the external resource server. |
+| [ServerSupportsAssemblyCodeData](7db6277b-f48f-a7e9-6bd4-2798999cb9df.md "ServerSupportsAssemblyCodeData Method") | Checks that the server referenced by the given ExternalResourceReference supports AssemblyCodeData. |
+| [ServerSupportsCADLinks](66d581a3-9a20-d3ba-47a3-6d17e52fda56.md "ServerSupportsCADLinks Method") | Checks that the server referenced by the given ExternalResourceReference supports CAD links. |
+| [ServerSupportsIFCLinks](71ee69fe-7a99-2af7-fb5e-d6e1533ea16e.md "ServerSupportsIFCLinks Method") | Checks that the server referenced by the given ExternalResourceReference supports IFC links. |
+| [ServerSupportsKeynotes](ef3003e0-6e4e-5b6f-1b66-0af06f90b89a.md "ServerSupportsKeynotes Method") | Checks that the server referenced by the given ExternalResourceReference supports KeynoteTable data. |
+| [ServerSupportsRevitLinks](154a8896-8d7c-ef67-3168-b91af2df0bcc.md "ServerSupportsRevitLinks Method") | Checks that the server referenced by the given ExternalResourceReference supports Revit links. |
+
+# See Also
+[ExternalResourceServerUtils Class](a3147faa-ddc7-6cc1-8906-260582b6bc4a.md "ExternalResourceServerUtils Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
+Send comments on this topic to 

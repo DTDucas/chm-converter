@@ -1,0 +1,54 @@
+# IsValidReferenceCurve Method (2022)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2022 API  
+---  
+DirectShape..::..IsValidReferenceCurve Method   
+[DirectShape Class](bfbd137b-c2c2-71bb-6f4a-992d0dcf6ea8.md "DirectShape Class") See Also  
+---  
+Validates that the input curve is suitable for creating a direct shape reference curve. Bounded and unbounded lines are accepted. Other bounded and unbounded curve types with natural bounds are accepted if they are not closed. Unbounded periodic curves are not allowed. 
+**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 22.0.0.0 (22.1.0.0)**Since:** 2022 
+# Syntax
+C#  
+---  
+```text
+public static bool IsValidReferenceCurve(
+	Curve curve
+)
+```
+  
+Visual Basic  
+---  
+```text
+Public Shared Function IsValidReferenceCurve ( _
+	curve As Curve _
+) As Boolean
+```
+  
+Visual C++  
+---  
+```text
+public:
+static bool IsValidReferenceCurve(
+	Curve^ curve
+)
+```
+  
+# ### Parameters
+curve
+    Type: [Autodesk.Revit.DB..::..Curve](400cc9b6-9ff7-de85-6fd8-c20002209d25.md "Curve Class") The curve to test. 
+# ### Return Value
+True if the input curve point can be used to create a direct shape reference curve, false otherwise. 
+# Exceptions
+| Exception | Condition |
+| --- | --- |
+| --- | --- |
+| [Autodesk.Revit.Exceptions..::..ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md "ArgumentNullException Class") | A non-optional argument was null |
+
+# See Also
+[DirectShape Class](bfbd137b-c2c2-71bb-6f4a-992d0dcf6ea8.md "DirectShape Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
+Send comments on this topic to 
