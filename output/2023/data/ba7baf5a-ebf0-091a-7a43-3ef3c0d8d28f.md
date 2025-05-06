@@ -1,0 +1,54 @@
+# GetElementIdValue Method (2023)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2023 API  
+---  
+FilterableValueProvider..::..GetElementIdValue Method   
+[FilterableValueProvider Class](50829fa2-03f1-9d4b-a3cd-2935d3bf8a8c.md "FilterableValueProvider Class") See Also  
+---  
+Gets an ElementId value from the given element. 
+**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 23.0.0.0 (23.1.0.0)**Since:** 2011 
+# Syntax
+C#  
+---  
+```text
+public ElementId GetElementIdValue(
+	Element element
+)
+```
+  
+Visual Basic  
+---  
+```text
+Public Function GetElementIdValue ( _
+	element As Element _
+) As ElementId
+```
+  
+Visual C++  
+---  
+```text
+public:
+ElementId^ GetElementIdValue(
+	Element^ element
+)
+```
+  
+# ### Parameters
+element
+    Type: [Autodesk.Revit.DB..::..Element](eb16114f-69ea-f4de-0d0d-f7388b105a16.md "Element Class") The element to query. 
+# ### Return Value
+The ElementId value from the element. 
+# Exceptions
+| Exception | Condition |
+| --- | --- |
+| --- | --- |
+| [Autodesk.Revit.Exceptions..::..ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md "ArgumentNullException Class") | A non-optional argument was null |
+
+# See Also
+[FilterableValueProvider Class](50829fa2-03f1-9d4b-a3cd-2935d3bf8a8c.md "FilterableValueProvider Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
+Send comments on this topic to 

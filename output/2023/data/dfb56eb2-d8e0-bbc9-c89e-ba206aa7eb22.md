@@ -1,0 +1,40 @@
+# FootingWillMoveToBottom Property (2023)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2023 API  
+---  
+BuiltInFailures..::..JoinElementsFailures..::..FootingWillMoveToBottom Property   
+[BuiltInFailures..::..JoinElementsFailures Class](2d7e4353-c24a-38d5-f3aa-3cbc2cb92698.md "BuiltInFailures.JoinElementsFailures Class") See Also  
+---  
+An attached Structural Foundation will be moved to the bottom of the Column. 
+**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 23.0.0.0 (23.1.0.0)
+# Syntax
+C#  
+---  
+```text
+public static FailureDefinitionId FootingWillMoveToBottom { get; }
+```
+  
+Visual Basic  
+---  
+```text
+Public Shared ReadOnly Property FootingWillMoveToBottom As FailureDefinitionId
+	Get
+```
+  
+Visual C++  
+---  
+```text
+public:
+static property FailureDefinitionId^ FootingWillMoveToBottom {
+	FailureDefinitionId^ get ();
+}
+```
+  
+# See Also
+[BuiltInFailures..::..JoinElementsFailures Class](2d7e4353-c24a-38d5-f3aa-3cbc2cb92698.md "BuiltInFailures.JoinElementsFailures Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
+Send comments on this topic to 
