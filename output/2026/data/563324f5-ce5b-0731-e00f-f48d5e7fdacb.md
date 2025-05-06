@@ -1,3 +1,0 @@
-# BasicLossFactor Constructor (2026)
-
-﻿
