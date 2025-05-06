@@ -1,0 +1,3 @@
+# SpotLightDistribution Constructor (2025)
+
+﻿
