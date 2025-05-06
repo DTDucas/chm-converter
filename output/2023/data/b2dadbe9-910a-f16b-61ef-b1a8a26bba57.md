@@ -1,0 +1,63 @@
+# Multiply Operator (UV, Double) (2023)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2023 API  
+---  
+UV..::..Multiply Operator (UV, Double)  
+[UV Class](1724be37-059b-91ff-aa74-d1508082f76d.md "UV Class") See Also  
+---  
+The product of the specified number and the specified 2-D vector.
+**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 23.0.0.0 (23.1.0.0)
+# Syntax
+C#  
+---  
+```text
+public static UV operator *(
+	UV left,
+	double value
+)
+```
+  
+Visual Basic  
+---  
+```text
+Public Shared Operator * ( _
+	left As UV, _
+	value As Double _
+) As UV
+```
+  
+Visual C++  
+---  
+```text
+public:
+static UV^ operator *(
+	UV^ left, 
+	double value
+)
+```
+  
+# ### Parameters
+left
+    Type: [Autodesk.Revit.DB..::..UV](1724be37-059b-91ff-aa74-d1508082f76d.md "UV Class")The vector to multiply with the value.
+value
+    Type: System..::..DoubleThe value to multiply with the specified vector.
+# ### Return Value
+The multiplied 2-D vector.
+# Remarks
+The multiplied vector is obtained by multiplying each coordinate of the specified vector by the specified value. 
+# Exceptions
+| Exception | Condition |
+| --- | --- |
+| --- | --- |
+| [Autodesk.Revit.Exceptions..::..ArgumentException](2e6e4206-97a8-dd4b-df5d-4269f4bb6088.md "ArgumentException Class") | Thrown when the specified value is an infinite number. |
+| [Autodesk.Revit.Exceptions..::..ArgumentNullException](631e1424-60f4-929b-4e52-dda9dcd26316.md "ArgumentNullException Class") | Thrown when left is nullNothingnullptra null reference (Nothing in Visual Basic). |
+
+# See Also
+[UV Class](1724be37-059b-91ff-aa74-d1508082f76d.md "UV Class")
+[Multiply Overload](e86bb7d4-d202-93b4-e5ae-efd62f23a479.md "Multiply Operator")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
+Send comments on this topic to 
