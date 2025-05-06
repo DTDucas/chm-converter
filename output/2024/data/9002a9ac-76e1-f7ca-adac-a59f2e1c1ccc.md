@@ -1,0 +1,39 @@
+# ForwardIterator Method (2024)
+
+﻿
+ Code: All Code: Multiple Code: C# Code: Visual Basic Code: Visual C++   
+---  
+C#Visual BasicVisual C++
+Revit 2024 API  
+---  
+ProjectLocationSet..::..ForwardIterator Method   
+[ProjectLocationSet Class](f61b39ab-704a-8981-419f-c2f64521f181.md "ProjectLocationSet Class") See Also  
+---  
+Retrieve a forward moving iterator to the set.
+**Namespace:** [Autodesk.Revit.DB](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")**Assembly:** RevitAPI (in RevitAPI.dll) Version: 24.0.0.0 (24.0.0.0)
+# Syntax
+C#  
+---  
+```text
+public virtual ProjectLocationSetIterator ForwardIterator()
+```
+  
+Visual Basic  
+---  
+```text
+Public Overridable Function ForwardIterator As ProjectLocationSetIterator
+```
+  
+Visual C++  
+---  
+```text
+public:
+virtual ProjectLocationSetIterator^ ForwardIterator()
+```
+  
+# ### Return Value
+Returns a forward moving iterator to the set.
+# See Also
+[ProjectLocationSet Class](f61b39ab-704a-8981-419f-c2f64521f181.md "ProjectLocationSet Class")
+[Autodesk.Revit.DB Namespace](87546ba7-461b-c646-cbb1-2cb8f5bff8b2.md "Autodesk.Revit.DB Namespace")
+Send comments on this topic to 
