@@ -43,7 +43,6 @@ DTDUCAS_LOGO = """
 Duong Tran Quang - DTDucas (baymax.contact@gmail.com)
 """
 
-
 def extract_page_title(soup):
     title_tag = soup.find("title")
     if title_tag and title_tag.string:
@@ -95,12 +94,15 @@ def update_links(soup, file_dictionary=None):
         if a["href"] == "#PageHeader":
             a.decompose()
         elif a["href"].lower().endswith((".htm", ".html")):
+            # Grab this from memory and make a copy
             href = a["href"]
-            base_href = os.path.basename(href)
-            base, _ = os.path.splitext(base_href)
-            a["href"] = base + ".md"
-            if file_dictionary and base in file_dictionary:
-                display_name = file_dictionary[base].get("title")
+            # Get the relative path, but without the .htm/.html file extension
+            # (e.g. mysubdirectory/anothersubdirectory/actualFile )
+            # Note that these links will be relative to their parent file, NOT relative to the main html folder
+            relPath, relPath_ext = os.path.splitext(href)
+            a["href"] = relPath + ".md"
+            if file_dictionary and relPath in file_dictionary:
+                display_name = file_dictionary[relPath].get("title")
                 if display_name:
                     a["title"] = display_name
     return soup
@@ -320,16 +322,16 @@ async def export_chm_to_htm(chm_path, export_folder):
 
 
 async def build_file_dictionary(input_folder, version=None):
-    html_folder = os.path.join(input_folder, "html")
-    if not os.path.exists(html_folder):
-        print(f"HTML folder does not exist: {html_folder}")
+    html_parent_folder = os.path.join(input_folder, "html")
+    if not os.path.exists(html_parent_folder):
+        print(f"HTML folder does not exist: {html_parent_folder}")
         return {}
     file_dictionary = {}
     semaphore = asyncio.Semaphore(20)
 
-    async def process_file_for_dict(filename):
-        input_path = os.path.join(html_folder, filename)
-        base, _ = os.path.splitext(filename)
+    async def process_file_for_dict(fileRelPath):
+        input_path = os.path.join(html_parent_folder, fileRelPath)
+        base, _ = os.path.splitext(fileRelPath)
         try:
             async with semaphore:
                 async with aiofiles.open(
@@ -354,10 +356,22 @@ async def build_file_dictionary(input_folder, version=None):
             }
 
     file_list = [
-        f for f in os.listdir(html_folder) if f.lower().endswith((".htm", ".html"))
+        # Commenting this out while I try to get it to traverse directory trees
+        #f for f in os.listdir(html_parent_folder) if f.lower().endswith((".htm", ".html"))
     ]
+
+    for root, dirs, files in os.walk(html_parent_folder):
+        for file in files:
+            if file.endswith((".html", ".htm")):
+                file_list.append(
+                    os.path.relpath(
+                        os.path.join(root, file),
+                        html_parent_folder
+                    )
+                )
+
     print(f"Building dictionary from {len(file_list)} HTML files...")
-    tasks = [process_file_for_dict(filename) for filename in file_list]
+    tasks = [process_file_for_dict(fileRelPath) for fileRelPath in file_list]
     results = await asyncio.gather(*tasks)
     for base, info in results:
         file_dictionary[base] = info
@@ -376,9 +390,9 @@ async def convert_files_with_dictionary(
     semaphore_limit=20,
     batch_size=10,
 ):
-    html_folder = os.path.join(input_folder, "html")
-    if not os.path.exists(html_folder):
-        print(f"HTML folder does not exist: {html_folder}")
+    html_parent_folder = os.path.join(input_folder, "html")
+    if not os.path.exists(html_parent_folder):
+        print(f"HTML folder does not exist: {html_parent_folder}")
         return
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
@@ -386,9 +400,19 @@ async def convert_files_with_dictionary(
         os.makedirs(data_folder)
     if not os.path.exists(core_folder):
         os.makedirs(core_folder)
-    file_list = [
-        f for f in os.listdir(html_folder) if f.lower().endswith((".htm", ".html"))
-    ]
+
+    file_list = []
+    for root, dirs, files in os.walk(html_parent_folder):
+        for file in files:
+            if file.endswith((".html", ".htm")):
+                file_list.append(
+                    os.path.relpath(
+                        os.path.join(root, file),
+                        html_parent_folder
+                    )
+                )
+
+    
     total_files = len(file_list)
     print(f"Converting {total_files} HTML files to Markdown...")
     semaphore = asyncio.Semaphore(semaphore_limit)
@@ -397,7 +421,7 @@ async def convert_files_with_dictionary(
             batch_files = file_list[i : i + batch_size]
             batch_tasks = []
             for filename in batch_files:
-                input_path = os.path.join(html_folder, filename)
+                input_path = os.path.join(html_parent_folder, filename)
                 base, _ = os.path.splitext(filename)
                 output_path = os.path.join(data_folder, base + ".md")
                 batch_tasks.append(
@@ -434,6 +458,8 @@ async def process_file(
             executor, convert_html_to_markdown, html_content, file_dictionary, version
         )
         async with semaphore:
+            parent_dir = os.path.dirname(output_path)
+            await aiofiles.os.makedirs(parent_dir, exist_ok=True)
             async with aiofiles.open(output_path, "w", encoding="utf-8") as f:
                 await f.write(markdown_content)
     except Exception as e:
@@ -462,6 +488,7 @@ async def create_index_files(core_folder, file_dictionary, version=None):
         await f.write(json.dumps(id_lookup, indent=4, ensure_ascii=False))
     print(f"Created ID-based lookup dictionary at {id_lookup_path}")
     md_index_path = os.path.join(core_folder, "index.md")
+
     async with aiofiles.open(md_index_path, "w", encoding="utf-8") as f:
         if version:
             await f.write(f"# API Documentation Index - Version {version}\n\n")
@@ -514,7 +541,7 @@ async def process_chm_file(
         if not os.path.exists(folder):
             os.makedirs(folder)
     print(f"Extracting {chm_file_path} to {input_folder}...")
-    success = await export_chm_to_htm(chm_file_path, input_folder)
+    success = await export_chm_to_htm(chm_file_path, input_folder + "/html")
     if not success:
         print(f"Failed to extract {chm_file_path}. Skipping this version.")
         return False
