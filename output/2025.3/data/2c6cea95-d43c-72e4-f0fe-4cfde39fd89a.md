@@ -1,3 +1,0 @@
-# CurveByPointsArray.Append Method (2025.3)
-
-﻿

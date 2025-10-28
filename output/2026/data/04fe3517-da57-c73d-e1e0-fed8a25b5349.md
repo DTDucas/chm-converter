@@ -1,3 +1,0 @@
-# AnalysisDisplayVectorSettings Constructor (2026)
-
-﻿

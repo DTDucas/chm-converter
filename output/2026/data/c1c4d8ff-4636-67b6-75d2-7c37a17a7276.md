@@ -1,3 +1,0 @@
-# RebarHostData.IsValidHost Method (2026)
-
-﻿

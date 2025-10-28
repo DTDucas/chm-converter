@@ -1,3 +1,0 @@
-# DockablePane.IsShown Method (2025.3)
-
-﻿

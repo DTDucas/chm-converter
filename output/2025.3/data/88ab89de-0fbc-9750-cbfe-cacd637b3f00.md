@@ -1,3 +1,0 @@
-# ParameterFilterRuleFactory.CreateGreaterOrEqualRule(ElementId, ElementId) Method (2025.3)
-
-﻿

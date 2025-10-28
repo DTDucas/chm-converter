@@ -1,3 +1,0 @@
-# ExternalFileUtils.IsExternalFileReference Method (2025.3)
-
-﻿
