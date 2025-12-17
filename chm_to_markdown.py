@@ -321,7 +321,7 @@ async def export_chm_to_htm(chm_path, export_folder):
         return False
 
 
-async def build_file_dictionary(input_folder, version=None):
+async def build_file_dictionary(input_folder, version=None, preserve_structure=True):
     html_parent_folder = os.path.join(input_folder, "html")
     if not os.path.exists(html_parent_folder):
         print(f"HTML folder does not exist: {html_parent_folder}")
@@ -331,7 +331,11 @@ async def build_file_dictionary(input_folder, version=None):
 
     async def process_file_for_dict(fileRelPath):
         input_path = os.path.join(html_parent_folder, fileRelPath)
-        base, _ = os.path.splitext(fileRelPath)
+        # Use basename only if not preserving structure, otherwise use relative path
+        if preserve_structure:
+            base, _ = os.path.splitext(fileRelPath)
+        else:
+            base, _ = os.path.splitext(os.path.basename(fileRelPath))
         try:
             async with semaphore:
                 async with aiofiles.open(
@@ -389,6 +393,7 @@ async def convert_files_with_dictionary(
     max_workers=4,
     semaphore_limit=20,
     batch_size=10,
+    preserve_structure=True,
 ):
     html_parent_folder = os.path.join(input_folder, "html")
     if not os.path.exists(html_parent_folder):
@@ -422,8 +427,13 @@ async def convert_files_with_dictionary(
             batch_tasks = []
             for filename in batch_files:
                 input_path = os.path.join(html_parent_folder, filename)
-                base, _ = os.path.splitext(filename)
-                output_path = os.path.join(data_folder, base + ".md")
+                if preserve_structure:
+                    base, _ = os.path.splitext(filename)
+                    output_path = os.path.join(data_folder, base + ".md")
+                else:
+                    # Flatten structure: use only basename
+                    base, _ = os.path.splitext(os.path.basename(filename))
+                    output_path = os.path.join(data_folder, base + ".md")
                 batch_tasks.append(
                     process_file(
                         executor,
@@ -459,7 +469,7 @@ async def process_file(
         )
         async with semaphore:
             parent_dir = os.path.dirname(output_path)
-            await aiofiles.os.makedirs(parent_dir, exist_ok=True)
+            os.makedirs(parent_dir, exist_ok=True)
             async with aiofiles.open(output_path, "w", encoding="utf-8") as f:
                 await f.write(markdown_content)
     except Exception as e:
@@ -530,6 +540,7 @@ async def process_chm_file(
     max_workers=4,
     semaphore_limit=20,
     batch_size=10,
+    preserve_structure=True,
 ):
     version = os.path.splitext(os.path.basename(chm_file_path))[0]
     print(f"\n=== Processing {version} ===")
@@ -545,7 +556,7 @@ async def process_chm_file(
     if not success:
         print(f"Failed to extract {chm_file_path}. Skipping this version.")
         return False
-    file_dictionary = await build_file_dictionary(input_folder, version)
+    file_dictionary = await build_file_dictionary(input_folder, version, preserve_structure)
     await convert_files_with_dictionary(
         input_folder,
         output_folder,
@@ -556,6 +567,7 @@ async def process_chm_file(
         max_workers,
         semaphore_limit,
         batch_size,
+        preserve_structure,
     )
     shutil.rmtree(os.path.join(input_folder, "html"), ignore_errors=True)
     print(f"\n=== Completed processing {version} ===")
@@ -569,6 +581,7 @@ async def process_all_chm_files(
     max_workers=8,
     semaphore_limit=20,
     batch_size=50,
+    preserve_structure=True,
 ):
     chm_files = [
         os.path.join(resources_folder, f)
@@ -588,6 +601,7 @@ async def process_all_chm_files(
             max_workers,
             semaphore_limit,
             batch_size,
+            preserve_structure,
         )
         results.append((chm_file, result))
     print("\n=== Processing Summary ===")
@@ -628,6 +642,11 @@ async def main():
         default=20,
         help="Semaphore limit for concurrent operations",
     )
+    parser.add_argument(
+        "--preserve-structure",
+        action="store_true",
+        help="Preserve the folder structure from the CHM file in the output markdown files/folders. Default is to flatten all files into a single data directory - this is usually good for API documentation, but may not be as good for more general documentation.",
+    )
     args = parser.parse_args()
     resources_folder = r"resources"
     base_input_folder = r"extracted"
@@ -648,6 +667,7 @@ async def main():
             args.workers,
             args.semaphore,
             args.batch_size,
+            args.preserve_structure,
         )
     elif args.all:
         await process_all_chm_files(
@@ -657,6 +677,7 @@ async def main():
             args.workers,
             args.semaphore,
             args.batch_size,
+            args.preserve_structure,
         )
     else:
         chm_files = [
@@ -682,6 +703,7 @@ async def main():
                     args.workers,
                     args.semaphore,
                     args.batch_size,
+                    args.preserve_structure,
                 )
             else:
                 try:
@@ -694,6 +716,7 @@ async def main():
                             args.workers,
                             args.semaphore,
                             args.batch_size,
+                            args.preserve_structure,
                         )
                     else:
                         print("Invalid selection.")
