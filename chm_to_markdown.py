@@ -7,7 +7,7 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor
 from bs4 import BeautifulSoup
 import html2text
-import aiofiles
+import aiofiles, aiofiles.os
 
 tags_to_remove = ["iframe", "object", "script", "br", "img", "meta", "link", "input"]
 classes_to_remove = [
@@ -469,7 +469,7 @@ async def process_file(
         )
         async with semaphore:
             parent_dir = os.path.dirname(output_path)
-            os.makedirs(parent_dir, exist_ok=True)
+            await aiofiles.os.makedirs(parent_dir, exist_ok=True)
             async with aiofiles.open(output_path, "w", encoding="utf-8") as f:
                 await f.write(markdown_content)
     except Exception as e:
