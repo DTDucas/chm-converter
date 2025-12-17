@@ -321,7 +321,7 @@ async def export_chm_to_htm(chm_path, export_folder):
         return False
 
 
-async def build_file_dictionary(input_folder, version=None, preserve_structure=True):
+async def build_file_dictionary(input_folder, version=None, preserve_structure=False):
     html_parent_folder = os.path.join(input_folder, "html")
     if not os.path.exists(html_parent_folder):
         print(f"HTML folder does not exist: {html_parent_folder}")
@@ -393,7 +393,7 @@ async def convert_files_with_dictionary(
     max_workers=4,
     semaphore_limit=20,
     batch_size=10,
-    preserve_structure=True,
+    preserve_structure=False,
 ):
     html_parent_folder = os.path.join(input_folder, "html")
     if not os.path.exists(html_parent_folder):
@@ -540,7 +540,7 @@ async def process_chm_file(
     max_workers=4,
     semaphore_limit=20,
     batch_size=10,
-    preserve_structure=True,
+    preserve_structure=False,
 ):
     version = os.path.splitext(os.path.basename(chm_file_path))[0]
     print(f"\n=== Processing {version} ===")
