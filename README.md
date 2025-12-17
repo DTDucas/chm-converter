@@ -86,9 +86,19 @@ python chm_to_markdown.py --all
 # Keep HTML files after conversion (for debugging)
 python chm_to_markdown.py --all --keep-html
 
+# Preserve the original folder structure from the CHM file
+python chm_to_markdown.py --all --preserve-structure
+
 # Adjust worker threads and batch size for performance
 python chm_to_markdown.py --all --workers 4 --batch-size 25
 ```
+
+### Structure Options
+
+By default, the converter flattens all extracted markdown files into a single `data` directory. Use `--preserve-structure` to maintain the original folder hierarchy from the CHM file:
+
+- **Without `--preserve-structure`** (default): All files are placed in `output/[chm_filename]/data/`
+- **With `--preserve-structure`**: Files maintain their original folder paths (e.g. ``output/[chm_filename]/data/mydialog/myfeature/details.md``), rather than being flattened to a single directory. This can be more useful and more navigable for general software documentation (as opposed to API references).
 
 ## Performance Tuning
 
