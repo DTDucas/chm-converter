@@ -1,158 +1,163 @@
 # CHM to Markdown Converter
 
-A Python utility for converting Compiled HTML Help (CHM) files to Markdown format, specifically optimized for Revit API documentation. This tool extracts HTML files from CHM documents and converts them to well-formatted Markdown files, making technical documentation more accessible, version control friendly, and AI-readable.
+A Python utility for converting Compiled HTML Help (`.chm`) files into clean Markdown, with built-in support for multiple document types through a profile system.
+
+Originally built for Autodesk Revit API documentation; the generic profile works with any CHM file.
 
 ## Features
 
-- Processes multiple Revit API documentation versions (2022-2026)
-- Creates an organized folder structure for easy reference
-- Generates core index files for AI integration and search functionality
-- Extracts CHM files using 7-Zip
-- Converts HTML content to clean Markdown format
-- Special handling for code snippets with language-specific syntax highlighting
-- Preserves and fixes tables
-- Updates internal links to maintain document references
-- Processes files asynchronously for better performance
-- Batch processes multiple CHM files with progress reporting
+- **Profile-based conversion** — `generic` profile for any CHM, `revit` profile for Autodesk Revit API docs
+- **Auto encoding detection** — handles UTF-8, GB18030, GBK, GB2312, and more via `chardet`
+- **Cross-platform 7-Zip detection** — finds `7z`/`7za`/`7zz` on PATH (Windows, Linux, macOS)
+- **Flexible CHM structure support** — handles `html/` subdirectory, flat, and deeply nested layouts (e.g. DirectX SDK)
+- **`--preserve-structure`** — optionally mirrors the CHM's internal folder hierarchy in the output instead of flattening everything into `data/`
+- **Code block preservation** — detects language from class names and named divs; supports C#, VB, C++, F#, Python, Java, JS/TS, Bash, SQL, XML, JSON
+- **Table normalization** — cleans and re-formats Markdown tables
+- **Index generation** — produces `file_index.json`, `id_lookup.json`, and `index.md` for search and AI integration
+- **Async + batched processing** — bounded concurrency and periodic GC prevent memory overflow on large CHM files (6 000+ pages)
 
-## Output Structure
+## Project Structure
 
-The converter creates an organized output structure:
+```
+chm_converter/           # Core package
+├── config.py            # ConversionConfig dataclass + built-in profiles
+├── encoding.py          # Encoding detection (chardet + CJK fallbacks)
+├── extractor.py         # CHM extraction via 7-Zip; HTML folder detection
+├── html_processor.py    # HTML cleaning, link rewriting, code block extraction
+├── md_converter.py      # HTML → Markdown conversion + post-processing
+├── indexer.py           # File dictionary building + index file generation
+└── pipeline.py          # High-level async pipeline (process_chm_file, process_all_chm_files)
+
+chm_to_markdown.py       # CLI entry point
+resources/               # Place CHM files here
+output/                  # Generated Markdown (created automatically)
+```
+
+### Output layout
 
 ```
 output/
-├── 2022/
-│   ├── core/           # Contains index files for AI and search
-│   │   ├── file_index.json
-│   │   ├── id_lookup.json
-│   │   └── index.md
-│   └── data/           # Contains all markdown documentation files
-│       ├── file1.md
-│       ├── file2.md
-│       └── ...
-├── 2023/
-│   ├── core/
-│   └── data/
-└── ...
+└── <name>/
+    ├── core/
+    │   ├── file_index.json   # id → {title, filename, version}
+    │   ├── id_lookup.json    # lowercase id → {title, filename, keywords, version}
+    │   └── index.md          # alphabetical navigation page
+    └── data/
+        ├── Topic1.md
+        ├── Topic2.md
+        └── ...
 ```
 
 ## Requirements
 
-- Python 3.7+
-- 7-Zip installed in the default location (`C:\Program Files\7-Zip\7z.exe`)
-- The following Python packages:
-  - beautifulsoup4
-  - html2text
-  - aiofiles
+- Python 3.10+
+- [7-Zip](https://www.7-zip.org/) — `7z` must be reachable via the default install path or `PATH`
+  - Windows: installs to `C:\Program Files\7-Zip\7z.exe` by default, or add to `PATH`
+  - Linux: `sudo apt install p7zip-full`
+  - macOS: `brew install p7zip`
 
 ## Installation
 
-1. Clone or download this repository
-2. Install required Python packages:
-
 ```bash
+git clone https://github.com/DTDucas/chm-converter.git
+cd chm-converter
 pip install -r requirements.txt
-```
-
-Or install them directly:
-
-```bash
-pip install beautifulsoup4 html2text aiofiles
 ```
 
 ## Usage
 
-1. Place your Revit API CHM files in the `resources` folder
-2. Run the script:
+Place `.chm` files in the `resources/` folder, then run:
 
 ```bash
+# Interactive menu (lists available CHM files)
 python chm_to_markdown.py
-```
 
-3. Choose from the available options:
-   - Process a specific CHM file by entering its number
-   - Process all CHM files by entering 'a' or 'all'
-   - Use command-line arguments for automation
+# Convert a single file
+python chm_to_markdown.py --single resources/docs.chm
 
-### Command-line Arguments
-
-```bash
-# Process a single CHM file
-python chm_to_markdown.py --single resources/2024.chm
-
-# Process all CHM files in the resources folder
+# Convert all CHM files in resources/
 python chm_to_markdown.py --all
 
-# Keep HTML files after conversion (for debugging)
-python chm_to_markdown.py --all --keep-html
+# Use the Revit API profile (strips Revit help-viewer boilerplate)
+python chm_to_markdown.py --all --profile revit
 
-# Adjust worker threads and batch size for performance
-python chm_to_markdown.py --all --workers 4 --batch-size 25
+# Preserve the original folder hierarchy inside data/ (e.g. for DirectX SDK)
+python chm_to_markdown.py --single resources/directx_sdk.chm --preserve-structure
+
+# Keep extracted HTML for debugging
+python chm_to_markdown.py --single resources/docs.chm --keep-html
+
+# Tune performance
+python chm_to_markdown.py --all --workers 4 --batch-size 25 --semaphore 10
 ```
 
-## Performance Tuning
+### CLI arguments
 
-You can adjust the following parameters to optimize performance for your system:
+| Argument               | Short | Default   | Description                                                     |
+| ---------------------- | ----- | --------- | --------------------------------------------------------------- |
+| `--single FILE`        | `-s`  | —         | Convert a single CHM file                                       |
+| `--all`                | `-a`  | —         | Convert all CHM files in `resources/`                           |
+| `--profile`            | `-p`  | `generic` | Conversion profile: `generic` or `revit`                        |
+| `--keep-html`          | `-k`  | off       | Retain extracted HTML after conversion                          |
+| `--workers N`          | `-w`  | `8`       | Thread-pool size for CPU-bound conversion                       |
+| `--batch-size N`       | `-b`  | `50`      | Files processed per async batch                                 |
+| `--semaphore N`        | —     | `20`      | Max concurrent I/O operations                                   |
+| `--preserve-structure` | —     | off       | Mirror CHM folder hierarchy in `data/`; preserve relative links |
 
-- `--workers` or `-w`: Number of worker threads for CPU-bound operations
-- `--batch-size` or `-b`: Number of files to process in each batch
-- `--semaphore`: Maximum concurrent file I/O operations
+## Profiles
 
-Example:
+| Profile   | Description                                                                                                            |
+| --------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `generic` | Minimal cleanup — works with any CHM file                                                                              |
+| `revit`   | Strips Autodesk Revit help-viewer UI chrome (collapsible regions, feedback links, code-tab toolbars, boilerplate text) |
 
-```bash
-python chm_to_markdown.py --all --workers 4 --batch-size 25 --semaphore 10
+Custom profiles can be created programmatically:
+
+```python
+from chm_converter.config import ConversionConfig
+from chm_converter.pipeline import process_chm_file
+import asyncio
+
+cfg = ConversionConfig(
+    classes_to_remove=["my-nav-bar", "site-footer"],
+    ids_to_remove=["cookie-banner"],
+    cleanup_patterns=[
+        (r"Rate this article.*?---", "---"),
+    ],
+)
+
+asyncio.run(process_chm_file("docs.chm", "extracted", "output", cfg=cfg))
 ```
 
 ## AI Integration
 
-This tool is designed to facilitate AI integration with Revit API documentation:
+The `core/` folder is designed for RAG and AI search pipelines:
 
-- The `core/file_index.json` file maps file IDs to titles and versions
-- The `core/id_lookup.json` file provides a lookup dictionary with extracted keywords
-- The `core/index.md` file provides a user-friendly navigation structure
-- All markdown files include version information in headings
-- Internal links are updated to maintain proper references between files
-
-## Customization
-
-The script provides several customization options for content conversion:
-
-### Removing Unwanted Elements
-
-You can customize which HTML elements to remove by editing these lists:
-
-```python
-tags_to_remove = ["iframe", "object", "script", "br", "img"]
-classes_to_remove = ["collapsibleAreaRegion", "collapsibleRegionTitle", ...]
-ids_to_remove = ["PageFooter", "PageHeader", ...]
-```
-
-### Code Snippets
-
-The script handles code snippets with language-specific formatting. You can customize the language mapping:
-
-```python
-id_to_lang = {
-    "IDAB_code_Div1": "csharp",
-    "IDAB_code_Div2": "vb",
-    "IDAB_code_Div3": "cpp",
-    "IDAB_code_Div4": "fsharp",
-}
-```
+- `file_index.json` — maps every file ID to its title, filename, and version
+- `id_lookup.json` — lowercase-keyed with extracted keyword lists for full-text search
+- `index.md` — human-readable alphabetical index with anchor links
 
 ## Troubleshooting
 
-- **Missing modules error**: Make sure you've installed all required packages and your Python environment is correctly configured.
-- **7-Zip not found**: Check that 7-Zip is installed in the default location or update the path in the script.
-- **Permission errors**: Run your terminal or command prompt with administrator privileges.
-- **Memory issues with large CHM files**: Try increasing the batch size and reducing max_workers to manage memory usage.
-- **Encoding issues**: The tool uses error-tolerant UTF-8 encoding, but some characters may still display incorrectly. Adjust encoding settings if needed.
+| Problem                                         | Solution                                                                                   |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| `7z not found`                                  | Install 7-Zip and ensure it is on `PATH`; see Requirements above                           |
+| Empty output / `No HTML files found`            | CHM uses a nested folder layout — add `--preserve-structure` to enable recursive traversal |
+| Revit 2025+ pages contain only a title, no body | Fixed in current version: `TopicContent` is no longer stripped from the Revit profile      |
+| Garbled CJK text                                | The tool auto-detects encoding via `chardet`; try `--profile generic` if issues persist    |
+| Memory errors on large CHM                      | Reduce `--workers` and `--batch-size`                                                      |
+| Permission errors                               | Run the terminal with administrator / sudo privileges                                      |
 
 ## License
 
-This project is open source and available under the MIT License.
+MIT License
 
 ## Author
 
-Duong Tran Quang - DTDucas (baymax.contact@gmail.com)
+**Duong Tran Quang (DTDucas)**
+baymax.contact@gmail.com
+[github.com/DTDucas](https://github.com/DTDucas)
+
+### Contributors
+
+- **Jiangxumin** — Chinese encoding support, cross-platform 7-Zip detection, memory-safe batch processing ([PR #11](https://github.com/DTDucas/chm-converter/pull/11))
