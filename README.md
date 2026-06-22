@@ -157,6 +157,7 @@ MIT License
 **Duong Tran Quang (DTDucas)**
 baymax.contact@gmail.com
 [github.com/DTDucas](https://github.com/DTDucas)
+Author: [dtducas.com](https://dtducas.com)
 
 ### Contributors
 
