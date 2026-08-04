@@ -5,6 +5,7 @@ from typing import Dict, Optional, Tuple
 from bs4 import BeautifulSoup
 
 from .config import ConversionConfig
+from .image_processor import ImageStore
 
 
 def extract_page_title(soup: BeautifulSoup) -> Optional[str]:
@@ -98,6 +99,33 @@ def update_links(
                 display = file_dictionary[key].get("title")
                 if display:
                     a["title"] = display
+    return soup
+
+
+def update_images(
+    soup: BeautifulSoup,
+    image_store: Optional[ImageStore],
+    html_file_path: Optional[str] = None,
+) -> BeautifulSoup:
+    """Materialize images referenced by ``<img>`` tags into *image_store*.
+
+    Successfully processed images have their ``src`` rewritten to point at
+    the local ``images/<md5>.<ext>`` file (relative path is ``../images/``,
+    matching the ``data/`` output layout). Failures leave the original
+    ``src`` untouched so the reference is preserved whenever possible.
+    """
+    if image_store is None:
+        return soup
+
+    for img in soup.find_all("img", src=True):
+        src = img["src"]
+        try:
+            filename = image_store.process(src, html_file_path)
+        except Exception as exc:
+            print(f"Error processing image '{src}': {exc}")
+            filename = None
+        if filename:
+            img["src"] = f"../images/{filename}"
     return soup
 
 
