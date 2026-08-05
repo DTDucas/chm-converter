@@ -44,6 +44,7 @@ async def _process_file(
             preserve_structure,
             image_store,
             input_path,
+            output_path,
         )
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         async with semaphore:

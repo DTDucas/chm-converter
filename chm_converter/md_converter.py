@@ -118,6 +118,7 @@ def convert_html_to_markdown(
     preserve_structure: bool = False,
     image_store: Optional[ImageStore] = None,
     html_file_path: Optional[str] = None,
+    markdown_output_path: Optional[str] = None,
 ) -> str:
     """Convert an HTML string to Markdown using *cfg* for cleanup rules."""
     soup = BeautifulSoup(html_content, "html.parser")
@@ -125,7 +126,7 @@ def convert_html_to_markdown(
 
     soup = remove_unwanted_elements(soup, cfg)
     soup = update_links(soup, file_dictionary, preserve_structure)
-    soup = update_images(soup, image_store, html_file_path)
+    soup = update_images(soup, image_store, html_file_path, markdown_output_path)
     soup, code_blocks = replace_code_snippets(soup, cfg)
 
     h = html2text.HTML2Text()

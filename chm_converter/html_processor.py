@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 import re
 from typing import Dict, Optional, Tuple
 
@@ -106,13 +107,14 @@ def update_images(
     soup: BeautifulSoup,
     image_store: Optional[ImageStore],
     html_file_path: Optional[str] = None,
+    markdown_output_path: Optional[str] = None,
 ) -> BeautifulSoup:
     """Materialize images referenced by ``<img>`` tags into *image_store*.
 
     Successfully processed images have their ``src`` rewritten to point at
-    the local ``images/<md5>.<ext>`` file (relative path is ``../images/``,
-    matching the ``data/`` output layout). Failures leave the original
-    ``src`` untouched so the reference is preserved whenever possible.
+    the local ``images/<md5>.<ext>`` file using a path relative to the
+    Markdown output file. Failures leave the original ``src`` untouched so
+    the reference is preserved whenever possible.
     """
     if image_store is None:
         return soup
@@ -125,7 +127,12 @@ def update_images(
             print(f"Error processing image '{src}': {exc}")
             filename = None
         if filename:
-            img["src"] = f"../images/{filename}"
+            if markdown_output_path:
+                image_path = Path(image_store.images_folder) / filename
+                relative_path = os.path.relpath(image_path, start=Path(markdown_output_path).parent)
+                img["src"] = relative_path.replace(os.sep, "/")
+            else:
+                img["src"] = f"../images/{filename}"
     return soup
 
 
