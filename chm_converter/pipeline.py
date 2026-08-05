@@ -10,6 +10,7 @@ import aiofiles
 from .config import ConversionConfig, DEFAULT_CONFIG
 from .encoding import read_file_with_encoding
 from .extractor import export_chm_to_htm, find_html_folder
+from .image_processor import ImageStore
 from .indexer import build_file_dictionary, create_index_files, _collect_html_files
 from .md_converter import convert_html_to_markdown
 
@@ -27,6 +28,7 @@ async def _process_file(
     version: Optional[str],
     cfg: ConversionConfig,
     preserve_structure: bool,
+    image_store: Optional[ImageStore],
 ) -> None:
     loop = asyncio.get_running_loop()
     try:
@@ -40,6 +42,9 @@ async def _process_file(
             version,
             cfg,
             preserve_structure,
+            image_store,
+            input_path,
+            output_path,
         )
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         async with semaphore:
@@ -64,6 +69,7 @@ async def _convert_files(
     semaphore_limit: int,
     batch_size: int,
     preserve_structure: bool,
+    image_store: Optional[ImageStore],
 ) -> None:
     html_folder = find_html_folder(input_folder)
     if not html_folder:
@@ -102,6 +108,7 @@ async def _convert_files(
                         version,
                         cfg,
                         preserve_structure,
+                        image_store,
                     )
                 )
             await asyncio.gather(*tasks)
@@ -145,14 +152,17 @@ async def process_chm_file(
     output_folder = os.path.join(base_output_folder, version)
     data_folder = os.path.join(output_folder, "data")
     core_folder = os.path.join(output_folder, "core")
+    images_folder = os.path.join(output_folder, "images")
 
-    for folder in (input_folder, output_folder, data_folder, core_folder):
+    for folder in (input_folder, output_folder, data_folder, core_folder, images_folder):
         os.makedirs(folder, exist_ok=True)
 
     print(f"Extracting {chm_file_path} -> {input_folder}")
     if not await export_chm_to_htm(chm_file_path, input_folder):
         print(f"Extraction failed for {chm_file_path}. Skipping.")
         return False
+
+    image_store = ImageStore(images_folder)
 
     file_dictionary = await build_file_dictionary(
         input_folder, version, preserve_structure
@@ -168,6 +178,7 @@ async def process_chm_file(
         semaphore_limit,
         batch_size,
         preserve_structure,
+        image_store,
     )
 
     if not keep_html:

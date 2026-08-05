@@ -13,7 +13,7 @@ class ConversionConfig:
 
     # HTML tags to strip entirely (content discarded)
     tags_to_remove: List[str] = field(default_factory=lambda: [
-        "iframe", "object", "script", "br", "img", "meta", "link", "input",
+        "iframe", "object", "script", "br", "meta", "link", "input",
     ])
 
     # CSS classes whose elements are stripped
