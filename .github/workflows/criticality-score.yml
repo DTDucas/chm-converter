@@ -12,7 +12,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Run OpenSSF Criticality Score
-        uses: ossf/criticality_score@v2
+      - name: Install Go
+        uses: actions/setup-go@v5
         with:
-          repo: https://github.com/DTDucas/chm-converter
+          go-version: "stable"
+
+      - name: Install OpenSSF Criticality Score
+        run: |
+          go install github.com/ossf/criticality_score/v2/cmd/criticality_score@latest
+
+      - name: Calculate score
+        run: |
+          "$(go env GOPATH)/bin/criticality_score" \
+            --repo=https://github.com/DTDucas/chm-converter
