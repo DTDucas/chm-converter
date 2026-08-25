@@ -19,9 +19,11 @@ jobs:
 
       - name: Install OpenSSF Criticality Score
         run: |
-          go install github.com/ossf/criticality_score/v2/cmd/criticality_score@latest
+          go install github.com/ossf/criticality_score/v2/cmd/criticality_score@v2.0.4
 
       - name: Calculate score
+        env:
+          GITHUB_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           "$(go env GOPATH)/bin/criticality_score" \
-            --repo=https://github.com/DTDucas/chm-converter
+            https://github.com/DTDucas/chm-converter
